@@ -1,8 +1,7 @@
 <template>
   <section id="Home">
     <div class="main-wrapper">
-
-
+      <TopBar id="TopBar"/>
     </div>
     <div class="sidebar-wrapper">
 
@@ -28,21 +27,21 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   border: thin solid blue;
 
-  .main-wrapper {
-    width: 70%;
+  .main-wrapper{
+    width: 68%;
     height: 95%;
-    margin: auto;
     border: thin solid green;
+    padding-right: 20px;
   }
 
   .sidebar-wrapper{
-    width: 25%;
+    width: 26%;
     height: 95%;
-    margin: auto;
     border: thin solid mediumpurple;
   }
 }
