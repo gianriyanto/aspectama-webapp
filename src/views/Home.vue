@@ -1,17 +1,24 @@
 <template>
   <section id="Home">
-    <div class="content-wrapper">
-      <div class="header-container">
-        <span class="header-text">
-        </span>
-      </div>
+    <div class="main-wrapper">
+
+
+    </div>
+    <div class="sidebar-wrapper">
+
     </div>
   </section>
 </template>
 
 <script>
+
+import TopBar from "@/components/TopBar";
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    TopBar
+  }
 }
 </script>
 
@@ -20,34 +27,23 @@ export default {
 #Home{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  justify-content: center;
+  width: 100vw;
   height: 100vh;
+  border: thin solid blue;
 
-  .content-wrapper{
+  .main-wrapper {
     width: 70%;
-    height: 100vh;
-    background-image: linear-gradient(to top right, #1f1f1f, #2b2b2b);
-    border-radius: 0 25px 25px 0;
-    box-shadow: 0 0 32px 15px #d6d6d6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 95%;
+    margin: auto;
+    border: thin solid green;
+  }
 
-    .header-container{
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      height: fit-content;
-      width: 500px;
-
-      .header-text{
-        line-height: 1.4;
-        font-family: "Bw Modelica Medium", serif;
-        word-spacing: -0.5px;
-        font-size: 38px;
-        color: white;
-      }
-    }
+  .sidebar-wrapper{
+    width: 25%;
+    height: 95%;
+    margin: auto;
+    border: thin solid mediumpurple;
   }
 }
 

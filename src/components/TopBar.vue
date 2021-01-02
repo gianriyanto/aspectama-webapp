@@ -1,12 +1,12 @@
 <template>
-<div id="TopTav">
+<div id="TopBar">
 
 </div>
 </template>
 
 <script>
 export default {
-  name: "TopTav"
+  name: "TopBar"
 }
 </script>
 
