@@ -13,7 +13,9 @@ export default {
 <style lang="scss" scoped>
 
 #ContactBar{
-
+  width: 60%;
+  height: 80px;
+  border: thin solid blueviolet;
 }
 
 </style>
