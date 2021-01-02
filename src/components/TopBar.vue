@@ -1,9 +1,7 @@
 <template>
   <div id="TopBar">
-    <span class="logo">
-
-    </span>
-    <button class="mycard-button">
+    <span class="logo"></span>
+    <button class="myCard-button">
       <span class="button-label">
         Take my Card
       </span>
@@ -21,8 +19,7 @@ export default {
 
 #TopBar{
   width: 100%;
-  height: 70px;
-  border: thin solid darkorange;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,19 +33,19 @@ export default {
     border-top-left-radius: 25px;
   }
 
-  .mycard-button{
+  .myCard-button{
     text-decoration: none;
     outline: none;
     height: 46px;
     width: 120px;
     background-color: transparent;
-    border: thin solid black;
+    border: thin solid #1f1f1f;
     border-radius: 9px;
 
     .button-label{
       font-family: "Bw Modelica Medium", serif;
       font-size: 12px;
-      color: black;
+      color: #1f1f1f;
     }
   }
 }
