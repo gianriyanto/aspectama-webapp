@@ -73,7 +73,7 @@ export default {
         margin: 0;
         font-family: "Gilroy SemiBold", serif;
         font-size: 44px;
-        color: black;
+        color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.1;
       }
@@ -90,7 +90,7 @@ export default {
         margin: 0;
         font-family: "Bw Modelica Light", serif;
         font-size: 15px;
-        color: black;
+        color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.7;
       }
