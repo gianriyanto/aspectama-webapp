@@ -36,11 +36,12 @@ export default {
   .myCard-button{
     text-decoration: none;
     outline: none;
-    height: 46px;
-    width: 120px;
+    height: 45px;
+    width: 130px;
     background-color: transparent;
     border: thin solid #1f1f1f;
     border-radius: 9px;
+    cursor: pointer;
 
     .button-label{
       font-family: "Bw Modelica Medium", serif;
