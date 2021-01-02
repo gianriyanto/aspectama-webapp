@@ -10,6 +10,14 @@
           education consultant.
         </h1>
       </span>
+      <span class="subheader-container">
+        <h2 class="subheader-text">
+          I help craft a tailored education blueprint for aspiring professionals. Find out how I can help, I’d love to hear from you.
+        </h2>
+      </span>
+
+      <ContactBar id="ContactBar"/>
+      <MosaicTiles id="MosaicTiles"/>
     </div>
     <div class="sidebar-wrapper">
 
@@ -20,10 +28,14 @@
 <script>
 
 import TopBar from "@/components/TopBar";
+import MosaicTiles from "@/components/MosaicTiles";
+import ContactBar from "@/components/ContactBar";
 
 export default {
   name: "Home",
   components: {
+    ContactBar,
+    MosaicTiles,
     TopBar
   }
 }
@@ -65,6 +77,30 @@ export default {
         letter-spacing: 0;
         line-height: 1.1;
       }
+    }
+    .subheader-container{
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      width: 550px;
+      text-align: center;
+
+      h2{
+        margin: 0;
+        font-family: "Bw Modelica Light", serif;
+        font-size: 15px;
+        color: black;
+        letter-spacing: 0;
+        line-height: 1.7;
+      }
+    }
+    #ContactBar{
+      padding-top: 20px;
+
+    }
+    #MosaicTiles{
+      padding-top: 20px;
     }
   }
 
