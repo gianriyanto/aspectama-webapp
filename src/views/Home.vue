@@ -3,15 +3,8 @@
     <div class="content-wrapper">
       <div class="header-container">
         <span class="header-text">
-          Hi, I'm Ervina.
-        </span>
-        <span class="header-text">
-          Aspectama's education consultant.
         </span>
       </div>
-    </div>
-    <div id="Typeform">
-
     </div>
   </section>
 </template>
@@ -31,10 +24,10 @@ export default {
   height: 100vh;
 
   .content-wrapper{
-    width: 65%;
+    width: 70%;
     height: 100vh;
-    background-color: #2B2B2B;
-    border-radius: 0 45px 45px 0;
+    background-image: linear-gradient(to top right, #1f1f1f, #2b2b2b);
+    border-radius: 0 25px 25px 0;
     box-shadow: 0 0 32px 15px #d6d6d6;
     display: flex;
     flex-direction: column;
@@ -44,20 +37,17 @@ export default {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      height: 550px;
+      height: fit-content;
       width: 500px;
 
       .header-text{
+        line-height: 1.4;
         font-family: "Bw Modelica Medium", serif;
         word-spacing: -0.5px;
-        font-size: 40px;
+        font-size: 38px;
         color: white;
       }
     }
-  }
-  #Typeform{
-    width: 35%;
-
   }
 }
 
