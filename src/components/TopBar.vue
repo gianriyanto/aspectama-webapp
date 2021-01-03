@@ -44,7 +44,7 @@ export default {
     cursor: pointer;
 
     .button-label{
-      font-family: "Bw Modelica Medium", serif;
+      font-family: "Bw Modelica Bold", serif;
       font-size: 11px;
       color: #1f1f1f;
     }
