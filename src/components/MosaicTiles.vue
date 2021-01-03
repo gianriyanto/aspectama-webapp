@@ -1,6 +1,35 @@
 <template>
   <div id="MosaicTiles">
+    <div class="left-section">
+      <div class="left-side">
+        <span class="card-0">
 
+        </span>
+        <span class="card-1">
+
+        </span>
+      </div>
+      <div class="right-side">
+        <span class="card-2">
+
+        </span>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="top-side">
+        <span class="card-3">
+
+        </span>
+        <span class="card-4">
+
+        </span>
+      </div>
+      <div class="bottom-side">
+        <span class="card-5">
+
+        </span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -13,12 +42,85 @@ export default {
 <style lang="scss" scoped>
 
 #MosaicTiles{
+  display: flex;
+  flex-direction: row;
   width: 65%;
   height: 290px;
-  background-color: whitesmoke;
-  border: thin solid rgba(77, 79, 109, 0.1);
   border-radius: 12px;
-  box-shadow: 0 1px 10px 1px rgba(77, 79, 109, 0.1);
+
+  .left-section{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+
+    .left-side{
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+
+      .card-0{
+        height: 60%;
+        margin: 0 3px 3px 0;
+        border-radius: 5px;
+        background-color: #eaeaea;
+      }
+      .card-1{
+        height: 40%;
+        margin: 3px 3px 0 0;
+        border-radius: 7px;
+        background-color: #eaeaea;
+      }
+    }
+    .right-side{
+      display: flex;
+      width: 55%;
+
+      .card-2{
+        margin: 0 3px 0 3px;
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+        background-color: #eaeaea;
+      }
+    }
+  }
+  .right-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+    .top-side{
+      display: flex;
+      flex-direction: row;
+      height: 45%;
+
+      .card-3{
+        margin: 0 3px 3px 3px;
+        width: 40%;
+        border-radius: 7px;
+        background-color: #eaeaea;
+      }
+      .card-4{
+        margin: 0 0 3px 3px;
+        width: 60%;
+        border-radius: 7px;
+        background-color: #eaeaea;
+      }
+    }
+    .bottom-side{
+      display: flex;
+      height: 55%;
+
+      .card-5{
+        margin: 3px 0 0 3px;
+        width: 100%;
+        border-radius: 7px;
+        background-color: #eaeaea;
+      }
+    }
+  }
 }
 
 </style>

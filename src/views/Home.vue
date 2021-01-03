@@ -100,7 +100,6 @@ export default {
       padding-top: 20px;
     }
     #MosaicTiles{
-      padding-top: 20px;
     }
     #BottomBar{
       margin-top: auto;
