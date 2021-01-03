@@ -32,9 +32,12 @@
 
 <script>
 import Typeform from "@/components/Typeform";
+
 export default {
   name: "SideBar",
-  components: {Typeform}
+  components: {
+    Typeform,
+  }
 }
 </script>
 
@@ -51,6 +54,7 @@ export default {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: space-between;
     width: 100%;
     height: 55px;
 
@@ -91,7 +95,7 @@ export default {
       }
       .subheader-text{
         padding-top: 4px;
-        font-family: "Gilroy Regular", serif;
+        font-family: "Bw Modelica Light", serif;
         font-size: 13px;
         color: #4a4a4a;
         letter-spacing: 0;
@@ -99,19 +103,19 @@ export default {
       }
     }
     #Typeform{
-      height: 450px;
-      width: 100%;
+      height: 440px;
     }
     .footer-container{
       display: flex;
       flex-direction: column;
-      height: 80px;
-      padding-top: 20px;
+      justify-content: flex-end;
+      height: 90px;
+      padding: 20px 0;
       align-items: center;
 
       .footer-text{
         font-family: "Gilroy SemiBold", serif;
-        font-size: 17px;
+        font-size: 14px;
         color: #1f1f1f;
       }
       .submit-button{
@@ -120,7 +124,7 @@ export default {
         outline: none;
         border: 0;
         height: 35px;
-        width: 92%;
+        width: 93%;
         background-color: #1f1f1f;
         border-radius: 35px;
         cursor: pointer;
