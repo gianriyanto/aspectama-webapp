@@ -48,7 +48,7 @@ export default {
 #Home{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
@@ -59,6 +59,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 22px;
 
     .header-container{
       padding-top: 80px;
@@ -107,7 +108,7 @@ export default {
   }
 
   #SideBar{
-    width: 24%;
+    width: 26%;
     height: 96%;
     border-radius: 12px;
     background-color: white;
