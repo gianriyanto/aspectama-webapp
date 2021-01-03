@@ -52,13 +52,13 @@ export default {
     align-items: center;
     flex-direction: row-reverse;
     width: 100%;
-    height: 50px;
+    height: 55px;
 
     .image{
-      width: 50px;
+      width: 55px;
       height: 100%;
       border-radius: 10px;
-      background-color: #e5e5e5;
+      background-color: #f6f6f6;
     }
   }
   .content-wrapper{
