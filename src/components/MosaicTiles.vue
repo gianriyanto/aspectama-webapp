@@ -51,22 +51,22 @@ export default {
   .left-section{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 55%;
     height: 100%;
 
     .left-side{
       display: flex;
       flex-direction: column;
-      width: 45%;
+      width: 50%;
 
       .card-0{
-        height: 60%;
+        height: 40%;
         margin: 0 3px 3px 0;
         border-radius: 5px;
         background-color: #eaeaea;
       }
       .card-1{
-        height: 40%;
+        height: 60%;
         margin: 3px 3px 0 0;
         border-radius: 7px;
         background-color: #eaeaea;
@@ -94,24 +94,24 @@ export default {
     .top-side{
       display: flex;
       flex-direction: row;
-      height: 45%;
+      height: 53%;
 
       .card-3{
         margin: 0 3px 3px 3px;
-        width: 40%;
+        width: 60%;
         border-radius: 7px;
         background-color: #eaeaea;
       }
       .card-4{
         margin: 0 0 3px 3px;
-        width: 60%;
+        width: 40%;
         border-radius: 7px;
         background-color: #eaeaea;
       }
     }
     .bottom-side{
       display: flex;
-      height: 55%;
+      height: 47%;
 
       .card-5{
         margin: 3px 0 0 3px;

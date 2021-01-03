@@ -24,7 +24,7 @@ export default {
 #ContactBar{
   display: flex;
   justify-content: center;
-  width: 410px;
+  width: 400px;
   height: 80px;
 
   .bar-container{
