@@ -17,7 +17,7 @@ export default {
   height: 290px;
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 8px 40px 1px rgba(77, 79, 109, 0.20);
+  box-shadow: 0 8px 40px 1px rgba(77, 79, 109, 0.15);
 }
 
 </style>
