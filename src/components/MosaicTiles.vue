@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 
 #MosaicTiles{
-  width: 60%;
+  width: 65%;
   height: 290px;
   background-color: white;
   border-radius: 12px;
