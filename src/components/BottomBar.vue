@@ -37,6 +37,7 @@ export default {
       font-family: "Bw Modelica Bold", serif;
       font-size: 13px;
       color: #292929;
+      cursor: pointer;
     }
 
     .slash{

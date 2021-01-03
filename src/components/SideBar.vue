@@ -20,12 +20,12 @@
         <span class="footer-text">
           Thanks Gian, chat soon!
         </span>
-        <button class="submit-button">
-          <span class="button-label">
-            Submit
-          </span>
-        </button>
       </div>
+      <button class="submit-button">
+        <span class="button-label">
+          Submit
+        </span>
+      </button>
     </div>
   </div>
 </template>
@@ -70,13 +70,13 @@ export default {
     flex-direction: column;
     width: 80%;
     height: fit-content;
-    padding-top: 50px;
+    padding-top: 45px;
     margin: 0 auto;
 
     .header-container{
       display: flex;
       flex-direction: column;
-      height: 100px;
+      height: 105px;
 
       .header-text0{
         font-family: "Gilroy SemiBold", serif;
@@ -94,7 +94,7 @@ export default {
         line-height: 1.2;
       }
       .subheader-text{
-        padding-top: 4px;
+        padding-top: 24px;
         font-family: "Bw Modelica Light", serif;
         font-size: 13px;
         color: #4a4a4a;
@@ -106,34 +106,33 @@ export default {
       height: 440px;
     }
     .footer-container{
+      padding-top: 5px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      height: 90px;
-      padding: 20px 0;
-      align-items: center;
+      height: 60px;
 
       .footer-text{
-        font-family: "Gilroy SemiBold", serif;
-        font-size: 14px;
+        font-family: "Bw Modelica Light", serif;
+        font-size: 13px;
         color: #1f1f1f;
       }
-      .submit-button{
-        margin-top: 15px;
-        text-decoration: none;
-        outline: none;
-        border: 0;
-        height: 35px;
-        width: 100%;
-        background-color: #1f1f1f;
-        border-radius: 7px;
-        cursor: pointer;
+    }
+    .submit-button{
+      margin-top: 15px;
+      margin-left: auto;
+      text-decoration: none;
+      outline: none;
+      border: 0;
+      height: 37px;
+      width: 45%;
+      background-color: #1f1f1f;
+      border-radius: 7px;
+      cursor: pointer;
 
-        .button-label{
-          font-family: "Bw Modelica Medium", serif;
-          font-size: 11px;
-          color: white;
-        }
+      .button-label{
+        font-family: "Bw Modelica Medium", serif;
+        font-size: 11px;
+        color: white;
       }
     }
   }
