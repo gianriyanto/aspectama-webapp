@@ -7,14 +7,14 @@
     </div>
     <div class="content-wrapper">
       <div class="header-container">
-        <span class="header-text">
+        <span class="header-text0">
           Hey there!
         </span>
-        <span class="header-text">
+        <span class="header-text1">
           Let's get started.
         </span>
         <span class="subheader-text">
-          Start by telling me a little bit about yourself
+          Start by telling me a little bit about yourself.
         </span>
       </div>
       <Typeform/>
@@ -60,15 +60,14 @@ export default {
       width: 50px;
       height: 100%;
       border-radius: 10px;
-      background-color: lightgrey;
+      background-color: #e5e5e5;
     }
   }
   .content-wrapper{
     display: flex;
     flex-direction: column;
-    width: 88%;
+    width: 80%;
     height: fit-content;
-    border: thin solid lightgrey;
     padding-top: 50px;
     margin: 0 auto;
 
@@ -77,7 +76,15 @@ export default {
       flex-direction: column;
       height: 100px;
 
-      .header-text{
+      .header-text0{
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 16px;
+        color: #1f1f1f;
+        letter-spacing: 0;
+        line-height: 1.2;
+      }
+
+      .header-text1{
         font-family: "Gilroy SemiBold", serif;
         font-size: 25px;
         color: #1f1f1f;
@@ -85,9 +92,9 @@ export default {
         line-height: 1.2;
       }
       .subheader-text{
-        padding-top: 10px;
+        padding-top: 6px;
         font-family: "Gilroy Regular", serif;
-        font-size: 14px;
+        font-size: 13px;
         color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.2;
@@ -96,13 +103,11 @@ export default {
     #Typeform{
       height: 450px;
       width: 100%;
-      border: thin solid darkslategray;
     }
     .footer-container{
       display: flex;
       flex-direction: column;
       height: 80px;
-      border: thin solid green;
       padding-top: 20px;
       align-items: center;
 
@@ -116,10 +121,10 @@ export default {
         text-decoration: none;
         outline: none;
         border: 0;
-        height: 36px;
-        width: 90%;
+        height: 35px;
+        width: 92%;
         background-color: #1f1f1f;
-        border-radius: 32px;
+        border-radius: 35px;
         cursor: pointer;
 
         .button-label{
