@@ -63,7 +63,7 @@ export default {
     margin-right: 22px;
 
     .header-container{
-      padding-top: 80px;
+      padding-top: 70px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -76,7 +76,7 @@ export default {
         font-size: 37px;
         color: #1f1f1f;
         letter-spacing: 0;
-        line-height: 1;
+        line-height: 1.2;
       }
     }
     .subheader-container{

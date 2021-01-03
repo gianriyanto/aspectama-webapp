@@ -1,9 +1,7 @@
 <template>
   <div id="SideBar">
     <div class="my-image-container">
-      <span class="image">
-
-      </span>
+      <span class="image"></span>
     </div>
     <div class="content-wrapper">
       <div class="header-container">
@@ -14,7 +12,7 @@
           Let's get started.
         </span>
         <span class="subheader-text">
-          Start by telling me a little bit about yourself.
+          Tell me a little bit about yourself.
         </span>
       </div>
       <Typeform/>
@@ -45,7 +43,7 @@ export default {
 #SideBar{
   border-radius: 12px;
   background-color: white;
-  box-shadow: 0 10px 30px 1px rgba(73, 74, 95, 0.15);
+  box-shadow: 0 4px 22px 1px rgba(73, 74, 95, 0.1);
   display: flex;
   flex-direction: column;
 
@@ -86,16 +84,16 @@ export default {
 
       .header-text1{
         font-family: "Gilroy SemiBold", serif;
-        font-size: 25px;
+        font-size: 26px;
         color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.2;
       }
       .subheader-text{
-        padding-top: 6px;
+        padding-top: 4px;
         font-family: "Gilroy Regular", serif;
         font-size: 13px;
-        color: #1f1f1f;
+        color: #4a4a4a;
         letter-spacing: 0;
         line-height: 1.2;
       }
