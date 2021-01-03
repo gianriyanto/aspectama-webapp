@@ -19,9 +19,7 @@
       <MosaicTiles id="MosaicTiles"/>
       <BottomBar id="BottomBar"/>
     </div>
-    <div class="sidebar-wrapper">
-
-    </div>
+    <SideBar id="SideBar"/>
   </section>
 </template>
 
@@ -31,10 +29,12 @@ import TopBar from "@/components/TopBar";
 import MosaicTiles from "@/components/MosaicTiles";
 import ContactBar from "@/components/ContactBar";
 import BottomBar from "@/components/BottomBar";
+import SideBar from "@/components/SideBar";
 
 export default {
   name: "Home",
   components: {
+    SideBar,
     BottomBar,
     ContactBar,
     MosaicTiles,
@@ -48,23 +48,20 @@ export default {
 #Home{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  border: thin solid blue;
 
   .main-wrapper{
-    width: 68%;
-    height: 95%;
-    border: thin solid green;
-    padding-right: 20px;
+    width: 70%;
+    height: 96%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .header-container{
-      padding-top: 100px;
+      padding-top: 80px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -109,10 +106,12 @@ export default {
     }
   }
 
-  .sidebar-wrapper{
-    width: 26%;
-    height: 95%;
-    border: thin solid mediumpurple;
+  #SideBar{
+    width: 24%;
+    height: 96%;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 10px 30px 1px rgba(73, 74, 95, 0.2);
   }
 }
 
