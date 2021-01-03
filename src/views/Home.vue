@@ -15,9 +15,9 @@
           I help craft a tailored education blueprint for aspiring professionals. Find out how I can help, I’d love to hear from you.
         </h2>
       </span>
-
       <ContactBar id="ContactBar"/>
       <MosaicTiles id="MosaicTiles"/>
+      <BottomBar id="BottomBar"/>
     </div>
     <div class="sidebar-wrapper">
 
@@ -30,10 +30,12 @@
 import TopBar from "@/components/TopBar";
 import MosaicTiles from "@/components/MosaicTiles";
 import ContactBar from "@/components/ContactBar";
+import BottomBar from "@/components/BottomBar";
 
 export default {
   name: "Home",
   components: {
+    BottomBar,
     ContactBar,
     MosaicTiles,
     TopBar
@@ -101,6 +103,9 @@ export default {
     }
     #MosaicTiles{
       padding-top: 20px;
+    }
+    #BottomBar{
+      margin-top: auto;
     }
   }
 
