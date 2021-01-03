@@ -107,7 +107,7 @@ export default {
     }
   }
   #SideBar{
-    width: 24%;
+    width: 22%;
     height: 92%;
     padding: 15px 15px;
   }
