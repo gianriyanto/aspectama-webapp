@@ -107,11 +107,9 @@ export default {
     }
   }
   #SideBar{
-    width: 26%;
-    height: 96%;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 10px 30px 1px rgba(73, 74, 95, 0.2);
+    width: 24%;
+    height: 92%;
+    padding: 15px 15px;
   }
 }
 
