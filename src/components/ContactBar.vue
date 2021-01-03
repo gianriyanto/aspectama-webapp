@@ -31,13 +31,13 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 30px;
+    height: 32px;
     width: 100%;
     border-radius: 30px;
     padding: 5px;
     align-items: center;
     background-color: white;
-    box-shadow: 0 5px 12px 1px rgba(77, 79, 109, 0.2);
+    box-shadow: 0 1px 12px 1px rgba(77, 79, 109, 0.25);
 
     .input-label{
       font-family: "Bw Modelica Medium", serif;
