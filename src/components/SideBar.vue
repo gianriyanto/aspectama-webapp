@@ -124,9 +124,9 @@ export default {
         outline: none;
         border: 0;
         height: 35px;
-        width: 93%;
+        width: 100%;
         background-color: #1f1f1f;
-        border-radius: 35px;
+        border-radius: 7px;
         cursor: pointer;
 
         .button-label{
