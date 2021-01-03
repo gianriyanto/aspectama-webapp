@@ -3,17 +3,12 @@
     <div class="main-wrapper">
       <TopBar id="TopBar"/>
       <span class="header-container">
-        <h1 class="header-text">
-          Hello, I'm Ervina, an
-        </h1>
-        <h1 class="header-text">
-          education consultant.
-        </h1>
+        <h1 class="header-text"> {{ header[0] }} </h1>
+        <h1 class="header-text"> {{ header[1] }} </h1>
       </span>
       <span class="subheader-container">
-        <h2 class="subheader-text">
-          I help craft a tailored education blueprint for aspiring professionals. Find out how I can help, I’d love to hear from you.
-        </h2>
+        <h2 class="subheader-text"> {{ subheader[0] }} </h2>
+        <h2 class="subheader-text"> {{ subheader[1] }} </h2>
       </span>
       <ContactBar id="ContactBar"/>
       <MosaicTiles id="MosaicTiles"/>
@@ -39,6 +34,12 @@ export default {
     ContactBar,
     MosaicTiles,
     TopBar
+  },
+  data() {
+    return {
+      header: ["Hello, I'm Ervina, an", "education consultant."],
+      subheader: ["I help craft a tailored education blueprint for aspiring professionals.", "Find out how I can help, I’d love to hear from you."]
+    }
   }
 }
 </script>
@@ -72,10 +73,10 @@ export default {
       h1{
         margin: 0;
         font-family: "Gilroy SemiBold", serif;
-        font-size: 44px;
+        font-size: 37px;
         color: #1f1f1f;
         letter-spacing: 0;
-        line-height: 1.1;
+        line-height: 1;
       }
     }
     .subheader-container{
@@ -83,13 +84,13 @@ export default {
       display: flex;
       flex-direction: column;
       height: fit-content;
-      width: 530px;
+      width: fit-content;
       text-align: center;
 
       h2{
         margin: 0;
         font-family: "Bw Modelica Light", serif;
-        font-size: 14px;
+        font-size: 12px;
         color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.7;
@@ -97,7 +98,6 @@ export default {
     }
     #ContactBar{
       padding-top: 20px;
-
     }
     #MosaicTiles{
       padding-top: 20px;
@@ -106,7 +106,6 @@ export default {
       margin-top: auto;
     }
   }
-
   #SideBar{
     width: 26%;
     height: 96%;
