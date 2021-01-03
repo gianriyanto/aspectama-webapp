@@ -83,13 +83,13 @@ export default {
       display: flex;
       flex-direction: column;
       height: fit-content;
-      width: 550px;
+      width: 530px;
       text-align: center;
 
       h2{
         margin: 0;
         font-family: "Bw Modelica Light", serif;
-        font-size: 15px;
+        font-size: 14px;
         color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.7;
