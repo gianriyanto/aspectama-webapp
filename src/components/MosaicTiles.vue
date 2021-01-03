@@ -15,7 +15,9 @@ export default {
 #MosaicTiles{
   width: 60%;
   height: 300px;
-  border: thin solid hotpink;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px 1px rgba(77, 79, 109, 0.20);
 }
 
 </style>
