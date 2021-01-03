@@ -3,7 +3,7 @@
     <span class="logo"></span>
     <button class="myCard-button">
       <span class="button-label">
-        Take My Card
+        Take my card
       </span>
     </button>
   </div>
