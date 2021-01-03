@@ -74,6 +74,7 @@ export default {
     margin: 0 auto;
 
     .header-container{
+      padding-left: 5px;
       display: flex;
       flex-direction: column;
       height: 105px;
@@ -106,6 +107,7 @@ export default {
       height: 440px;
     }
     .footer-container{
+      padding-left: 5px;
       padding-top: 5px;
       display: flex;
       flex-direction: column;
