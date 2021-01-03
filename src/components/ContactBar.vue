@@ -24,20 +24,20 @@ export default {
 #ContactBar{
   display: flex;
   justify-content: center;
-  width: 450px;
+  width: 430px;
   height: 80px;
 
   .bar-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 33px;
+    height: 30px;
     width: 100%;
     border-radius: 30px;
     padding: 5px;
     align-items: center;
     background-color: white;
-    box-shadow: 0 5px 20px 1px rgba(77, 79, 109, 0.25);
+    box-shadow: 0 5px 12px 1px rgba(77, 79, 109, 0.2);
 
     .input-label{
       font-family: "Bw Modelica Medium", serif;
@@ -50,8 +50,8 @@ export default {
       text-decoration: none;
       outline: none;
       border: 0;
-      height: 33px;
-      width: 110px;
+      height: 100%;
+      width: 100px;
       background-color: #1f1f1f;
       border-radius: 32px;
       cursor: pointer;
