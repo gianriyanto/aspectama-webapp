@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 
 #BottomBar{
-  width: 100%;
+  width: 95%;
   height: 30px;
   display: flex;
   flex-direction: row;

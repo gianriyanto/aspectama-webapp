@@ -18,8 +18,8 @@ export default {
 <style lang="scss" scoped>
 
 #TopBar{
-  width: 100%;
-  height: 80px;
+  width: 95%;
+  height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
