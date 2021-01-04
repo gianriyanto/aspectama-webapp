@@ -76,7 +76,7 @@ export default {
         margin: 0 3px 3px 0;
         border-radius: 5px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
-        background-image: linear-gradient(to right top, #97d1f8, #94c7fd, #99bcff, #a7affe, #baa0f6);
+        background-image: linear-gradient(to right top, #97d1f8, #94c7fd, #99bcff);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
@@ -89,10 +89,12 @@ export default {
         margin: 3px 3px 0 0;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.35 );
-        background-image: linear-gradient(to right top, #777cee, #857ceb, #927de8, #9c7ee4, #a67fe1);
+        background-image: linear-gradient(to right top, #777cee, #857ceb, #927de8, #9c7ee4);
+
         .label{
           font-family: "Bw Modelica Bold", serif;
           font-size: 17px;
+          color: white;
         }
       }
     }
@@ -106,7 +108,7 @@ export default {
         padding: 20px;
         width: 100%;
         border-radius: 7px;
-        background-image: linear-gradient(to right top, #b19bf0, #f299d5, #ffa5b3, #ffbd9b, #ffda99);
+        background-image: linear-gradient(to right top, #b9a6ee, #efb0da, #f6b1bc, #fdc2a5, #ffda99);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
@@ -132,11 +134,12 @@ export default {
         width: 60%;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to left bottom, #fb899c, #ff978e, #ffa884, #febb7f, #f4cd83);
+        background-image: linear-gradient(to right top, #9181f8, #8f89f9, #8f90fa, #8f97fb, #909efb);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
           font-size: 17px;
+          color: white;
         }
       }
       .card-4{
@@ -145,7 +148,7 @@ export default {
         width: 40%;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #fb7e7e, #fe88a6, #f697ca, #e6aae7, #d2bcfb);
+        background-image: linear-gradient(to right top, #ee9d9d, #e997ac, #e9a2c8);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
@@ -163,7 +166,7 @@ export default {
         width: 100%;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        background-image: linear-gradient(to right top, #89d5b1, #45d5de, #48ccff, #a9b7ff, #f99ae9);
+        background-image: linear-gradient(to right top, #91d6b5, #95dadd, #81c6e2);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
