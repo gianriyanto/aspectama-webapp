@@ -98,8 +98,12 @@ export default {
     }
     #ContactBar{
       padding-top: 30px;
+      width: 400px;
+      height: 85px;
     }
     #MosaicTiles{
+      width: 61%;
+      height: 290px;
     }
     #BottomBar{
       margin-top: auto;

@@ -24,8 +24,6 @@ export default {
 #ContactBar{
   display: flex;
   justify-content: center;
-  width: 400px;
-  height: 80px;
 
   .bar-container{
     display: flex;
@@ -57,7 +55,7 @@ export default {
       cursor: pointer;
 
       .button-label{
-        font-family: "Bw Modelica Medium", serif;
+        font-family: "Bw Modelica Regular", serif;
         font-size: 10px;
         color: white;
       }
