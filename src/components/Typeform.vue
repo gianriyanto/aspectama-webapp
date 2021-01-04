@@ -68,6 +68,7 @@ export default {
    justify-content: flex-start;
 
    .input-card{
+     margin-bottom: 15px;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
@@ -75,10 +76,11 @@ export default {
      width: 85%;
      height: 65px;
      border-radius: 6px;
-     border: 1px solid #f3f3f3;
-     margin-bottom: 15px;
-     background-color: white;
-     box-shadow: 0 10px 20px 1px rgba(127, 128, 140, 0.1);
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+     background: rgba( 255, 255, 255, 0.00 );
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+     backdrop-filter: blur( 3.0px );
+     -webkit-backdrop-filter: blur( 3.0px );
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;

@@ -45,8 +45,10 @@ export default {
 
 #SideBar{
   border-radius: 12px;
-  background-color: white;
-  box-shadow: 0 4px 22px 1px rgba(73, 74, 95, 0.1);
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba(82, 83, 103, 0.1);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   display: flex;
   flex-direction: column;
 
