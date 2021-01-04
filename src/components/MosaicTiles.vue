@@ -60,13 +60,13 @@ export default {
       width: 50%;
 
       .card-0{
-        height: 40%;
+        height: 37%;
         margin: 0 3px 3px 0;
         border-radius: 5px;
         background-color: #eaeaea;
       }
       .card-1{
-        height: 60%;
+        height: 63%;
         margin: 3px 3px 0 0;
         border-radius: 7px;
         background-color: #eaeaea;
