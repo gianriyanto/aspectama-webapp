@@ -120,7 +120,6 @@ export default {
       }
     }
     .submit-button{
-      margin-top: 15px;
       margin-left: auto;
       text-decoration: none;
       outline: none;
@@ -128,7 +127,7 @@ export default {
       height: 37px;
       width: 45%;
       background-color: #1f1f1f;
-      border-radius: 7px;
+      border-radius: 8px;
       cursor: pointer;
 
       .button-label{

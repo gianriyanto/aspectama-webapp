@@ -36,7 +36,7 @@ export default {
   .myCard-button{
     text-decoration: none;
     outline: none;
-    height: 40px;
+    height: 47px;
     width: 120px;
     background-color: transparent;
     border: thin solid #1f1f1f;
@@ -45,7 +45,7 @@ export default {
 
     .button-label{
       font-family: "Bw Modelica Bold", serif;
-      font-size: 11px;
+      font-size: 12px;
       color: #1f1f1f;
     }
   }
