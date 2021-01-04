@@ -3,30 +3,42 @@
     <div class="left-section">
       <div class="left-side">
         <span class="card-0">
-
+          <span class="label">
+            Lorem Ipsum
+          </span>
         </span>
         <span class="card-1">
-
+          <span class="label">
+            Lorem Ipsum
+          </span>
         </span>
       </div>
       <div class="right-side">
         <span class="card-2">
-
+          <span class="label">
+            Lorem Ipsum
+          </span>
         </span>
       </div>
     </div>
     <div class="right-section">
       <div class="top-side">
         <span class="card-3">
-
+          <span class="label">
+            Lorem Ipsum
+          </span>
         </span>
         <span class="card-4">
-
+          <span class="label">
+            Lorem Ipsum
+          </span>
         </span>
       </div>
       <div class="bottom-side">
         <span class="card-5">
-
+          <span class="label">
+            Lorem Ipsum
+          </span>
         </span>
       </div>
     </div>
@@ -44,51 +56,68 @@ export default {
 #MosaicTiles{
   display: flex;
   flex-direction: row;
-  width: 65%;
-  height: 290px;
   border-radius: 12px;
 
   .left-section{
     display: flex;
     flex-direction: row;
-    width: 55%;
+    width: 57%;
     height: 100%;
 
     .left-side{
       display: flex;
       flex-direction: column;
-      width: 50%;
+      height: 100%;
+      width: 52%;
 
       .card-0{
         height: 37%;
+        padding: 20px;
         margin: 0 3px 3px 0;
         border-radius: 5px;
-        background-color: #eaeaea;
+        background-color: #94baff;
+
+        .label{
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 17px;
+        }
       }
       .card-1{
         height: 63%;
+        padding: 20px;
         margin: 3px 3px 0 0;
         border-radius: 7px;
-        background-color: #eaeaea;
+        background-color: #9c8ae3;
+
+        .label{
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 17px;
+        }
       }
     }
     .right-side{
       display: flex;
-      width: 55%;
+      height: 100%;
+      width: 48%;
 
       .card-2{
         margin: 0 3px 0 3px;
+        padding: 20px;
         width: 100%;
-        height: 100%;
         border-radius: 7px;
-        background-color: #eaeaea;
+        background-color: #ffda99;
+
+        .label{
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 17px;
+        }
       }
     }
   }
   .right-section{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 43%;
     height: 100%;
 
     .top-side{
@@ -98,15 +127,27 @@ export default {
 
       .card-3{
         margin: 0 3px 3px 3px;
+        padding: 20px;
         width: 60%;
         border-radius: 7px;
-        background-color: #eaeaea;
+        background-color: #6ea1ff;
+
+        .label{
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 17px;
+        }
       }
       .card-4{
         margin: 0 0 3px 3px;
+        padding: 20px;
         width: 40%;
         border-radius: 7px;
-        background-color: #eaeaea;
+        background-color: #7bcfd2;
+
+        .label{
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 17px;
+        }
       }
     }
     .bottom-side{
@@ -115,9 +156,15 @@ export default {
 
       .card-5{
         margin: 3px 0 0 3px;
+        padding: 20px;
         width: 100%;
         border-radius: 7px;
-        background-color: #eaeaea;
+        background-color: #8de2cc;
+
+        .label{
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 17px;
+        }
       }
     }
   }
