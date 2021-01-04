@@ -2,7 +2,7 @@
   <div id="Typeform">
     <div class="input-card">
       <span class="prompt">
-        Let's get started with your name
+        Let's start with your name
       </span>
       <span class="input">
         Your full name
@@ -11,7 +11,16 @@
     </div>
     <div class="input-card">
       <span class="prompt">
-        What would you like to study
+        And you're looking for a
+      </span>
+      <span class="input">
+        college, undergrad, postgrad?
+        <check-circle-icon size="1x" class="icon"></check-circle-icon>
+      </span>
+    </div>
+    <div class="input-card">
+      <span class="prompt">
+        You're most interested to study
       </span>
       <span class="input">
         Interested major or course
@@ -20,19 +29,10 @@
     </div>
     <div class="input-card">
       <span class="prompt">
-        You'd like to travel to study at
+        And travel abroad to
       </span>
       <span class="input">
-        City or Country
-        <check-circle-icon size="1x" class="icon"></check-circle-icon>
-      </span>
-    </div>
-    <div class="input-card">
-      <span class="prompt">
-        To pursue a career as a
-      </span>
-      <span class="input">
-        Career Profession
+        Preferred city or country?
         <check-circle-icon size="1x" class="icon"></check-circle-icon>
       </span>
     </div>
@@ -76,7 +76,7 @@ export default {
      height: 65px;
      border-radius: 6px;
      border: 1px solid #f3f3f3;
-     margin-bottom: 20px;
+     margin-bottom: 15px;
      background-color: white;
      box-shadow: 0 10px 20px 1px rgba(127, 128, 140, 0.1);
 
