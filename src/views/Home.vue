@@ -37,8 +37,8 @@ export default {
   },
   data() {
     return {
-      header: ["Hello, I'm Ervina, an", "education consultant."],
-      subheader: ["I help tailor an education blueprint for aspiring professionals. Find out how I can help,", "I’d love to hear from you."]
+      header: ["Hi! I'm Ervina your", "education counsellor."],
+      subheader: ["I help architect a personalised education blueprint for aspiring professionals like you.", "Find out how I can help, I’d love to hear from you."]
     }
   }
 }
@@ -67,7 +67,7 @@ export default {
       display: flex;
       flex-direction: column;
       height: fit-content;
-      width: 500px;
+      width: 600px;
       text-align: center;
 
       h1{
@@ -80,7 +80,7 @@ export default {
       }
     }
     .subheader-container{
-      padding-top: 5px;
+      padding-top: 10px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -89,17 +89,17 @@ export default {
 
       h2{
         margin: 0;
-        font-family: "Bw Modelica Light", serif;
-        font-size: 12px;
+        font-family: "Bw Modelica Regular", serif;
+        font-size: 13px;
         color: #1f1f1f;
         letter-spacing: 0;
-        line-height: 1.6;
+        line-height: 1.7;
       }
     }
     #ContactBar{
       padding-top: 30px;
       width: 400px;
-      height: 85px;
+      height: 75px;
     }
     #MosaicTiles{
       width: 61%;
