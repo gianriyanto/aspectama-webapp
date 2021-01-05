@@ -53,6 +53,7 @@ export default {
   box-shadow: 0 8px 32px 0 rgba(82, 83, 103, 0.1);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
+  height: fit-content;
 
   .my-image-container{
     display: flex;
@@ -74,7 +75,7 @@ export default {
     flex-direction: column;
     width: 87%;
     height: 100%;
-    padding-top: 25px;
+    padding-top: 0;
     margin: 0 auto;
 
     .header-container{
@@ -117,7 +118,7 @@ export default {
       padding-top: 5px;
       display: flex;
       flex-direction: column;
-      height: 50px;
+      height: fit-content;
 
       .footer-text{
         font-family: "Bw Modelica Light", serif;

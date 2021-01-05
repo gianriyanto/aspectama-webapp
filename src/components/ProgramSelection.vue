@@ -63,7 +63,7 @@ export default {
 
     .program-card{
       padding: 12px;
-      width: 25%;
+      width: 24%;
       border-radius: 6px;
       display: flex;
       flex-direction: column;

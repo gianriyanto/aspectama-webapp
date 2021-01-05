@@ -62,19 +62,19 @@ export default {
    justify-content: flex-start;
 
    #ProgramSelection{
-     height: 170px;
+     height: 160px;
      width: 99%;
      margin-bottom: 26px;
    }
 
    .input-card{
-     margin-bottom: 2vh;
+     margin-bottom: 1.5vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
-     padding: 7px 20px;
+     padding: 6px 20px;
      width: 88%;
-     height: 60px;
+     height: 55px;
      border-radius: 6px;
      border: 1px solid rgba( 255, 255, 255, 0.18 );
      background: rgba( 255, 255, 255, 0.00 );
