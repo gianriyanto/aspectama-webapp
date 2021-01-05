@@ -19,6 +19,7 @@ export default {
 
 #app {
   background-image: linear-gradient(to right top, white, white);
+  min-height: 740px;
 
   button{
     cursor: pointer;

@@ -55,7 +55,7 @@ export default {
   height: 100vh;
 
   .main-wrapper{
-    width: 70%;
+    width: 71%;
     height: 96%;
     display: flex;
     flex-direction: column;
@@ -99,10 +99,10 @@ export default {
     #ContactBar{
       padding-top: 33px;
       width: 410px;
-      height: 75px;
+      height: fit-content;
     }
     #MosaicTiles{
-      padding-top: 12px;
+      padding-top: 40px;
       width: 61%;
       height: 300px;
     }

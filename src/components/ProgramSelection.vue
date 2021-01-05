@@ -47,7 +47,7 @@ export default {
 
   .header-text{
     font-family: "Bw Modelica Bold", serif;
-    font-size: 12px;
+    font-size: 13px;
     color: #4a4a4a;
     padding-left: 5px;
     height: fit-content;
@@ -63,7 +63,7 @@ export default {
 
     .program-card{
       padding: 12px;
-      width: 24%;
+      width: 23.5%;
       border-radius: 6px;
       display: flex;
       flex-direction: column;

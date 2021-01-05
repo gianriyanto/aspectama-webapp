@@ -50,7 +50,7 @@ export default {
   flex-direction: column;
   border-radius: 12px;
   background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba(82, 83, 103, 0.1);
+  box-shadow: 0 4px 32px 0 rgba(82, 83, 103, 0.2);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   height: fit-content;
@@ -82,13 +82,13 @@ export default {
       padding-left: 5px;
       display: flex;
       flex-direction: column;
-      height: 91px;
+      height: fit-content;
 
       .header-text0{
         font-family: "Gilroy SemiBold", serif;
         font-size: 16px;
         color: #1f1f1f;
-        letter-spacing: 0;
+        letter-spacing: 0px;
         line-height: 1.2;
       }
 
@@ -96,7 +96,7 @@ export default {
         font-family: "Gilroy SemiBold", serif;
         font-size: 24px;
         color: #1f1f1f;
-        letter-spacing: 0;
+        letter-spacing: -0.5px;
         line-height: 1.2;
       }
 
@@ -110,7 +110,7 @@ export default {
       }
     }
     #Typeform{
-      padding-top: 5px;
+      padding-top: 20px;
       height: fit-content;
     }
     .footer-container{

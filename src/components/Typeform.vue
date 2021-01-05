@@ -62,34 +62,34 @@ export default {
    justify-content: flex-start;
 
    #ProgramSelection{
-     height: 160px;
+     height: 155px;
      width: 99%;
-     margin-bottom: 26px;
+     margin-bottom: 1.7vh;
    }
 
    .input-card{
-     margin-bottom: 1.5vh;
+     margin-bottom: 1.7vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
-     padding: 6px 20px;
+     padding: 7px 20px;
      width: 88%;
      height: 55px;
-     border-radius: 6px;
+     border-radius: 12px;
      border: 1px solid rgba( 255, 255, 255, 0.18 );
      background: rgba( 255, 255, 255, 0.00 );
-     box-shadow: 0 3px 15px 0 rgba( 31, 38, 135, 0.1 );
+     box-shadow: 0 5px 25px 0 rgba( 31, 38, 135, 0.15 );
      backdrop-filter: blur( 3.0px );
      -webkit-backdrop-filter: blur( 3.0px );
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;
-       font-size: 12px;
+       font-size: 13px;
        color: #4a4a4a;
      }
      .input{
        font-family: "Bw Modelica Light", serif;
-       font-size: 12px;
+       font-size: 13px;
        color: #5f5f5f;
 
        .icon{
