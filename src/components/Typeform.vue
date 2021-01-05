@@ -6,8 +6,7 @@
         Let's start with your name
       </span>
       <span class="input">
-        Your full name
-        <check-circle-icon size="1x" class="icon"></check-circle-icon>
+        <inline-input v-bind:inputData="name"/>
       </span>
     </div>
     <div class="input-card">
@@ -15,8 +14,7 @@
         You're most interested to study
       </span>
       <span class="input">
-        Interested major or course
-        <check-circle-icon size="1x" class="icon"></check-circle-icon>
+        <inline-input v-bind:inputData="course"/>
       </span>
     </div>
     <div class="input-card">
@@ -24,8 +22,7 @@
         And travel abroad to
       </span>
       <span class="input">
-        Preferred city or country?
-        <check-circle-icon size="1x" class="icon"></check-circle-icon>
+        <inline-input v-bind:inputData="country"/>
       </span>
     </div>
     <div class="input-card">
@@ -33,24 +30,31 @@
         Cool! It's best to reach you at
       </span>
       <span class="input">
-        Phone or email
-        <check-circle-icon size="1x" class="icon"></check-circle-icon>
+        <inline-input v-bind:inputData="contact"/>
       </span>
     </div>
   </div>
 </template>
 
 <script>
-import { CheckCircleIcon } from 'vue-feather-icons'
 import ProgramSelection from "@/components/ProgramSelection";
+import InlineInput from "@/components/InlineInput";
 
 export default {
   name: "Typeform",
   components: {
+    InlineInput,
     ProgramSelection,
-    CheckCircleIcon
+  },
+  data() {
+    return {
+      program: "",
+      name: {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false},
+      course: {prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false},
+      country: {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false},
+      contact: {prompt: 'Your mobile or email', input: 'Your mobile or email', edit: false, isValid: false},
+    }
   }
-
 }
 </script>
 
@@ -62,8 +66,8 @@ export default {
    justify-content: flex-start;
 
    #ProgramSelection{
-     height: 155px;
-     width: 100%;
+     height: 150px;
+     width: 96%;
      margin-bottom: 1.7vh;
    }
 
@@ -73,13 +77,13 @@ export default {
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
-     padding: 7px 20px;
+     padding: 9px 20px;
      width: 84%;
      height: 55px;
      border-radius: 12px;
      border: 1px solid rgba( 255, 255, 255, 0.18 );
      background: rgba( 255, 255, 255, 0.00 );
-     box-shadow: 0 5px 25px 0 rgba( 31, 38, 135, 0.15 );
+     box-shadow: 0 5px 15px 0 rgba(80, 82, 107, 0.1);
      backdrop-filter: blur( 3.0px );
      -webkit-backdrop-filter: blur( 3.0px );
 
@@ -87,18 +91,6 @@ export default {
        font-family: "Bw Modelica Bold", serif;
        font-size: 13px;
        color: #4a4a4a;
-     }
-     .input{
-       font-family: "Bw Modelica Light", serif;
-       font-size: 13px;
-       color: #5f5f5f;
-
-       .icon{
-         padding-left: 3px;
-         transform: translateY(2px);
-         font-size: 13px;
-         color: #16a075;
-       }
      }
    }
  }
