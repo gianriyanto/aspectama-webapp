@@ -132,15 +132,11 @@ export default {
       flex-grow: 1;
 
       .submit-button{
-        text-decoration: none;
         margin-left: auto;
-        outline: none;
-        border: 0;
         height: 40px;
         width: 41%;
         background-color: #1f1f1f;
         border-radius: 8px;
-        cursor: pointer;
 
         .button-label{
           font-family: "Bw Modelica Medium", serif;
