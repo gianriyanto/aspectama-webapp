@@ -41,9 +41,7 @@ html, body {
   padding: 0 !important;
 }
 
-@media only screen and (max-width: 769px) {
-
-}
+@media only screen and (max-width: 769px) { }
 
 @font-face {
   font-family: "Gilroy Bold";
