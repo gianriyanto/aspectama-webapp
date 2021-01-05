@@ -103,7 +103,7 @@ export default {
     }
     #MosaicTiles{
       padding-top: 30px;
-      width: 61%;
+      width: 65%;
       height: 300px;
     }
     #BottomBar{

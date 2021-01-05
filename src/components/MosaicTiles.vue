@@ -121,7 +121,7 @@ export default {
 
         .label{
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 25px;
+          font-size: 22px;
           letter-spacing: -1px;
           line-height: 1.3;
           color: #1f1f1f;
