@@ -150,7 +150,7 @@ export default {
         width: 40%;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #f87c7c, #fa8189, #fb8796, #fb8da2, #fb94ae);
+        background-image: linear-gradient(to right top, #fd8f8f, #ff96a9, #ff9fc4, #ffaadd, #fdb7f4);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
