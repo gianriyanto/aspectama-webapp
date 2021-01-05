@@ -5,10 +5,7 @@
     </div>
     <div class="content-wrapper">
       <div class="header-container">
-        <span class="header-text0">
-          Hey there!
-        </span>
-        <span class="header-text1">
+        <span class="header-text">
           Let's get started.
         </span>
         <span class="subheader-text">
@@ -75,7 +72,7 @@ export default {
     flex-direction: column;
     width: 87%;
     height: 100%;
-    padding-top: 0;
+    padding-top: 22px;
     margin: 0 auto;
 
     .header-container{
@@ -84,15 +81,7 @@ export default {
       flex-direction: column;
       height: fit-content;
 
-      .header-text0{
-        font-family: "Gilroy SemiBold", serif;
-        font-size: 16px;
-        color: #1f1f1f;
-        letter-spacing: 0px;
-        line-height: 1.2;
-      }
-
-      .header-text1{
+      .header-text{
         font-family: "Gilroy SemiBold", serif;
         font-size: 24px;
         color: #1f1f1f;

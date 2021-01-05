@@ -62,8 +62,8 @@ export default {
     flex-grow: 1;
 
     .program-card{
-      padding: 12px;
-      width: 23.5%;
+      padding: 11px;
+      width: 23%;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
@@ -73,7 +73,7 @@ export default {
         font-family: "Bw Modelica Bold", serif;
         color: white;
         line-height: 1.4;
-        font-size: 12px;
+        font-size: 11px;
       }
     }
 

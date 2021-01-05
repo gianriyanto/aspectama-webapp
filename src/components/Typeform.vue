@@ -63,17 +63,18 @@ export default {
 
    #ProgramSelection{
      height: 155px;
-     width: 99%;
+     width: 100%;
      margin-bottom: 1.7vh;
    }
 
    .input-card{
+     align-self: center;
      margin-bottom: 1.7vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
      padding: 7px 20px;
-     width: 88%;
+     width: 84%;
      height: 55px;
      border-radius: 12px;
      border: 1px solid rgba( 255, 255, 255, 0.18 );

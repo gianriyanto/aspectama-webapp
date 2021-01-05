@@ -4,19 +4,19 @@
       <div class="left-side">
         <span class="card-0">
           <span class="label">
-            Lorem Ipsum
+            Lorem Ipsum dolor.
           </span>
         </span>
         <span class="card-1">
           <span class="label">
-            Lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit.
           </span>
         </span>
       </div>
       <div class="right-side">
         <span class="card-2">
           <span class="label">
-            Lorem ipsum dolor sit amet
+            Lorem ipsum dolor sit meteuni.
           </span>
         </span>
       </div>
@@ -25,7 +25,7 @@
       <div class="top-side">
         <span class="card-3">
           <span class="label">
-            Lorem ipsum dolor sit amet
+            Lorem dolor sit amet
           </span>
         </span>
         <span class="card-4">
@@ -37,7 +37,7 @@
       <div class="bottom-side">
         <span class="card-5">
           <span class="label">
-            Lorem ipsum dolor sit amet
+            Lorem ipsum.
           </span>
         </span>
       </div>
@@ -68,7 +68,7 @@ export default {
       display: flex;
       flex-direction: column;
       height: 100%;
-      width: 52%;
+      width: 51%;
 
       .card-0{
         height: 37%;
@@ -79,12 +79,16 @@ export default {
         background-image: linear-gradient(to left bottom, #97d1f8, #94c7fd, #99b6ff);
 
         .label{
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 17px;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 20px;
+          letter-spacing: -1px;
+          line-height: 1.3;
           color: #1f1f1f;
         }
       }
       .card-1{
+        display: flex;
+        flex-direction: column-reverse;
         height: 63%;
         padding: 15px 20px;
         margin: 4px 4px 0 0;
@@ -93,8 +97,10 @@ export default {
         background-image: linear-gradient(to right top, #777cee, #857ceb, #927de8, #9c7ee4);
 
         .label{
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 17px;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 19px;
+          letter-spacing: -0.5px;
+          line-height: 1.3;
           color: white;
         }
       }
@@ -102,9 +108,11 @@ export default {
     .right-side{
       display: flex;
       height: 100%;
-      width: 48%;
+      width: 49%;
 
       .card-2{
+        display: flex;
+        flex-direction: column-reverse;
         margin: 0 4px 0 4px;
         padding: 15px 20px;
         width: 100%;
@@ -112,8 +120,10 @@ export default {
         background-image: linear-gradient(to right top, #b9a6ee, #efb0da, #f6b1bc, #fac3b1, #ffda99);
 
         .label{
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 17px;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 25px;
+          letter-spacing: -1px;
+          line-height: 1.3;
           color: #1f1f1f;
         }
       }
@@ -128,7 +138,7 @@ export default {
     .top-side{
       display: flex;
       flex-direction: row;
-      height: 53%;
+      height: 57%;
 
       .card-3{
         margin: 0 4px 4px 4px;
@@ -139,12 +149,16 @@ export default {
         background-image: linear-gradient(to right top, #7e94ff, #898eff, #9687ff, #a380ff, #b177fd);
 
         .label{
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 17px;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 19px;
+          letter-spacing: -0.5px;
+          line-height: 1.2;
           color: white;
         }
       }
       .card-4{
+        display: flex;
+        flex-direction: column-reverse;
         margin: 0 0 4px 4px;
         padding: 15px 20px;
         width: 40%;
@@ -154,15 +168,18 @@ export default {
 
         .label{
           font-family: "Bw Modelica Bold", serif;
-          font-size: 17px;
+          font-size: 18px;
+          letter-spacing: -0.5px;
+          line-height: 1.2;
         }
       }
     }
     .bottom-side{
       display: flex;
-      height: 47%;
+      height: 43%;
 
       .card-5{
+        display: flex;
         margin: 4px 0 0 4px;
         padding: 15px 20px;
         width: 100%;
@@ -171,8 +188,13 @@ export default {
         background-image: linear-gradient(to right top, #91d6b5, #95dadd, #81c6e2);
 
         .label{
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 17px;
+          margin: auto;
+          text-align: center;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 21px;
+          letter-spacing: -0.5px;
+          line-height: 1.2;
+          color: black;
         }
       }
     }
