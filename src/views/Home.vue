@@ -55,7 +55,7 @@ export default {
   height: 100vh;
 
   .main-wrapper{
-    width: 72%;
+    width: 70%;
     height: 96%;
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@ export default {
       }
     }
     .subheader-container{
-      padding-top: 10px;
+      padding-top: 13px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -93,24 +93,25 @@ export default {
         font-size: 13px;
         color: #1f1f1f;
         letter-spacing: 0;
-        line-height: 1.7;
+        line-height: 1.8;
       }
     }
     #ContactBar{
-      padding-top: 30px;
+      padding-top: 33px;
       width: 410px;
       height: 75px;
     }
     #MosaicTiles{
+      padding-top: 12px;
       width: 61%;
-      height: 290px;
+      height: 300px;
     }
     #BottomBar{
       margin-top: auto;
     }
   }
   #SideBar{
-    width: 22%;
+    width: 23%;
     height: 92%;
     padding: 15px 15px;
   }

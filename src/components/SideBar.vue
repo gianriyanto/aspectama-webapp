@@ -21,11 +21,13 @@
           Thanks Gian, chat soon!
         </span>
       </div>
-      <button class="submit-button">
+      <div class="button-container">
+        <button class="submit-button">
         <span class="button-label">
           Submit
         </span>
-      </button>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -44,13 +46,13 @@ export default {
 <style lang="scss" scoped>
 
 #SideBar{
+  display: flex;
+  flex-direction: column;
   border-radius: 12px;
   background: rgba( 255, 255, 255, 0.15 );
   box-shadow: 0 8px 32px 0 rgba(82, 83, 103, 0.1);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
-  display: flex;
-  flex-direction: column;
 
   .my-image-container{
     display: flex;
@@ -70,16 +72,16 @@ export default {
   .content-wrapper{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: fit-content;
-    padding-top: 35px;
+    width: 87%;
+    height: 100%;
+    padding-top: 25px;
     margin: 0 auto;
 
     .header-container{
       padding-left: 5px;
       display: flex;
       flex-direction: column;
-      height: 105px;
+      height: 91px;
 
       .header-text0{
         font-family: "Gilroy SemiBold", serif;
@@ -91,21 +93,23 @@ export default {
 
       .header-text1{
         font-family: "Gilroy SemiBold", serif;
-        font-size: 26px;
+        font-size: 24px;
         color: #1f1f1f;
         letter-spacing: 0;
         line-height: 1.2;
       }
+
       .subheader-text{
-        padding-top: 12px;
+        padding-top: 5px;
         font-family: "Bw Modelica Light", serif;
-        font-size: 13px;
+        font-size: 12px;
         color: #4a4a4a;
         letter-spacing: 0;
         line-height: 1.2;
       }
     }
     #Typeform{
+      padding-top: 5px;
       height: fit-content;
     }
     .footer-container{
@@ -121,21 +125,28 @@ export default {
         color: #1f1f1f;
       }
     }
-    .submit-button{
-      margin-left: auto;
-      text-decoration: none;
-      outline: none;
-      border: 0;
-      height: 37px;
-      width: 45%;
-      background-color: #1f1f1f;
-      border-radius: 8px;
-      cursor: pointer;
+    .button-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex-grow: 1;
 
-      .button-label{
-        font-family: "Bw Modelica Medium", serif;
-        font-size: 11px;
-        color: white;
+      .submit-button{
+        text-decoration: none;
+        margin-left: auto;
+        outline: none;
+        border: 0;
+        height: 40px;
+        width: 41%;
+        background-color: #1f1f1f;
+        border-radius: 8px;
+        cursor: pointer;
+
+        .button-label{
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 11px;
+          color: white;
+        }
       }
     }
   }
