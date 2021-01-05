@@ -1,20 +1,12 @@
 <template>
   <div id="Typeform">
+    <ProgramSelection id="ProgramSelection"/>
     <div class="input-card">
       <span class="prompt">
         Let's start with your name
       </span>
       <span class="input">
         Your full name
-        <check-circle-icon size="1x" class="icon"></check-circle-icon>
-      </span>
-    </div>
-    <div class="input-card">
-      <span class="prompt">
-        And you're looking for a
-      </span>
-      <span class="input">
-        college, undergrad, postgrad?
         <check-circle-icon size="1x" class="icon"></check-circle-icon>
       </span>
     </div>
@@ -50,10 +42,12 @@
 
 <script>
 import { CheckCircleIcon } from 'vue-feather-icons'
+import ProgramSelection from "@/components/ProgramSelection";
 
 export default {
   name: "Typeform",
   components: {
+    ProgramSelection,
     CheckCircleIcon
   }
 
@@ -67,14 +61,20 @@ export default {
    flex-direction: column;
    justify-content: flex-start;
 
+   #ProgramSelection{
+     height: 170px;
+     width: 99%;
+     margin-bottom: 26px;
+   }
+
    .input-card{
-     margin-bottom: 15px;
+     margin-bottom: 2vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
-     padding: 5px 20px;
-     width: 85%;
-     height: 65px;
+     padding: 7px 20px;
+     width: 88%;
+     height: 60px;
      border-radius: 6px;
      border: 1px solid rgba( 255, 255, 255, 0.18 );
      background: rgba( 255, 255, 255, 0.00 );
