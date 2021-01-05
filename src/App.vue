@@ -19,6 +19,21 @@ export default {
 
 #app {
   background-image: linear-gradient(to right top, white, white);
+
+  button{
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+  }
+
+  a {
+    color: transparent;
+    a:visited {
+      text-decoration: none;
+      color: transparent;
+    }
+  }
 }
 
 html, body {
