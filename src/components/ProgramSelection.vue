@@ -49,7 +49,7 @@ export default {
     font-family: "Bw Modelica Bold", serif;
     font-size: 13px;
     color: #4a4a4a;
-    padding-left: 5px;
+    padding-left: 0;
     height: fit-content;
   }
 
@@ -63,7 +63,7 @@ export default {
 
     .program-card{
       padding: 11px;
-      width: 23%;
+      width: 24%;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
@@ -79,12 +79,15 @@ export default {
 
     .blue-bg{
       background-color: #6ea2db;
+      box-shadow: 0 5px 15px 0 rgb(173, 196, 231);
     }
     .green-bg{
-      background-color: #76cfbc;
+      background-color: #78d6c2;
+      box-shadow: 0 5px 15px 0 rgb(158, 202, 185);
     }
     .black-bg{
       background-color: #2d2d2d;
+      box-shadow: 0 5px 15px 0 rgba(53, 53, 57, 0.5);
     }
   }
 
