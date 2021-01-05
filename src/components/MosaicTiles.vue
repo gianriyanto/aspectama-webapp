@@ -81,6 +81,7 @@ export default {
         .label{
           font-family: "Bw Modelica Bold", serif;
           font-size: 17px;
+          color: #1f1f1f;
         }
       }
       .card-1{
@@ -108,11 +109,12 @@ export default {
         padding: 20px;
         width: 100%;
         border-radius: 7px;
-        background-image: linear-gradient(to right top, #b9a6ee, #efb0da, #f6b1bc, #fdc2a5, #ffda99);
+        background-image: linear-gradient(to right top, #b9a6ee, #efb0da, #f6b1bc, #fac3b1, #ffda99);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
           font-size: 17px;
+          color: #1f1f1f;
         }
       }
     }
@@ -134,7 +136,7 @@ export default {
         width: 60%;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #9181f8, #8f89f9, #8f90fa, #8f97fb, #909efb);
+        background-image: linear-gradient(to right top, #7e94ff, #898eff, #9687ff, #a380ff, #b177fd);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
@@ -148,7 +150,7 @@ export default {
         width: 40%;
         border-radius: 7px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #ee9d9d, #e997ac, #e9a2c8);
+        background-image: linear-gradient(to right top, #f87c7c, #fa8189, #fb8796, #fb8da2, #fb94ae);
 
         .label{
           font-family: "Bw Modelica Bold", serif;

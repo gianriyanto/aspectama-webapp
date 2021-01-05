@@ -18,7 +18,8 @@ export default {
 <style lang="scss">
 
 #app {
-  background-image: linear-gradient(to right top, #f9edff, #f6f0ff, #f4f2ff, #f3f4ff, #f3f6ff, #f1f8ff, #f1faff, #f1fbfe, #f2fcfb, #f5fdf8, #fafcf6, #fffcf6);}
+  background-image: linear-gradient(to right top, white, white);
+}
 
 html, body {
   margin: 0 !important;
