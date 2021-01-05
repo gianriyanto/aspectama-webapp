@@ -1,4 +1,5 @@
 # ervina-website
+Single Page Application for Aspectama's Education Counsellor
 
 ## Project setup
 ```
