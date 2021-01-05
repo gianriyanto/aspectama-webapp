@@ -72,11 +72,11 @@ export default {
 
       .card-0{
         height: 37%;
-        padding: 20px;
+        padding: 15px 20px;
         margin: 0 4px 4px 0;
         border-radius: 8px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
-        background-image: linear-gradient(to right top, #97d1f8, #94c7fd, #99bcff);
+        background-image: linear-gradient(to left bottom, #97d1f8, #94c7fd, #99b6ff);
 
         .label{
           font-family: "Bw Modelica Bold", serif;
@@ -86,7 +86,7 @@ export default {
       }
       .card-1{
         height: 63%;
-        padding: 20px;
+        padding: 15px 20px;
         margin: 4px 4px 0 0;
         border-radius: 8px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.35 );
@@ -106,7 +106,7 @@ export default {
 
       .card-2{
         margin: 0 4px 0 4px;
-        padding: 20px;
+        padding: 15px 20px;
         width: 100%;
         border-radius: 8px;
         background-image: linear-gradient(to right top, #b9a6ee, #efb0da, #f6b1bc, #fac3b1, #ffda99);
@@ -132,7 +132,7 @@ export default {
 
       .card-3{
         margin: 0 4px 4px 4px;
-        padding: 20px;
+        padding: 15px 20px;
         width: 60%;
         border-radius: 8px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
@@ -146,7 +146,7 @@ export default {
       }
       .card-4{
         margin: 0 0 4px 4px;
-        padding: 20px;
+        padding: 15px 20px;
         width: 40%;
         border-radius: 8px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
@@ -164,7 +164,7 @@ export default {
 
       .card-5{
         margin: 4px 0 0 4px;
-        padding: 20px;
+        padding: 15px 20px;
         width: 100%;
         border-radius: 8px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
