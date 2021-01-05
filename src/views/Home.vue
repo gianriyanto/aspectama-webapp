@@ -97,14 +97,14 @@ export default {
       }
     }
     #ContactBar{
-      padding-top: 20px;
-      width: 410px;
+      padding-top: 40px;
+      width: 370px;
       height: fit-content;
     }
     #MosaicTiles{
-      padding-top: 30px;
+      padding-top: 40px;
       width: 65%;
-      height: 280px;
+      height: 230px;
     }
     #BottomBar{
       margin-top: auto;

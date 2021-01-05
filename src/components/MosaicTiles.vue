@@ -4,7 +4,7 @@
       <div class="left-side">
         <span class="card-0">
           <span class="label">
-            Lorem Ipsum dolor.
+            Lorem dolor.
           </span>
         </span>
         <span class="card-1">
@@ -16,7 +16,7 @@
       <div class="right-side">
         <span class="card-2">
           <span class="label">
-            Lorem ipsum dolor sit meteuni.
+            Lorem ipsum dolor meteuni.
           </span>
         </span>
       </div>
@@ -25,7 +25,7 @@
       <div class="top-side">
         <span class="card-3">
           <span class="label">
-            Lorem dolor sit amet
+            Lorem dolor amet.
           </span>
         </span>
         <span class="card-4">
@@ -74,13 +74,13 @@ export default {
         height: 37%;
         padding: 15px 20px;
         margin: 0 4px 4px 0;
-        border-radius: 8px;
+        border-radius: 6px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
         background-image: linear-gradient(to left bottom, #97d1f8, #94c7fd, #99b6ff);
 
         .label{
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 20px;
+          font-size: 18px;
           letter-spacing: -1px;
           line-height: 1.3;
           color: #1f1f1f;
@@ -92,16 +92,17 @@ export default {
         height: 63%;
         padding: 15px 20px;
         margin: 4px 4px 0 0;
-        border-radius: 8px;
+        border-radius: 6px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.35 );
-        background-image: linear-gradient(to right top, #777cee, #857ceb, #927de8, #9c7ee4);
+        background-image: linear-gradient(to right top, #a099f1, #ad9def, #b5a0e9);
 
         .label{
+          width: 50%;
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 19px;
+          font-size: 16px;
           letter-spacing: -0.5px;
           line-height: 1.3;
-          color: white;
+          color: #1f1f1f;
         }
       }
     }
@@ -116,14 +117,15 @@ export default {
         margin: 0 4px 0 4px;
         padding: 15px 20px;
         width: 100%;
-        border-radius: 8px;
-        background-image: linear-gradient(to right top, #b9a6ee, #efb0da, #f6b1bc, #fac3b1, #ffda99);
+        border-radius: 6px;
+        background-image: linear-gradient(to right top, #f6b1bc, #fac3b1, #fcd0a9);
 
         .label{
+          width: 50%;
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 22px;
+          font-size: 20px;
           letter-spacing: -1px;
-          line-height: 1.3;
+          line-height: 1.2;
           color: #1f1f1f;
         }
       }
@@ -141,19 +143,23 @@ export default {
       height: 57%;
 
       .card-3{
+        display: flex;
+        flex-direction: row-reverse;
         margin: 0 4px 4px 4px;
         padding: 15px 20px;
         width: 60%;
-        border-radius: 8px;
+        border-radius: 6px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #7e94ff, #898eff, #9687ff, #a380ff, #b177fd);
+        background-image: linear-gradient(to right top, #428fee, #8da6ff);
 
         .label{
+          text-align: right;
+          width: 50%;
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 19px;
+          font-size: 16px;
           letter-spacing: -0.5px;
           line-height: 1.2;
-          color: white;
+          color: #1f1f1f;
         }
       }
       .card-4{
@@ -162,13 +168,14 @@ export default {
         margin: 0 0 4px 4px;
         padding: 15px 20px;
         width: 40%;
-        border-radius: 8px;
+        border-radius: 6px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #fd8f8f, #ff96a9, #f5a1c1, #f5abd7);
+        background-image: linear-gradient(to right top, #fd8f8f, #ff96a9);
 
         .label{
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 18px;
+          text-align: right;
+          font-family: "Bw Modelica ExtraBold", serif;
+          font-size: 14px;
           letter-spacing: -0.5px;
           line-height: 1.2;
         }
@@ -183,18 +190,18 @@ export default {
         margin: 4px 0 0 4px;
         padding: 15px 20px;
         width: 100%;
-        border-radius: 8px;
+        border-radius: 6px;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        background-image: linear-gradient(to right top, #91d6b5, #95dadd, #81c6e2);
+        background-image: linear-gradient(to right top, #91d6b5, #95dadd);
 
         .label{
           margin: auto;
           text-align: center;
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 21px;
+          font-size: 16px;
           letter-spacing: -0.5px;
           line-height: 1.2;
-          color: black;
+          color: #1f1f1f;
         }
       }
     }
