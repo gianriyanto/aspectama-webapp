@@ -78,19 +78,19 @@ export default {
      border-radius: 6px;
      border: 1px solid rgba( 255, 255, 255, 0.18 );
      background: rgba( 255, 255, 255, 0.00 );
-     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+     box-shadow: 0 3px 15px 0 rgba( 31, 38, 135, 0.1 );
      backdrop-filter: blur( 3.0px );
      -webkit-backdrop-filter: blur( 3.0px );
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;
-       font-size: 13px;
+       font-size: 12px;
        color: #4a4a4a;
      }
      .input{
        font-family: "Bw Modelica Light", serif;
-       font-size: 13px;
-       color: black;
+       font-size: 12px;
+       color: #5f5f5f;
 
        .icon{
          padding-left: 3px;
