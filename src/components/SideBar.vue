@@ -127,11 +127,16 @@ export default {
         width: 41%;
         background-color: #1f1f1f;
         border-radius: 8px;
+        transition: all .3s ease-in-out;
 
         .button-label{
           font-family: "Bw Modelica Medium", serif;
           font-size: 11px;
           color: white;
+        }
+
+        &:hover{
+          opacity: 0.9;
         }
       }
     }

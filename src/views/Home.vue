@@ -80,7 +80,7 @@ export default {
       }
     }
     .subheader-container{
-      padding-top: 13px;
+      padding-top: 10px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -93,7 +93,7 @@ export default {
         font-size: 13px;
         color: #1f1f1f;
         letter-spacing: 0;
-        line-height: 1.8;
+        line-height: 1.7;
       }
     }
     #ContactBar{

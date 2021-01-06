@@ -54,15 +54,20 @@ export default {
       outline: none;
       border: 0;
       height: 100%;
-      width: 100px;
+      width: 120px;
       background-color: #1f1f1f;
       border-radius: 32px;
       cursor: pointer;
+      transition: all .3s ease-in-out;
 
       .button-label{
         font-family: "Bw Modelica Regular", serif;
         font-size: 10px;
         color: white;
+      }
+
+      &:hover{
+        opacity: 0.9;
       }
     }
   }
