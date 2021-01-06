@@ -73,7 +73,7 @@ export default {
     margin: 0 auto;
 
     .header-container{
-      padding-left: 5px;
+      padding-left: 2px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -87,7 +87,7 @@ export default {
       }
 
       .subheader-text{
-        padding-top: 5px;
+        padding-top: 7px;
         font-family: "Bw Modelica Light", serif;
         font-size: 12px;
         color: #4a4a4a;
@@ -96,7 +96,7 @@ export default {
       }
     }
     #Typeform{
-      padding-top: 20px;
+      padding-top: 25px;
       height: fit-content;
     }
     .footer-container{

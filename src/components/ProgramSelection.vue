@@ -46,10 +46,10 @@ export default {
   align-self: center;
 
   .header-text{
+    padding-left: 2px;
     font-family: "Bw Modelica Bold", serif;
     font-size: 13px;
     color: #4a4a4a;
-    padding-left: 0;
     height: fit-content;
   }
 
@@ -63,7 +63,7 @@ export default {
 
     .program-card{
       padding: 11px;
-      width: 24.5%;
+      width: 23.6%;
       border-radius: 9px;
       display: flex;
       flex-direction: column;

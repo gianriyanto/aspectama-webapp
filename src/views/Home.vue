@@ -55,7 +55,7 @@ export default {
   height: 100vh;
 
   .main-wrapper{
-    width: 70%;
+    width: 73%;
     height: 96%;
     display: flex;
     flex-direction: column;
@@ -111,9 +111,9 @@ export default {
     }
   }
   #SideBar{
-    width: 24%;
+    width: 21%;
     min-width: 320px;
-    height: 92%;
+    height: 93%;
     padding: 15px 15px;
   }
 }
