@@ -4,19 +4,16 @@
       <div class="left-side">
         <span class="card-0">
           <span class="label">
-            Lorem dolor.
           </span>
         </span>
         <span class="card-1">
           <span class="label">
-            Lorem ipsum dolor sit.
           </span>
         </span>
       </div>
       <div class="right-side">
         <span class="card-2">
           <span class="label">
-            Lorem ipsum dolor meteuni.
           </span>
         </span>
       </div>
@@ -25,19 +22,16 @@
       <div class="top-side">
         <span class="card-3">
           <span class="label">
-            Lorem dolor amet.
           </span>
         </span>
         <span class="card-4">
           <span class="label">
-            Lorem ipsum
           </span>
         </span>
       </div>
       <div class="bottom-side">
         <span class="card-5">
           <span class="label">
-            Lorem ipsum.
           </span>
         </span>
       </div>
@@ -119,7 +113,7 @@ export default {
         padding: 15px 20px;
         width: 100%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #f6b1bc, #fac3b1, #fcd0a9);
+        background-image: linear-gradient(to right top, #fad7b8, #fdd690);
 
         .label{
           width: 50%;
@@ -190,13 +184,13 @@ export default {
         padding: 15px 20px;
         width: 100%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #91d6b5, #95dadd);
+        background-image: linear-gradient(to right top, #a5dec3, #a9e5e7);
 
         .label{
           margin: auto;
           text-align: center;
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 16px;
+          font-size: 23px;
           letter-spacing: -0.5px;
           line-height: 1.2;
           color: #1f1f1f;

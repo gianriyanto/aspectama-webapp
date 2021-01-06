@@ -78,13 +78,13 @@ export default {
     }
 
     .blue-bg{
-      background-color: #6ea2db;
+      background-color: #7fb9f8;
     }
     .green-bg{
-      background-color: #78d6c2;
+      background-color: #71cbb8;
     }
     .black-bg{
-      background-color: #2d2d2d;
+      background-color: #393939;
     }
   }
 
