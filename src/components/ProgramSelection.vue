@@ -64,7 +64,7 @@ export default {
     .program-card{
       padding: 11px;
       width: 24.5%;
-      border-radius: 6px;
+      border-radius: 9px;
       display: flex;
       flex-direction: column;
       text-align: left;

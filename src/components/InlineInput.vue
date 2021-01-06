@@ -75,7 +75,7 @@ export default {
     border: transparent;
     outline: transparent;
     background-color: transparent;
-    border-bottom: thin solid #458fcf;
+    border-bottom: thin solid #7eb1dd;
   }
 
   .input-card{

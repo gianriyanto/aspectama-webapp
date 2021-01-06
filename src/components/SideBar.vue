@@ -45,11 +45,8 @@ export default {
 #SideBar{
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
-  background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 4px 32px 0 rgba(82, 83, 103, 0.2);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 15px;
+  background-color: #f6f6f6;
   height: fit-content;
 
   .my-image-container{
@@ -63,8 +60,8 @@ export default {
     .image{
       width: 55px;
       height: 100%;
-      border-radius: 10px;
-      background-color: #f6f6f6;
+      border-radius: 50%;
+      background-color: #d4d4d4;
     }
   }
   .content-wrapper{

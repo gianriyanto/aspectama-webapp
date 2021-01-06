@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      header: ["Hi! I'm Ervina your", "education counselor."],
+      header: ["Hello! I'm Ervina", "your education counselor."],
       subheader: ["I help architect a personalised education blueprint for aspiring professionals like you.", "Find out how I can help, I’d love to hear from you."]
     }
   }

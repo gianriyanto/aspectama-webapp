@@ -71,7 +71,7 @@ export default {
         padding: 15px 20px;
         margin: 0 4px 4px 0;
         border-radius: 6px;
-        background-image: linear-gradient(to left bottom, #97d1f8, #94c7fd, #99b6ff);
+        background-image: linear-gradient(to left bottom, #8ac9f3, #71acf5);
 
         .label{
           margin-top: auto;
@@ -113,7 +113,7 @@ export default {
         padding: 15px 20px;
         width: 100%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #fad7b8, #fdd690);
+        background-image: linear-gradient(to right top, #fadcb8, #fcd695);
 
         .label{
           width: 50%;
@@ -144,7 +144,7 @@ export default {
         padding: 15px 20px;
         width: 60%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #74b3ff, #8da6ff);
+        background-image: linear-gradient(to right top, #5da1f3, #708efa);
 
         .label{
           text-align: right;

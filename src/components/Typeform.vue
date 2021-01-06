@@ -80,12 +80,9 @@ export default {
      padding: 9px 20px;
      width: 84%;
      height: 55px;
-     border-radius: 12px;
-     border: 1px solid rgba( 255, 255, 255, 0.18 );
-     background: rgba( 255, 255, 255, 0.00 );
-     box-shadow: 0 5px 15px 0 rgba(80, 82, 107, 0.1);
-     backdrop-filter: blur( 3.0px );
-     -webkit-backdrop-filter: blur( 3.0px );
+     border-radius: 10px;
+     border: 1px solid rgba(112, 91, 91, 0.2);
+     background-color: white;
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;
