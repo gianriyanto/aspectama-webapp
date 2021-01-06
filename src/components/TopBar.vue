@@ -1,6 +1,8 @@
 <template>
   <div id="TopBar">
-    <span class="logo"></span>
+    <span class="logo-container">
+      <img class="logo-image" src="@/assets/logo/AspectamaLogo.png" alt="">
+    </span>
     <button class="myCard-button">
       <span class="button-label">
         Take my card
@@ -19,18 +21,19 @@ export default {
 
 #TopBar{
   width: 95%;
-  height: 70px;
+  height: 75px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  .logo{
-    width: 25px;
-    height: 50px;
-    background-color: #1f1f1f;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
+  .logo-container{
+    padding-top: 3px;
+
+    .logo-image{
+      height: 55px;
+      width: auto;
+    }
   }
 
   .myCard-button{
