@@ -11,7 +11,9 @@
     <div v-else class="input-card">
       <div :class="applyInputStyle(field.input)">
         <label @click="onEditText"> {{field.input}} </label>
-        <check-circle-icon size="1x" class="check-icon"></check-circle-icon>
+        <transition appear name="fade">
+          <check-circle-icon v-if="field.isValid" size="1x" class="check-icon"/>
+        </transition>
       </div>
     </div>
   </div>
@@ -87,6 +89,7 @@ export default {
     transform: translateY(2px);
     font-size: 13px;
     color: #16a075;
+    flex-grow: 1;
   }
   .input-has-value-style{
     color: #458fcf;
@@ -95,6 +98,15 @@ export default {
     color: darkgrey;
     width: fit-content;
   }
+}
+.fade-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+.fade-leave-active {
+  transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.fade-enter, .fade-leave-to{
+  opacity: 0;
 }
 
 </style>

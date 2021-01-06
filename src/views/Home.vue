@@ -98,7 +98,7 @@ export default {
     }
     #ContactBar{
       padding-top: 25px;
-      width: 400px;
+      width: 410px;
       height: fit-content;
     }
     #MosaicTiles{
