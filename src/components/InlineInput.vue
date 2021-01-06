@@ -67,11 +67,11 @@ export default {
 
 #InlineInput{
   font-family: "Bw Modelica Regular", serif;
-  font-size: 13px;
+  font-size: 14px;
 
   .input-editing{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #5f5f5f;
     width: 98%;
     border: transparent;
@@ -87,7 +87,7 @@ export default {
   .check-icon{
     padding-left: 3px;
     transform: translateY(2px);
-    font-size: 13px;
+    font-size: 14px;
     color: #16a075;
     flex-grow: 1;
   }
@@ -95,7 +95,7 @@ export default {
     color: #458fcf;
   }
   .input-no-value-style{
-    color: darkgrey;
+    color: #999da7;
     width: fit-content;
   }
 }
