@@ -63,7 +63,7 @@ export default {
     margin-right: 22px;
 
     .header-container{
-      padding-top: 75px;
+      padding-top: 80px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -97,14 +97,14 @@ export default {
       }
     }
     #ContactBar{
-      padding-top: 40px;
+      padding-top: 25px;
       width: 370px;
       height: fit-content;
     }
     #MosaicTiles{
-      padding-top: 40px;
+      padding-top: 35px;
       width: 65%;
-      height: 230px;
+      height: 35%;
     }
     #BottomBar{
       margin-top: auto;

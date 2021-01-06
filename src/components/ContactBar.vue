@@ -35,7 +35,7 @@ export default {
     padding: 5px;
     align-items: center;
     background-color: white;
-    box-shadow: 0 10px 20px 1px rgba(77, 79, 109, 0.15);
+    box-shadow: 0 5px 15px 1px rgba(77, 79, 109, 0.2);
 
     .input-label{
       font-family: "Bw Modelica Medium", serif;

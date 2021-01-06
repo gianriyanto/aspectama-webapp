@@ -71,14 +71,16 @@ export default {
       width: 51%;
 
       .card-0{
+        display: flex;
+        flex-direction: row-reverse;
         height: 37%;
         padding: 15px 20px;
         margin: 0 4px 4px 0;
         border-radius: 6px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.25 );
         background-image: linear-gradient(to left bottom, #97d1f8, #94c7fd, #99b6ff);
 
         .label{
+          margin-top: auto;
           font-family: "Bw Modelica ExtraBold", serif;
           font-size: 18px;
           letter-spacing: -1px;
@@ -93,13 +95,12 @@ export default {
         padding: 15px 20px;
         margin: 4px 4px 0 0;
         border-radius: 6px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.35 );
-        background-image: linear-gradient(to right top, #a099f1, #ad9def, #b5a0e9);
+        background-image: linear-gradient(to right top, #b9a6ff, #a5afff);
 
         .label{
-          width: 50%;
+          width: 60%;
           font-family: "Bw Modelica ExtraBold", serif;
-          font-size: 16px;
+          font-size: 18px;
           letter-spacing: -0.5px;
           line-height: 1.3;
           color: #1f1f1f;
@@ -149,8 +150,7 @@ export default {
         padding: 15px 20px;
         width: 60%;
         border-radius: 6px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
-        background-image: linear-gradient(to right top, #428fee, #8da6ff);
+        background-image: linear-gradient(to right top, #74b3ff, #8da6ff);
 
         .label{
           text-align: right;
@@ -169,7 +169,6 @@ export default {
         padding: 15px 20px;
         width: 40%;
         border-radius: 6px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.15 );
         background-image: linear-gradient(to right top, #fd8f8f, #ff96a9);
 
         .label{
@@ -191,7 +190,6 @@ export default {
         padding: 15px 20px;
         width: 100%;
         border-radius: 6px;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         background-image: linear-gradient(to right top, #91d6b5, #95dadd);
 
         .label{

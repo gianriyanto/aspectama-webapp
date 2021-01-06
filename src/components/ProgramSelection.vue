@@ -63,7 +63,7 @@ export default {
 
     .program-card{
       padding: 11px;
-      width: 24%;
+      width: 24.5%;
       border-radius: 6px;
       display: flex;
       flex-direction: column;
@@ -79,15 +79,12 @@ export default {
 
     .blue-bg{
       background-color: #6ea2db;
-      box-shadow: 0 5px 15px 0 rgb(173, 196, 231);
     }
     .green-bg{
       background-color: #78d6c2;
-      box-shadow: 0 5px 15px 0 rgb(158, 202, 185);
     }
     .black-bg{
       background-color: #2d2d2d;
-      box-shadow: 0 5px 15px 0 rgba(53, 53, 57, 0.5);
     }
   }
 
