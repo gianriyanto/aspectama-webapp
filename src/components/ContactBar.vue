@@ -1,9 +1,7 @@
 <template>
   <div id="ContactBar">
     <div class="bar-container">
-      <span class="input-label">
-        Your contact phone or email
-      </span>
+      <inline-input class="input-field" v-bind:inputData="contact"/>
       <button class="send-button">
         <span class="button-label">
           Keep in touch
@@ -14,8 +12,18 @@
 </template>
 
 <script>
+import InlineInput from "@/components/InlineInput";
+
 export default {
-  name: "ContactBar"
+  name: "ContactBar",
+  components: {
+    InlineInput
+  },
+  data() {
+    return {
+      contact: {prompt: 'Your contact phone or email', input: 'Your contact phone or email', edit: false, isValid: false},
+    }
+  }
 }
 </script>
 
@@ -29,20 +37,17 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 30px;
+    height: 34px;
     width: 100%;
     border-radius: 50px;
-    padding: 3px;
+    padding: 3px 3px 3px 20px;
     align-items: center;
     background-color: white;
     box-shadow: 0 5px 25px 1px rgba(77, 79, 109, 0.2);
 
-    .input-label{
-      font-family: "Bw Modelica Medium", serif;
-      font-size: 12px;
-      color: lightgrey;
-      letter-spacing: 0;
-      padding-left: 15px
+    .input-field{
+      flex-grow: 1;
+      padding-right: 13px;
     }
     .send-button{
       text-decoration: none;
