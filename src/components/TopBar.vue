@@ -37,7 +37,7 @@ export default {
   }
 
   .myCard-button{
-    height: 47px;
+    height: 42px;
     width: 120px;
     background-color: transparent;
     border: thin solid #1f1f1f;
