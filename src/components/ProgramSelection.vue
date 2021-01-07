@@ -68,8 +68,8 @@ export default {
       display: flex;
       flex-direction: column;
       text-align: left;
-      background-color: #393939;
-      border: thin solid #393939;
+      background-color: #212121;
+      border: thin solid #212121;
       opacity: 0.8;
       transition: all 0.2s ease-in-out;
 
@@ -89,7 +89,7 @@ export default {
       opacity: 1;
       background-color: #6fb0ff;
       border: thin solid #6098dd;
-  }
+    }
   }
 
 }
