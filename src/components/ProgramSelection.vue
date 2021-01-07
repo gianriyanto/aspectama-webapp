@@ -4,28 +4,13 @@
       Pick a program level
     </span>
     <div class="selection-container">
-      <span class="program-card green-bg">
+      <span v-for="program in programs"
+            v-bind:key=program.index
+            class="program-card"
+            v-bind:class="{ 'selected-program-card': program.isSelected }"
+            @click="selectProgram(program.programName)">
         <span class="label">
-          Foundation
-        </span>
-        <span class="label">
-          College
-        </span>
-      </span>
-      <span class="program-card blue-bg">
-        <span class="label">
-          Under
-        </span>
-        <span class="label">
-          Graduate
-        </span>
-      </span>
-      <span class="program-card black-bg">
-        <span class="label">
-          Post
-        </span>
-        <span class="label">
-          Graduate
+          {{ program.programName }}
         </span>
       </span>
     </div>
@@ -34,7 +19,21 @@
 
 <script>
 export default {
-  name: "ProgramSelection"
+  name: "ProgramSelection",
+  props: ['selectionData'],
+  data() {
+    return {
+      programs: this.selectionData,
+      cardStyle: ['blue-card', 'red-card', 'black-card']
+    }
+  },
+  methods: {
+    selectProgram: function(selectedProgram) {
+      for (let i = 0; i < this.programs.length; i++) {
+        this.programs[i].isSelected = selectedProgram === this.programs[i].programName;
+      }
+    }
+  }
 }
 </script>
 
@@ -62,12 +61,17 @@ export default {
     flex-grow: 1;
 
     .program-card{
+      cursor: pointer;
       padding: 11px;
-      width: 23.6%;
+      width: 23%;
       border-radius: 9px;
       display: flex;
       flex-direction: column;
       text-align: left;
+      background-color: #393939;
+      border: thin solid #393939;
+      opacity: 0.8;
+      transition: all 0.2s ease-in-out;
 
       .label{
         font-family: "Bw Modelica Bold", serif;
@@ -75,17 +79,17 @@ export default {
         line-height: 1.4;
         font-size: 11px;
       }
+
+      &:hover{
+        transform: scale(1.02);
+      }
     }
 
-    .blue-bg{
-      background-color: #7fb9f8;
-    }
-    .green-bg{
-      background-color: #71cbb8;
-    }
-    .black-bg{
-      background-color: #393939;
-    }
+    .selected-program-card{
+      opacity: 1;
+      background-color: #6fb0ff;
+      border: thin solid #6098dd;
+  }
   }
 
 }
