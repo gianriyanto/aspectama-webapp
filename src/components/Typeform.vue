@@ -1,6 +1,6 @@
 <template>
   <div id="Typeform">
-    <ProgramSelection id="ProgramSelection"/>
+    <ProgramSelection id="ProgramSelection" v-bind:selectionData="programs"/>
 
     <div class="input-card">
       <span class="prompt">
@@ -77,7 +77,7 @@ export default {
   },
   data() {
     return {
-      program: "",
+      programs: [{programName: 'College Foundation', isSelected: false}, {programName: 'Under Graduate', isSelected: false}, {programName: 'Post Graduate', isSelected: false} ],
       name: {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false},
       course: {prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false},
       country: {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false},
@@ -146,6 +146,16 @@ export default {
        color: #bebebe;
      }
    }
+ }
+
+ .fade-enter-active {
+   transition: all 0.3s ease-in-out;
+ }
+ .fade-leave-active {
+   transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+ }
+ .fade-enter, .fade-leave-to{
+   opacity: 0;
  }
 
 </style>
