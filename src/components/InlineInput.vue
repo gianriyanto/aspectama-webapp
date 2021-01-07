@@ -67,11 +67,11 @@ export default {
 
 #InlineInput{
   font-family: "Bw Modelica Regular", serif;
-  font-size: 14px;
+  font-size: 13px;
 
   .input-editing{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #5f5f5f;
     width: 98%;
     border: transparent;

@@ -2,7 +2,7 @@
   <div id="ContactBar">
     <div class="bar-container">
       <contact-inline-input class="input-field" v-bind:inputData="contact"/>
-      <button class="send-button">
+      <button class="send-button" @click="sendContact">
         <span class="button-label">
           Keep in touch
         </span>
@@ -22,6 +22,11 @@ export default {
   data() {
     return {
       contact: {prompt: 'Your contact phone or email', input: 'Your contact phone or email', edit: false, isValid: false},
+    }
+  },
+  methods: {
+    sendContact() {
+      console.log(this.contact.input);
     }
   }
 }
