@@ -70,7 +70,7 @@ export default {
       text-align: left;
       background-color: #303030;
       border: thin solid #303030;
-      transition: all 0.3s ease-in-out;
+      transition: all .35s ease-in-out;
 
       .label{
         font-family: "Bw Modelica Bold", serif;
@@ -86,8 +86,8 @@ export default {
 
     .selected-program-card{
       opacity: 1;
-      background-color: #6f98ff;
-      border: thin solid #6f98ff;
+      background-color: #69a7f1;
+      border: thin solid #69a7f1;
     }
   }
 
