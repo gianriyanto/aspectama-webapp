@@ -68,10 +68,9 @@ export default {
       display: flex;
       flex-direction: column;
       text-align: left;
-      background-color: #212121;
-      border: thin solid #212121;
-      opacity: 0.8;
-      transition: all 0.2s ease-in-out;
+      background-color: #303030;
+      border: thin solid #303030;
+      transition: all 0.3s ease-in-out;
 
       .label{
         font-family: "Bw Modelica Bold", serif;
@@ -81,14 +80,14 @@ export default {
       }
 
       &:hover{
-        transform: scale(1.02);
+        opacity: 0.9;
       }
     }
 
     .selected-program-card{
       opacity: 1;
-      background-color: #6fb0ff;
-      border: thin solid #6098dd;
+      background-color: #6f98ff;
+      border: thin solid #6f98ff;
     }
   }
 

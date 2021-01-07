@@ -11,7 +11,7 @@
       </span>
     </div>
 
-    <div class="invalid" v-if="!name.isValid">
+    <div class="disabled-card" v-if="!name.isValid">
       <span class="prompt">
         You're most interested to study
       </span>
@@ -28,7 +28,7 @@
       </span>
     </div>
 
-    <div class="invalid" v-if="!course.isValid || !name.isValid">
+    <div class="disabled-card" v-if="!course.isValid || !name.isValid">
       <span class="prompt">
         And travel abroad to
       </span>
@@ -45,7 +45,7 @@
       </span>
     </div>
 
-    <div class="invalid" v-if="!country.isValid || !course.isValid || !name.isValid">
+    <div class="disabled-card" v-if="!country.isValid || !course.isValid || !name.isValid">
       <span class="prompt">
         Cool! It's best to reach you at
       </span>
@@ -116,11 +116,11 @@ export default {
      .prompt {
        font-family: "Bw Modelica Bold", serif;
        font-size: 13px;
-       color: #4a4a4a;
+       color: #434343;
      }
    }
 
-   .invalid{
+   .disabled-card{
      align-self: center;
      margin-bottom: 1.7vh;
      display: flex;
@@ -137,13 +137,13 @@ export default {
      .prompt {
        font-family: "Bw Modelica Bold", serif;
        font-size: 13px;
-       color: #ababab;
+       color: #8f8f8f;
      }
 
      .input{
        font-family: "Bw Modelica Regular", serif;
        font-size: 13px;
-       color: #bebebe;
+       color: #8f8f8f;
      }
    }
  }

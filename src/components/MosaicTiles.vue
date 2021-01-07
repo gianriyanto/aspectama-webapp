@@ -55,14 +55,14 @@ export default {
   .left-section{
     display: flex;
     flex-direction: row;
-    width: 57%;
+    width: 55%;
     height: 100%;
 
     .left-side{
       display: flex;
       flex-direction: column;
       height: 100%;
-      width: 51%;
+      width: 55%;
 
       .card-0{
         display: flex;
@@ -71,7 +71,7 @@ export default {
         padding: 15px 20px;
         margin: 0 4px 4px 0;
         border-radius: 6px;
-        background-image: linear-gradient(to left bottom, #8ac9f3, #71acf5);
+        background-image: linear-gradient(to right top, #fca2a2, #fc9eae);
 
         .label{
           margin-top: auto;
@@ -79,7 +79,7 @@ export default {
           font-size: 18px;
           letter-spacing: -1px;
           line-height: 1.3;
-          color: #1f1f1f;
+          color: white;
         }
       }
       .card-1{
@@ -89,7 +89,7 @@ export default {
         padding: 15px 20px;
         margin: 4px 4px 0 0;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #b9a6ff, #a5afff);
+        background-image: linear-gradient(to right top, #5da1f3, #708efa);
 
         .label{
           width: 60%;
@@ -104,7 +104,7 @@ export default {
     .right-side{
       display: flex;
       height: 100%;
-      width: 49%;
+      width: 45%;
 
       .card-2{
         display: flex;
@@ -113,7 +113,7 @@ export default {
         padding: 15px 20px;
         width: 100%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #fadcb8, #ffda9c);
+        background-image: linear-gradient(to right top, #fadcb8, #fddda7);
 
         .label{
           width: 50%;
@@ -129,7 +129,7 @@ export default {
   .right-section{
     display: flex;
     flex-direction: column;
-    width: 43%;
+    width: 45%;
     height: 100%;
 
     .top-side{
@@ -144,7 +144,7 @@ export default {
         padding: 15px 20px;
         width: 60%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #5da1f3, #708efa);
+        background-image: linear-gradient(to left bottom, #8ac9f3, #71acf5);
 
         .label{
           text-align: right;
@@ -163,7 +163,7 @@ export default {
         padding: 15px 20px;
         width: 40%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #fca2a2, #fc9eae);
+        background-image: linear-gradient(to right top, #3c3c3c, #474747);
 
         .label{
           text-align: right;

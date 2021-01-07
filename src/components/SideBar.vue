@@ -54,7 +54,8 @@ export default {
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
-    width: 100%;
+    align-self: center;
+    width: 95%;
     height: 55px;
 
     .image{

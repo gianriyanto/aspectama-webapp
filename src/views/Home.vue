@@ -55,12 +55,12 @@ export default {
   height: 100vh;
 
   .main-wrapper{
-    width: 74%;
+    width: 78%;
     height: 96%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 22px;
+    margin-right: 0px;
 
     .header-container{
       padding-top: 80px;
@@ -103,7 +103,7 @@ export default {
     }
     #MosaicTiles{
       padding-top: 35px;
-      width: 68%;
+      width: 62%;
       height: 35%;
     }
     #BottomBar{
@@ -111,10 +111,11 @@ export default {
     }
   }
   #SideBar{
-    width: 19%;
+    width: 20%;
     min-width: 320px;
     height: 93%;
-    padding: 15px 10px;
+    padding: 15px 0;
+    margin: 0 15px;
   }
 }
 
