@@ -40,7 +40,7 @@ export default {
         this.field.edit = false;
         this.field.isValid = false;
       } else {
-        this.field.input = input.charAt(0).toUpperCase() + input.slice(1);
+        this.field.input = input;
         this.field.isValid = true;
       }
     },
@@ -68,10 +68,9 @@ export default {
     font-family: "Bw Modelica Medium", serif;
     font-size: 13px;
     color: #5f5f5f;
-    width: 98%;
-    border: transparent;
-    outline: transparent;
-    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
   }
 
   .input-card{

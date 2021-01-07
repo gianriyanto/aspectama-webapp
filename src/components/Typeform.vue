@@ -137,13 +137,13 @@ export default {
      .prompt {
        font-family: "Bw Modelica Bold", serif;
        font-size: 13px;
-       color: #8f8f8f;
+       color: #d7d7d7;
      }
 
      .input{
        font-family: "Bw Modelica Regular", serif;
        font-size: 13px;
-       color: #8f8f8f;
+       color: #d7d7d7;
      }
    }
  }
