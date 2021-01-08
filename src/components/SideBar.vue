@@ -106,7 +106,7 @@ export default {
         margin-left: auto;
         height: 40px;
         width: 41%;
-        background-color: #1f1f1f;
+        background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
         border-radius: 8px;
         transition: all .3s ease-in-out;
         filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.8));
