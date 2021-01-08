@@ -34,7 +34,7 @@
         </span>
         <span class="card-4">
           <span class="label">
-            Your future simplified
+            Your Future Simplified
           </span>
           <img class="image" src="@/assets/images/graduation.svg" alt="">
         </span>
@@ -83,7 +83,7 @@ export default {
         height: 40%;
         margin: 0 4px 4px 0;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #fca2a2, #fc9eae);
+        background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
 
         .label{
           padding-left: 15px;
@@ -93,7 +93,7 @@ export default {
           font-family: "Gilroy Bold", serif;
           font-size: 14px;
           line-height: 1.3;
-          color: white;
+          color: black;
         }
         .image{
           margin-top: auto;
@@ -174,25 +174,25 @@ export default {
       .card-3{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 4px 4px 4px;
         width: 55%;
         border-radius: 6px;
-        background-image: linear-gradient(to left bottom, #8ac9f3, #71acf5);
+        background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
         .label{
-          padding: 15px 20px 0 20px;
+          padding: 10px 20px 5px 20px;
           text-align: center;
           width: fit-content;
           font-family: "Gilroy Bold", serif;
-          font-size: 13px;
-          letter-spacing: -0.5px;
-          line-height: 1.2;
-          color: #1f1f1f;
+          font-size: 12.5px;
+          letter-spacing: -0.3px;
+          line-height: 1.3;
+          color: white;
         }
         .image{
           margin: 0 auto;
-          width: 80%;
+          width: 82%;
           height: fit-content;
         }
       }
@@ -209,16 +209,16 @@ export default {
           padding: 0 20px 15px 20px;
           text-align: right;
           font-family: "Gilroy Bold", serif;
-          font-size: 14px;
+          font-size: 16px;
           letter-spacing: 0;
           line-height: 1.2;
-          color: white;
+          color: #fff3ce;
         }
         .image{
-          padding: 10px 15px 0 0;
-          margin-left: auto;
+          padding: 10px 20px 0 10px;
+          margin-right: auto;
           align-self: flex-end;
-          width: 75%;
+          width: 70%;
           height: fit-content;
         }
       }
@@ -234,7 +234,7 @@ export default {
         margin: 4px 0 0 4px;
         width: 100%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #96b8fc, #889af6);
+        background-image: linear-gradient(to right top, #969bfc, #788df6);
 
         .label{
           padding: 15px 0 15px 20px;
@@ -242,7 +242,7 @@ export default {
           width: 85%;
           text-align: left;
           font-family: "Gilroy Bold", serif;
-          font-size: 12px;
+          font-size: 12.5px;
           line-height: 1.4;
           color: white;
         }
