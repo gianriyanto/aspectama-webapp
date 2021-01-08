@@ -4,13 +4,13 @@
       <div class="left-side">
         <span class="card-0">
           <span class="label">
-            End to end consulting service
+            End to end consulting service.
           </span>
           <img class="image" src="@/assets/images/timeline.svg" alt="">
         </span>
         <span class="card-1">
           <span class="label">
-            Your passion at the centre of every decision.
+            Passion and purpose at the centre of every decision.
           </span>
           <img class="image" src="@/assets/images/artificial_intelligence.svg" alt="">
         </span>
@@ -28,13 +28,13 @@
       <div class="top-side">
         <span class="card-3">
           <span class="label">
-            Study and travel abroad.
+            Study at institutions around the world.
           </span>
           <img class="image" src="@/assets/images/world_connection_.svg" alt="">
         </span>
         <span class="card-4">
           <span class="label">
-            Your future simplified.
+            Your future simplified
           </span>
           <img class="image" src="@/assets/images/graduation.svg" alt="">
         </span>
@@ -42,7 +42,7 @@
       <div class="bottom-side">
         <span class="card-5">
           <span class="label">
-            People-oriented and tailored approach.
+            People-oriented solutions tailored to your unique learning journey.
           </span>
           <img class="image" src="@/assets/images/profile_analysis_.svg" alt="">
         </span>
@@ -169,29 +169,29 @@ export default {
     .top-side{
       display: flex;
       flex-direction: row;
-      height: 52%;
+      height: 57%;
 
       .card-3{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 0 4px 4px 4px;
-        padding: 15px 0 15px 20px;
-        width: 50%;
+        width: 55%;
         border-radius: 6px;
         background-image: linear-gradient(to left bottom, #8ac9f3, #71acf5);
 
         .label{
-          text-align: left;
-          width: 100%;
+          padding: 15px 20px 0 20px;
+          text-align: center;
+          width: fit-content;
           font-family: "Gilroy Bold", serif;
-          font-size: 15px;
+          font-size: 13px;
           letter-spacing: -0.5px;
           line-height: 1.2;
           color: #1f1f1f;
         }
         .image{
-          margin-left: auto;
+          margin: 0 auto;
           width: 80%;
           height: fit-content;
         }
@@ -201,7 +201,7 @@ export default {
         flex-direction: column-reverse;
         justify-content: space-between;
         margin: 0 0 4px 4px;
-        width: 50%;
+        width: 45%;
         border-radius: 6px;
         background-image: linear-gradient(to right top, #3c3c3c, #474747);
 
@@ -225,7 +225,7 @@ export default {
     }
     .bottom-side{
       display: flex;
-      height: 48%;
+      height: 43%;
 
       .card-5{
         display: flex;
@@ -238,13 +238,13 @@ export default {
 
         .label{
           padding: 15px 0 15px 20px;
-          margin-top: auto;
+          margin: auto 0;
           width: 85%;
           text-align: left;
           font-family: "Gilroy Bold", serif;
-          font-size: 16px;
-          line-height: 1.2;
-          color: #1f1f1f;
+          font-size: 12px;
+          line-height: 1.4;
+          color: white;
         }
 
         .image{
