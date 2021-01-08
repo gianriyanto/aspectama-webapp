@@ -12,6 +12,7 @@
         <span class="label">
           {{ program.programName }}
         </span>
+        <img class="image" :src="require(`@/assets/images/${program.imageURL}`)" alt=""/>
       </span>
     </div>
   </div>
@@ -62,33 +63,38 @@ export default {
 
     .program-card{
       cursor: pointer;
-      padding: 11px;
-      width: 24%;
-      border-radius: 9px;
+      width: 31%;
+      border-radius: 7px;
       display: flex;
       flex-direction: column;
       text-align: left;
-      background-color: #151515;
-      border: thin solid #151515;
-      opacity: 0.9;
-      transition: all .35s ease-in-out;
+      background-color: white;
+      border: thin solid #c8c8c8;
+      opacity: 1;
+      transition: all .3s ease-in-out;
 
       .label{
+        padding: 11px 11px 0 11px;
         font-family: "Bw Modelica Bold", serif;
-        color: white;
+        color: #2b2b2b;
         line-height: 1.4;
         font-size: 11px;
       }
 
+      .image{
+        flex-grow: 1;
+        height: 60px;
+      }
+
       &:hover{
-        opacity: 0.85;
+        opacity: 0.8;
       }
     }
 
     .selected-program-card{
       opacity: 1;
-      background-color: #69a7f1;
-      border: thin solid #69a7f1;
+      background-color: #88bdff;
+      border: thin solid #7cb7ff;
     }
   }
 
