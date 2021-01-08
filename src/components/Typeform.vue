@@ -102,7 +102,7 @@ export default {
 
    #ProgramSelection{
      height: 150px;
-     width: 99%;
+     width: 100%;
      margin-bottom: 2vh;
    }
 
@@ -113,10 +113,10 @@ export default {
      flex-direction: column;
      justify-content: space-evenly;
      padding: 7px 20px;
-     width: 87%;
+     width: 86%;
      height: 62px;
-     border-radius: 10px;
-     border: 1px solid #c8c8c8;
+     border-radius: 7px;
+     border: 1px solid #dddddd;
      background-color: white;
      transition: all .4s ease-in-out;
 
@@ -138,9 +138,9 @@ export default {
      flex-direction: column;
      justify-content: space-evenly;
      padding: 7px 20px;
-     width: 87%;
+     width: 86%;
      height: 62px;
-     border-radius: 10px;
+     border-radius: 7px;
      border: 1px solid rgba(112, 91, 91, 0.1);
      background-color: white;
      opacity: 0.7;
