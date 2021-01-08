@@ -83,7 +83,7 @@ export default {
       flex-direction: column;
       text-align: left;
       background-color: white;
-      border: thin solid #c8c8c8;
+      border: thin solid #dddddd;
       opacity: 1;
       transition: all .3s ease-in-out;
 
