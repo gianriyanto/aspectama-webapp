@@ -12,12 +12,7 @@
           Tell me a little bit about yourself.
         </span>
       </div>
-      <Typeform/>
-      <div class="footer-container">
-        <span class="footer-text">
-          Thanks Gian, chat soon!
-        </span>
-      </div>
+      <Typeform id="Typeform"/>
       <div class="button-container">
         <button class="submit-button">
         <span class="button-label">
@@ -100,19 +95,7 @@ export default {
       padding-top: 25px;
       height: fit-content;
     }
-    .footer-container{
-      padding-left: 5px;
-      padding-top: 5px;
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
 
-      .footer-text{
-        font-family: "Bw Modelica Light", serif;
-        font-size: 13px;
-        color: #1f1f1f;
-      }
-    }
     .button-container{
       display: flex;
       flex-direction: column;

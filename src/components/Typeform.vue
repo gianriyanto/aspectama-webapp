@@ -62,6 +62,12 @@
       </span>
     </div>
 
+    <div v-if="country.isValid && course.isValid && name.isValid && contact.isValid" class="footer-container">
+      <span class="footer-text">
+        Thanks {{ name.input.split(' ')[0] }}, chat soon!
+      </span>
+    </div>
+
   </div>
 </template>
 
@@ -110,12 +116,12 @@ export default {
      width: 87%;
      height: 62px;
      border-radius: 10px;
-     border: 1px solid rgba(112, 91, 91, 0.2);
+     border: 1px solid #85cdbc;
      background-color: white;
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;
-       font-size: 13px;
+       font-size: 14px;
        color: #434343;
      }
    }
@@ -136,14 +142,28 @@ export default {
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;
-       font-size: 13px;
+       font-size: 14px;
        color: #d7d7d7;
      }
 
      .input{
        font-family: "Bw Modelica Regular", serif;
-       font-size: 13px;
+       font-size: 14px;
        color: #d7d7d7;
+     }
+   }
+
+   .footer-container{
+     padding-left: 5px;
+     padding-top: 5px;
+     display: flex;
+     flex-direction: column;
+     height: fit-content;
+
+     .footer-text{
+       font-family: "Bw Modelica Light", serif;
+       font-size: 14px;
+       color: #1f1f1f;
      }
    }
  }

@@ -55,7 +55,7 @@ export default {
   height: 100vh;
 
   .main-wrapper{
-    width: 78%;
+    width: 74%;
     height: 96%;
     display: flex;
     flex-direction: column;
@@ -72,10 +72,10 @@ export default {
 
       h1{
         margin: 0;
-        font-family: "Gilroy SemiBold", serif;
+        font-family: "Bw Modelica Bold", serif;
         font-size: 37px;
         color: #1f1f1f;
-        letter-spacing: 0;
+        letter-spacing: -0.5px;
         line-height: 1.1;
       }
     }
@@ -111,7 +111,7 @@ export default {
     }
   }
   #SideBar{
-    width: 20%;
+    width: 24%;
     min-width: 320px;
     height: 93%;
     padding: 15px 0;

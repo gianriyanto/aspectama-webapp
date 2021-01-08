@@ -184,7 +184,7 @@ export default {
         padding: 15px 20px;
         width: 100%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #b0eedc, #a0e1e2);
+        background-image: linear-gradient(to right top, #96b8fc, #889af6);
 
         .label{
           margin: auto;

@@ -48,7 +48,7 @@ export default {
     padding: 3px 3px 3px 25px;
     align-items: center;
     background-color: white;
-    box-shadow: 0 5px 25px 1px rgba(77, 79, 109, 0.2);
+    box-shadow: 0 1px 12px 1px rgba(146, 146, 153, 0.4);
 
     .input-field{
       flex-grow: 1;
@@ -60,7 +60,7 @@ export default {
       outline: none;
       border: 0;
       height: 100%;
-      width: 120px;
+      width: 110px;
       background-color: #1f1f1f;
       border-radius: 32px;
       cursor: pointer;

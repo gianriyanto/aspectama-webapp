@@ -67,17 +67,17 @@ export default {
 
 #InlineInput{
   font-family: "Bw Modelica Regular", serif;
-  font-size: 13px;
+  font-size: 14px;
 
   .input-editing{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #5f5f5f;
     width: 98%;
     border: transparent;
     outline: transparent;
     background-color: transparent;
-    border-bottom: thin solid #7eb1dd;
+    border-bottom: thin solid #a3cfc4;
   }
 
   .input-card{

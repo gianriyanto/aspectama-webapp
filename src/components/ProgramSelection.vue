@@ -63,13 +63,14 @@ export default {
     .program-card{
       cursor: pointer;
       padding: 11px;
-      width: 23%;
+      width: 24%;
       border-radius: 9px;
       display: flex;
       flex-direction: column;
       text-align: left;
-      background-color: #303030;
-      border: thin solid #303030;
+      background-color: #151515;
+      border: thin solid #151515;
+      opacity: 0.9;
       transition: all .35s ease-in-out;
 
       .label{
@@ -80,7 +81,7 @@ export default {
       }
 
       &:hover{
-        opacity: 0.9;
+        opacity: 0.85;
       }
     }
 
