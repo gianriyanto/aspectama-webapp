@@ -2,7 +2,7 @@
   <div id="Typeform">
     <ProgramSelection id="ProgramSelection" v-bind:selectionData="programs"/>
 
-    <div class="input-card">
+    <div class="input-card" v-bind:class="{'isvalid-border': name.isValid}">
       <span class="prompt">
         Let's start with your name
       </span>
@@ -116,14 +116,19 @@ export default {
      width: 87%;
      height: 62px;
      border-radius: 10px;
-     border: 1px solid #85cdbc;
+     border: 1px solid #c8c8c8;
      background-color: white;
+     transition: all .4s ease-in-out;
 
      .prompt {
        font-family: "Bw Modelica Bold", serif;
        font-size: 14px;
        color: #434343;
      }
+   }
+
+   .isvalid-border{
+     border: 1px solid #85cdbc;
    }
 
    .disabled-card{
