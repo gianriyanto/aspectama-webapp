@@ -28,7 +28,7 @@ export default {
   align-items: center;
 
   #SocialLinks {
-    width: 100px;
+    width: 95px;
   }
 
   #ContactDetails{
