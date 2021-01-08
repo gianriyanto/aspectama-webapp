@@ -212,7 +212,7 @@ export default {
           font-size: 16px;
           letter-spacing: 0;
           line-height: 1.2;
-          color: #fff3ce;
+          color: #fffae8;
         }
         .image{
           padding: 10px 20px 0 10px;
@@ -242,7 +242,7 @@ export default {
           width: 85%;
           text-align: left;
           font-family: "Gilroy Bold", serif;
-          font-size: 12.5px;
+          font-size: 13px;
           line-height: 1.4;
           color: white;
         }
