@@ -95,7 +95,7 @@ export default {
     color: #458fcf;
   }
   .input-no-value-style{
-    color: #999da7;
+    color: #b2b3b7;
     width: fit-content;
   }
 }
