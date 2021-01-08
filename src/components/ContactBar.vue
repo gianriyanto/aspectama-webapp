@@ -48,7 +48,7 @@ export default {
     padding: 3px 3px 3px 25px;
     align-items: center;
     background-color: white;
-    box-shadow: 0 1px 14px 1px rgba(146, 146, 153, 0.3);
+    filter: drop-shadow(2px 8px 10px rgba(96, 88, 88, 0.2));
 
     .input-field{
       flex-grow: 1;
@@ -61,7 +61,7 @@ export default {
       border: 0;
       height: 100%;
       width: 110px;
-      background-image: linear-gradient(to right top, #3c3c3c, #474747);
+      background-image: linear-gradient(to right top, #2b2b2b, #323232);
       border-radius: 32px;
       cursor: pointer;
       transition: all .3s ease-in-out;
