@@ -1,14 +1,19 @@
 <template>
   <div id="BottomBar">
     <SocialLinks/>
+    <ContactDetails/>
   </div>
 </template>
 
 <script>
 import SocialLinks from "@/components/SocialLinks";
+import ContactDetails from "@/components/ContactDetails";
 export default {
   name: "BottomBar",
-  components: {SocialLinks}
+  components: {
+    ContactDetails,
+    SocialLinks
+  }
 }
 </script>
 
@@ -23,7 +28,11 @@ export default {
   align-items: center;
 
   #SocialLinks {
+    width: 100px;
+  }
 
+  #ContactDetails{
+    width: 290px;
   }
 }
 
