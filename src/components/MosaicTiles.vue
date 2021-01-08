@@ -6,13 +6,13 @@
           <span class="label">
             End to end consulting service.
           </span>
-          <img class="image" src="@/assets/images/timeline.svg" alt="">
+          <img class="image drop-shadow" src="@/assets/images/timeline.svg" alt="">
         </span>
         <span class="card-1">
           <span class="label">
             Your passion and purpose at the heart of every decision.
           </span>
-          <img class="image" src="@/assets/images/artificial_intelligence.svg" alt="">
+          <img class="image drop-shadow" src="@/assets/images/artificial_intelligence.svg" alt="">
         </span>
       </div>
       <div class="right-side">
@@ -20,7 +20,7 @@
           <span class="label">
             Discover your talent and potential with a free aptitude test.
           </span>
-          <img class="image" src="@/assets/images/report_analysis_-2.svg" alt="">
+          <img class="image drop-shadow" src="@/assets/images/report_analysis_-2.svg" alt="">
         </span>
       </div>
     </div>
@@ -30,13 +30,13 @@
           <span class="label">
             Study at institutions around the world.
           </span>
-          <img class="image" src="@/assets/images/world_connection_.svg" alt="">
+          <img class="image drop-shadow" src="@/assets/images/world_connection_.svg" alt="">
         </span>
         <span class="card-4">
           <span class="label">
             Your Future Simplified
           </span>
-          <img class="image" src="@/assets/images/graduation.svg" alt="">
+          <img class="image drop-shadow" src="@/assets/images/graduation.svg" alt="">
         </span>
       </div>
       <div class="bottom-side">
@@ -44,7 +44,7 @@
           <span class="label">
             People-oriented solutions tailored to every unique learning journey.
           </span>
-          <img class="image" src="@/assets/images/profile_analysis_.svg" alt="">
+          <img class="image drop-shadow" src="@/assets/images/profile_analysis_.svg" alt="">
         </span>
       </div>
     </div>
@@ -78,7 +78,7 @@ export default {
 
       .card-0{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         height: 40%;
         margin: 0 4px 4px 0;
@@ -86,19 +86,20 @@ export default {
         background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
 
         .label{
-          padding-left: 15px;
-          padding-bottom: 15px;
-          padding-top: 15px;
+          text-align: right;
+          padding-right: 10px;
+          padding-bottom: 0px;
+          padding-top: 10px;
           width: 40%;
           font-family: "Gilroy Bold", serif;
           font-size: 14px;
           line-height: 1.3;
-          color: black;
+          color: #1f1f1f;
         }
         .image{
+          padding-bottom: 10px;
+          padding-left: 13px;
           margin-top: auto;
-          padding-bottom: 15px;
-          padding-right: 10px;
           width: 45%;
           height: auto;
         }
@@ -254,6 +255,10 @@ export default {
         }
       }
     }
+  }
+
+  .drop-shadow{
+    filter: drop-shadow(1px 6px 20px rgba(96, 88, 88, 0.4));
   }
 }
 
