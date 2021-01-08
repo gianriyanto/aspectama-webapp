@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      contact: {prompt: 'Your contact phone or email', input: 'Your contact phone or email', edit: false, isValid: false},
+      contact: {prompt: 'your contact phone or email', input: 'your contact phone or email', edit: false, isValid: false},
     }
   },
   methods: {
@@ -42,13 +42,13 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 36px;
+    height: 35px;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 3px 3px 3px 25px;
     align-items: center;
     background-color: white;
-    filter: drop-shadow(2px 8px 10px rgba(96, 88, 88, 0.2));
+    filter: drop-shadow(3px 6px 10px rgba(96, 88, 88, 0.3));
 
     .input-field{
       flex-grow: 1;
@@ -61,15 +61,15 @@ export default {
       border: 0;
       height: 100%;
       width: 110px;
-      background-image: linear-gradient(to right top, #2b2b2b, #323232);
-      border-radius: 32px;
+      background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+      border-radius: 30px;
       cursor: pointer;
       transition: all .3s ease-in-out;
 
       .button-label{
         margin: auto;
         font-family: "Bw Modelica Medium", serif;
-        font-size: 11px;
+        font-size: 10px;
         color: white;
       }
 

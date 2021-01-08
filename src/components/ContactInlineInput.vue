@@ -61,11 +61,11 @@ export default {
 <style lang="scss" scoped>
 
 #ContactInlineInput{
-  font-family: "Bw Modelica Medium", serif;
+  font-family: "Bw Modelica Regular", serif;
   font-size: 13px;
 
   .input-editing{
-    font-family: "Bw Modelica Medium", serif;
+    font-family: "Bw Modelica Regular", serif;
     font-size: 13px;
     color: #5f5f5f;
     width: 100%;
