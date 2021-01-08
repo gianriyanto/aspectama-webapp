@@ -30,6 +30,7 @@ export default {
 
   a {
     color: transparent;
+    text-decoration: none;
     a:visited {
       text-decoration: none;
       color: transparent;
