@@ -150,7 +150,7 @@ export default {
           font-family: "Gilroy Bold", serif;
           font-size: 17px;
           letter-spacing: -0.5px;
-          line-height: 1.4;
+          line-height: 1.3;
           color: #1f1f1f;
         }
 
@@ -204,7 +204,7 @@ export default {
         margin: 0 0 4px 4px;
         width: 45%;
         border-radius: 6px;
-        background-image: linear-gradient(to right top, #3c3c3c, #474747);
+        background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
 
         .label{
           padding: 0 20px 15px 20px;
@@ -212,7 +212,7 @@ export default {
           font-family: "Gilroy Bold", serif;
           font-size: 16px;
           letter-spacing: 0;
-          line-height: 1.2;
+          line-height: 1.3;
           color: #fffae8;
         }
         .image{
@@ -243,8 +243,8 @@ export default {
           width: 85%;
           text-align: left;
           font-family: "Gilroy Bold", serif;
-          font-size: 13px;
-          line-height: 1.4;
+          font-size: 14px;
+          line-height: 1.3;
           color: white;
         }
 
@@ -258,7 +258,7 @@ export default {
   }
 
   .drop-shadow{
-    filter: drop-shadow(1px 6px 20px rgba(96, 88, 88, 0.4));
+    filter: drop-shadow(1px 6px 20px rgba(96, 88, 88, 0.6));
   }
 }
 
