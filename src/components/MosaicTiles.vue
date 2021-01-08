@@ -10,7 +10,7 @@
         </span>
         <span class="card-1">
           <span class="label">
-            Passion and purpose at the centre of every decision.
+            Your passion and purpose at the heart of every decision.
           </span>
           <img class="image" src="@/assets/images/artificial_intelligence.svg" alt="">
         </span>
@@ -42,7 +42,7 @@
       <div class="bottom-side">
         <span class="card-5">
           <span class="label">
-            People-oriented solutions tailored to your unique learning journey.
+            People-oriented solutions tailored to every unique learning journey.
           </span>
           <img class="image" src="@/assets/images/profile_analysis_.svg" alt="">
         </span>
