@@ -4,15 +4,29 @@
       Pick a program level
     </span>
     <div class="selection-container">
-      <span v-for="program in programs"
-            v-bind:key=program.index
-            class="program-card"
-            v-bind:class="{ 'selected-program-card': program.isSelected }"
-            @click="selectProgram(program.programName)">
+      <span class="program-card"
+            v-bind:class="{ 'selected-program-card blue': programs[0].isSelected }"
+            @click="selectProgram(programs[0].programName)">
         <span class="label">
-          {{ program.programName }}
+          {{ programs[0].programName }}
         </span>
-        <img class="image" :src="require(`@/assets/images/${program.imageURL}`)" alt=""/>
+        <img class="image" :src="require(`@/assets/images/${programs[0].imageURL}`)" alt=""/>
+      </span>
+      <span class="program-card"
+            v-bind:class="{ 'selected-program-card red': programs[1].isSelected }"
+            @click="selectProgram(programs[1].programName)">
+        <span class="label">
+          {{ programs[1].programName }}
+        </span>
+        <img class="image" :src="require(`@/assets/images/${programs[1].imageURL}`)" alt=""/>
+      </span>
+      <span class="program-card"
+            v-bind:class="{ 'selected-program-card green': programs[2].isSelected }"
+            @click="selectProgram(programs[2].programName)">
+        <span class="label">
+          {{ programs[2].programName }}
+        </span>
+        <img class="image" :src="require(`@/assets/images/${programs[2].imageURL}`)" alt=""/>
       </span>
     </div>
   </div>
@@ -87,17 +101,32 @@ export default {
       }
 
       &:hover{
-        opacity: 0.8;
+        opacity: 0.6;
       }
     }
 
     .selected-program-card{
       opacity: 1;
-      background-color: #88bdff;
-      border: thin solid #7cb7ff;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .blue{
+      background-color: #92c9ee;
+      border: thin solid #92c9ee;
+    }
+
+    .red{
+      background-color: #ffb3c1;
+      border: thin solid #ffb3c1;
+    }
+
+    .green{
+      background-color: #86ded1;
+      border: thin solid #86ded1;
     }
   }
-
 }
 
 </style>
