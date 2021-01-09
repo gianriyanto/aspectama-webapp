@@ -104,7 +104,11 @@ export default {
     #MosaicTiles{
       padding-top: 35px;
       width: 62%;
-      height: 35%;
+      min-width: 650px;
+      max-width: 770px;
+      height: 40%;
+      min-height: 254px;
+      max-height: 302px;
     }
     #BottomBar{
       margin-top: auto;

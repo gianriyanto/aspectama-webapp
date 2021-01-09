@@ -87,9 +87,9 @@ export default {
 
         .label{
           text-align: right;
-          padding-right: 10px;
+          padding-right: 15px;
           padding-bottom: 0px;
-          padding-top: 10px;
+          padding-top: 15px;
           width: 40%;
           font-family: "Gilroy Bold", serif;
           font-size: 14px;
@@ -145,17 +145,17 @@ export default {
         background-image: linear-gradient(to right top, #fadcb8, #fddda7);
 
         .label{
-          padding: 0 20px 15px 20px;
+          padding: 0 20px 20px 20px;
           height: fit-content;
           font-family: "Gilroy Bold", serif;
-          font-size: 17px;
+          font-size: 18px;
           letter-spacing: -0.5px;
-          line-height: 1.3;
+          line-height: 1.4;
           color: #1f1f1f;
         }
 
         .image{
-          height: 150px;
+          height: 170px;
           width: 100%;
         }
       }
@@ -182,7 +182,7 @@ export default {
         background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
         .label{
-          padding: 10px 20px 5px 20px;
+          padding: 15px 15px 5px 15px;
           text-align: center;
           width: fit-content;
           font-family: "Gilroy Bold", serif;
@@ -193,7 +193,7 @@ export default {
         }
         .image{
           margin: 0 auto;
-          width: 82%;
+          width: 80%;
           height: fit-content;
         }
       }
@@ -258,7 +258,7 @@ export default {
   }
 
   .drop-shadow{
-    filter: drop-shadow(1px 6px 20px rgba(96, 88, 88, 0.6));
+    filter: drop-shadow(1px 10px 15px rgba(96, 88, 88, 0.3));
   }
 }
 
