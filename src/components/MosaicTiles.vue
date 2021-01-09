@@ -182,12 +182,12 @@ export default {
         background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
         .label{
-          padding: 15px 15px 5px 15px;
+          padding: 0 15px 5px 15px;
           text-align: center;
           width: fit-content;
           font-family: "Gilroy Bold", serif;
-          font-size: 12.5px;
-          letter-spacing: -0.3px;
+          font-size: 13px;
+          letter-spacing: -0px;
           line-height: 1.3;
           color: white;
         }
@@ -210,7 +210,7 @@ export default {
           padding: 0 20px 15px 20px;
           text-align: right;
           font-family: "Gilroy Bold", serif;
-          font-size: 16px;
+          font-size: 17px;
           letter-spacing: 0;
           line-height: 1.3;
           color: #fffae8;
@@ -218,7 +218,7 @@ export default {
         .image{
           padding: 10px 20px 0 10px;
           margin-right: auto;
-          align-self: flex-end;
+          align-self: center;
           width: 70%;
           height: fit-content;
         }
