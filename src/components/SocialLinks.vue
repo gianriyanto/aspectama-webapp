@@ -1,16 +1,16 @@
 <template>
   <div id="SocialLinks">
     <a class="link"
-       v-on:click="goToSite('https://www.instagram.com/aspectamaalamsutera/?hl=en')">
-      <instagram-icon size="1.5x" class="icon"></instagram-icon>
+       v-on:click="goToSite('http://aspectamaalsut.co.id')">
+      <globe-icon size="1.5x" class="icon"></globe-icon>
     </a>
     <a class="link"
        v-on:click="goToSite('https://www.facebook.com/Aspectama-AlamSutera-288109908569927/')">
       <facebook-icon size="1.5x" class="icon"></facebook-icon>
     </a>
     <a class="link"
-       v-on:click="goToSite('http://aspectamaalsut.co.id')">
-      <globe-icon size="1.5x" class="icon"></globe-icon>
+       v-on:click="goToSite('https://www.instagram.com/aspectamaalamsutera/?hl=en')">
+      <instagram-icon size="1.5x" class="icon"></instagram-icon>
     </a>
   </div>
 </template>
