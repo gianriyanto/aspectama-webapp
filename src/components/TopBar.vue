@@ -48,13 +48,34 @@ export default {
     height: 42px;
     width: 120px;
     background-color: transparent;
-    border: thin solid #1f1f1f;
+    border: thin solid #454545;
     border-radius: 9px;
+    position: relative;
 
     .button-label{
+      position: relative;
       font-family: "Bw Modelica Bold", serif;
       font-size: 12px;
       color: #1f1f1f;
+      z-index: 2;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(to right, #bbf6f4, #9eacf5);
+      border-radius: 9px;
+      transition: all 0.35s;
+    }
+    &:hover {
+      color: #fff;
+      opacity: 1;
+    }
+    &:hover:after {
+      width: 100%;
     }
   }
 }
