@@ -19,7 +19,7 @@
         Interested major or course
       </span>
     </div>
-    <div class="input-card" v-else>
+    <div class="input-card" v-bind:class="{'isvalid-border': course.isValid}" v-else>
       <span class="prompt">
         You're most interested to study
       </span>
@@ -36,7 +36,7 @@
         Preferred city or country?
       </span>
     </div>
-    <div class="input-card" v-else>
+    <div class="input-card" v-bind:class="{'isvalid-border': country.isValid}" v-else>
       <span class="prompt">
         And travel abroad to
       </span>
@@ -53,7 +53,7 @@
         Your mobile or email
       </span>
     </div>
-    <div class="input-card" v-else>
+    <div class="input-card" v-bind:class="{'isvalid-border': contact.isValid}" v-else>
       <span class="prompt">
         Cool! It's best to reach you at
       </span>
