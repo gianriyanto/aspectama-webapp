@@ -18,7 +18,7 @@
       <div class="right-side">
         <span class="card-2">
           <span class="label">
-            Free consultation and Talent Discovery test.
+            Free Consultation and Talent Discovery Test.
           </span>
           <img class="image drop-shadow" src="@/assets/images/report_analysis_-2.svg" alt="">
         </span>
@@ -105,7 +105,7 @@ export default {
       .card-1{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 57%;
         margin: 4px 4px 0 0;
         border-radius: 6px;
@@ -117,7 +117,7 @@ export default {
           height: fit-content;
           width: 80%;
           font-family: "Gilroy Bold", serif;
-          font-size: 14px;
+          font-size: 15px;
           line-height: 1.3;
           color: white;
         }
@@ -147,7 +147,7 @@ export default {
           height: fit-content;
           font-family: "Gilroy Bold", serif;
           font-size: 20px;
-          letter-spacing: -0.5px;
+          letter-spacing: -1px;
           line-height: 1.4;
           color: #1f1f1f;
         }
@@ -168,7 +168,7 @@ export default {
     .top-side{
       display: flex;
       flex-direction: row;
-      height: 57%;
+      height: 54%;
 
       .card-3{
         display: flex;
@@ -180,9 +180,10 @@ export default {
         background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
         .label{
-          padding: 0 15px 5px 15px;
+          align-self: center;
           text-align: center;
-          width: fit-content;
+          padding-bottom: 10px;
+          width: 80%;
           font-family: "Gilroy Bold", serif;
           font-size: 13px;
           letter-spacing: -0px;
@@ -191,8 +192,8 @@ export default {
         }
         .image{
           margin: 0 auto;
-          width: 80%;
-          height: fit-content;
+          width: 76%;
+          height: 90px;
         }
       }
       .card-4{
@@ -224,7 +225,7 @@ export default {
     }
     .bottom-side{
       display: flex;
-      height: 43%;
+      height: 47%;
 
       .card-5{
         display: flex;
@@ -241,7 +242,7 @@ export default {
           width: 85%;
           text-align: left;
           font-family: "Gilroy Bold", serif;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.3;
           color: white;
         }

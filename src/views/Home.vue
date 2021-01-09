@@ -106,9 +106,7 @@ export default {
       width: 62%;
       min-width: 650px;
       max-width: 770px;
-      height: 40%;
-      min-height: 254px;
-      max-height: 302px;
+      height: 310px;
     }
     #BottomBar{
       margin-top: auto;
