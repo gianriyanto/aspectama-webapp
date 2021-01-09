@@ -10,7 +10,7 @@
         </span>
         <span class="card-1">
           <span class="label">
-            Your passion and purpose at the heart of every decision.
+            Your passion at the heart of every decision.
           </span>
           <img class="image drop-shadow" src="@/assets/images/artificial_intelligence.svg" alt="">
         </span>
@@ -18,7 +18,7 @@
       <div class="right-side">
         <span class="card-2">
           <span class="label">
-            Discover your talent and potential with a free aptitude test.
+            Free consultation and Talent Discovery test.
           </span>
           <img class="image drop-shadow" src="@/assets/images/report_analysis_-2.svg" alt="">
         </span>
@@ -88,11 +88,13 @@ export default {
         .label{
           text-align: center;
           padding-top: 5px;
-          padding-bottom: 8px;
+          padding-bottom: 5px;
           font-family: "Gilroy Bold", serif;
           font-size: 14px;
           line-height: 1.3;
           color: #1f1f1f;
+          width: 75%;
+          align-self: center;
         }
         .image{
           width: 50%;
@@ -111,8 +113,8 @@ export default {
 
         .label{
           padding-top: 15px;
-          padding-left: 15px;
-          height: 40%;
+          padding-left: 20px;
+          height: fit-content;
           width: 80%;
           font-family: "Gilroy Bold", serif;
           font-size: 14px;
@@ -121,8 +123,8 @@ export default {
         }
         .image{
           margin-left: auto;
-          height: 54%;
-          width: 130px;
+          height: 100px;
+          width: 140px;
         }
       }
     }
@@ -144,7 +146,7 @@ export default {
           padding: 0 20px 20px 20px;
           height: fit-content;
           font-family: "Gilroy Bold", serif;
-          font-size: 18px;
+          font-size: 20px;
           letter-spacing: -0.5px;
           line-height: 1.4;
           color: #1f1f1f;

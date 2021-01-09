@@ -1,7 +1,9 @@
 <template>
   <div id="TopBar">
-    <span class="logo-container">
-      <img class="logo-image" src="@/assets/logo/AspectamaLogo.png" alt="">
+    <span class="logo-container"
+       v-on:click="goToSite('http://aspectamaalsut.co.id')">
+      <img class="logo-image"
+           src="@/assets/logo/AspectamaLogo.png" alt="">
     </span>
     <button class="myCard-button">
       <span class="button-label">
@@ -13,7 +15,12 @@
 
 <script>
 export default {
-  name: "TopBar"
+  name: "TopBar",
+  methods: {
+    goToSite(url) {
+      window.open(url, '_blank');
+    }
+  },
 }
 </script>
 
@@ -29,6 +36,7 @@ export default {
 
   .logo-container{
     padding-top: 3px;
+    cursor: pointer;
 
     .logo-image{
       height: 55px;
