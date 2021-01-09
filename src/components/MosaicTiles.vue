@@ -4,7 +4,7 @@
       <div class="left-side">
         <span class="card-0">
           <span class="label">
-            End to end consulting service.
+            People-oriented consulting.
           </span>
           <img class="image drop-shadow" src="@/assets/images/timeline.svg" alt="">
         </span>
@@ -42,7 +42,7 @@
       <div class="bottom-side">
         <span class="card-5">
           <span class="label">
-            People-oriented solutions tailored to every unique learning journey.
+            End-to-end solutions tailored to every unique learning journey.
           </span>
           <img class="image drop-shadow" src="@/assets/images/profile_analysis_.svg" alt="">
         </span>
@@ -78,29 +78,25 @@ export default {
 
       .card-0{
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        justify-content: center;
         height: 40%;
         margin: 0 4px 4px 0;
         border-radius: 6px;
         background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
 
         .label{
-          text-align: right;
-          padding-right: 15px;
-          padding-bottom: 0px;
-          padding-top: 15px;
-          width: 40%;
+          text-align: center;
+          padding-top: 5px;
+          padding-bottom: 8px;
           font-family: "Gilroy Bold", serif;
           font-size: 14px;
           line-height: 1.3;
           color: #1f1f1f;
         }
         .image{
-          padding-bottom: 10px;
-          padding-left: 13px;
-          margin-top: auto;
-          width: 45%;
+          width: 50%;
+          align-self: center;
           height: auto;
         }
       }

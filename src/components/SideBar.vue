@@ -109,7 +109,7 @@ export default {
         background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
         border-radius: 8px;
         transition: all .3s ease-in-out;
-        filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.8));
+        filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.4));
 
         .button-label{
           font-family: "Bw Modelica Medium", serif;
