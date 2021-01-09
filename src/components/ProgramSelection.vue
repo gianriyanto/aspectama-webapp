@@ -92,7 +92,7 @@ export default {
         font-family: "Bw Modelica Bold", serif;
         color: #2b2b2b;
         line-height: 1.4;
-        font-size: 11px;
+        font-size: 0.8vw;
       }
 
       .image{

@@ -101,9 +101,9 @@ export default {
    justify-content: flex-start;
 
    #ProgramSelection{
-     height: 150px;
+     height: 160px;
      width: 100%;
-     margin-bottom: 2vh;
+     margin-bottom: 1.7vh;
    }
 
    .input-card{
