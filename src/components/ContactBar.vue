@@ -42,7 +42,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 35px;
+    height: 31px;
     width: 100%;
     border-radius: 30px;
     padding: 3px 3px 3px 25px;
