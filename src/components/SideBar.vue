@@ -1,7 +1,9 @@
 <template>
   <div id="SideBar">
     <div class="my-image-container">
-      <span class="image"></span>
+      <span class="image">
+        <span class="label"> ET </span>
+      </span>
     </div>
     <div class="content-wrapper">
       <div class="header-container">
@@ -50,14 +52,25 @@ export default {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-self: center;
-    width: 95%;
+    width: 91%;
     height: 55px;
 
     .image{
+      display: flex;
       width: 55px;
       height: 100%;
       border-radius: 50%;
-      background-color: #d4d4d4;
+      background-color: #ececec;
+
+      .label{
+        padding-top: 5px;
+        padding-left: 2px;
+        margin: auto;
+        font-family: "Gilroy Bold", serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: #d2d2d2;
+      }
     }
   }
   .content-wrapper{
@@ -65,7 +78,7 @@ export default {
     flex-direction: column;
     width: 87%;
     height: 100%;
-    padding-top: 0;
+    padding-top: 20px;
     margin: 0 auto;
 
     .header-container{
