@@ -2,50 +2,72 @@
   <div id="MosaicTiles">
     <div class="left-section">
       <div class="left-side">
-        <span class="card-0">
-          <span class="label">
-            People-oriented consulting.
+
+        <transition appear name="slide-fade-down">
+          <span class="card-0">
+            <span class="label">
+              People-oriented consulting.
+            </span>
+            <img class="image drop-shadow" src="@/assets/images/timeline.svg" alt="">
           </span>
-          <img class="image drop-shadow" src="@/assets/images/timeline.svg" alt="">
-        </span>
-        <span class="card-1">
+        </transition>
+
+        <transition appear name="slide-fade-right">
+          <span class="card-1">
           <span class="label">
             Your passion at the heart of every decision.
           </span>
           <img class="image drop-shadow" src="@/assets/images/artificial_intelligence.svg" alt="">
         </span>
+        </transition>
+
       </div>
       <div class="right-side">
-        <span class="card-2">
+
+        <transition appear name="slide-fade-up">
+          <span class="card-2">
           <span class="label">
             Free Consultation and Talent Discovery Test.
           </span>
           <img class="image drop-shadow" src="@/assets/images/report_analysis_-2.svg" alt="">
         </span>
+        </transition>
+
       </div>
     </div>
     <div class="right-section">
       <div class="top-side">
-        <span class="card-3">
+
+        <transition appear name="slide-fade-down">
+          <span class="card-3">
           <span class="label">
             Study at institutions around the world.
           </span>
           <img class="image drop-shadow" src="@/assets/images/world_connection_.svg" alt="">
         </span>
-        <span class="card-4">
+        </transition>
+
+        <transition appear name="slide-fade-right">
+          <span class="card-4">
           <span class="label">
             Your Future Simplified
           </span>
           <img class="image drop-shadow" src="@/assets/images/graduation.svg" alt="">
         </span>
+        </transition>
+
       </div>
       <div class="bottom-side">
-        <span class="card-5">
+
+        <transition appear name="slide-fade-left">
+          <span class="card-5">
           <span class="label">
             End-to-end solutions tailored to every unique learning journey.
           </span>
           <img class="image drop-shadow" src="@/assets/images/profile_analysis_.svg" alt="">
         </span>
+        </transition>
+
       </div>
     </div>
   </div>
@@ -58,6 +80,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "/src/styles/animations.scss";
 
 #MosaicTiles{
   display: flex;
@@ -260,5 +284,6 @@ export default {
     filter: drop-shadow(1px 10px 15px rgba(96, 88, 88, 0.3));
   }
 }
+
 
 </style>
