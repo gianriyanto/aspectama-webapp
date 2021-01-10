@@ -66,15 +66,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 0px;
 
     .header-container{
-      padding-top: 10vh;
       display: flex;
       flex-direction: column;
       height: fit-content;
       width: 600px;
       text-align: center;
+      margin-top: 10vh;
 
       h1{
         margin: 0;
@@ -111,7 +110,7 @@ export default {
       width: 62%;
       min-width: 650px;
       max-width: 770px;
-      height: 310px;
+      height: 280px;
     }
     #BottomBar{
       margin-top: auto;

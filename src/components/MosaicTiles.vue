@@ -121,7 +121,7 @@ export default {
           align-self: center;
         }
         .image{
-          width: 50%;
+          width: 45%;
           align-self: center;
           height: auto;
         }
@@ -147,8 +147,8 @@ export default {
         }
         .image{
           margin-left: auto;
-          height: 100px;
-          width: 140px;
+          height: 80px;
+          width: 100px;
         }
       }
     }
@@ -206,7 +206,7 @@ export default {
         .label{
           align-self: center;
           text-align: center;
-          padding-bottom: 10px;
+          padding: 5px 0;
           width: 80%;
           font-family: "Gilroy Bold", serif;
           font-size: 13px;
@@ -223,27 +223,26 @@ export default {
       .card-4{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0 0 4px 4px;
         width: 45%;
         border-radius: 6px;
         background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
 
         .label{
-          padding: 0 20px 15px 20px;
+          padding: 5px 20px 10px 20px;
           text-align: right;
           font-family: "Gilroy Bold", serif;
-          font-size: 17px;
+          font-size: 16px;
           letter-spacing: 0;
-          line-height: 1.3;
+          line-height: 1.2;
           color: #fffae8;
         }
         .image{
-          padding: 5px 20px 0 10px;
           margin: 0 auto;
           align-self: center;
           width: 70%;
-          height: 110px;
+          height: 80px;
         }
       }
     }
