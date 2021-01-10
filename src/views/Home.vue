@@ -2,10 +2,12 @@
   <section id="Home">
     <div class="main-wrapper">
       <TopBar id="TopBar"/>
-      <span class="header-container">
-        <h1 class="header-text"> {{ header[0] }} </h1>
-        <h1 class="header-text"> {{ header[1] }} </h1>
-      </span>
+      <transition appear name="fade">
+        <span class="header-container">
+          <h1 class="header-text"> {{ header[0] }} </h1>
+          <h1 class="header-text"> {{ header[1] }} </h1>
+        </span>
+      </transition>
       <span class="subheader-container">
         <h2 class="subheader-text"> {{ subheader[0] }} </h2>
         <h2 class="subheader-text"> {{ subheader[1] }} </h2>
@@ -14,7 +16,9 @@
       <MosaicTiles id="MosaicTiles"/>
       <BottomBar id="BottomBar"/>
     </div>
-    <SideBar id="SideBar"/>
+    <transition appear name="fade">
+      <SideBar id="SideBar"/>
+    </transition>
   </section>
 </template>
 
@@ -45,6 +49,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "/src/styles/animations.scss";
 
 #Home{
   display: flex;

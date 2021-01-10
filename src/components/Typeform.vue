@@ -62,11 +62,13 @@
       </span>
     </div>
 
-    <div v-if="country.isValid && course.isValid && name.isValid && contact.isValid" class="footer-container">
-      <span class="footer-text">
-        Thanks {{ name.input.split(' ')[0] }}, chat soon!
-      </span>
-    </div>
+    <transition appear name="fade">
+      <div v-if="country.isValid && course.isValid && name.isValid && contact.isValid" class="footer-container">
+        <span class="footer-text">
+          Thanks {{ name.input.split(' ')[0] }}, chat soon!
+        </span>
+      </div>
+    </transition>
 
   </div>
 </template>
@@ -94,6 +96,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "/src/styles/animations.scss";
 
  #Typeform{
    display: flex;
