@@ -69,7 +69,7 @@ export default {
     margin-right: 0px;
 
     .header-container{
-      padding-top: 80px;
+      padding-top: 10vh;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -86,7 +86,7 @@ export default {
       }
     }
     .subheader-container{
-      padding-top: 10px;
+      padding-top: 12px;
       display: flex;
       flex-direction: column;
       height: fit-content;
@@ -95,20 +95,19 @@ export default {
 
       h2{
         margin: 0;
-        font-family: "Bw Modelica Regular", serif;
-        font-size: 13px;
+        font-family: "Gilroy Light", serif;
+        font-size: 14px;
         color: #1f1f1f;
-        letter-spacing: 0;
         line-height: 1.7;
       }
     }
     #ContactBar{
-      padding-top: 25px;
+      padding-top: 2vh;
       width: 390px;
       height: fit-content;
     }
     #MosaicTiles{
-      padding-top: 35px;
+      padding-top: 5vh;
       width: 62%;
       min-width: 650px;
       max-width: 770px;

@@ -85,7 +85,7 @@ export default {
   },
   data() {
     return {
-      programs: [{programName: 'Pre-Uni Pathway', isSelected: false, imageURL:'team_work.svg'}, {programName: 'Under Graduate', isSelected: false, imageURL:'career_-2.svg'}, {programName: 'Post Graduate', isSelected: false, imageURL:'knowledge_.svg'} ],
+      programs: [{programName: 'Pre-uni Pathway', isSelected: false, imageURL:'team_work.svg'}, {programName: 'Under Graduate', isSelected: false, imageURL:'career_-2.svg'}, {programName: 'Post Graduate', isSelected: false, imageURL:'knowledge_.svg'} ],
       name: {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false},
       course: {prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false},
       country: {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false},

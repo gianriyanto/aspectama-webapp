@@ -239,11 +239,11 @@ export default {
           color: #fffae8;
         }
         .image{
-          padding: 10px 20px 0 10px;
-          margin-right: auto;
+          padding: 5px 20px 0 10px;
+          margin: 0 auto;
           align-self: center;
           width: 70%;
-          height: fit-content;
+          height: 110px;
         }
       }
     }
