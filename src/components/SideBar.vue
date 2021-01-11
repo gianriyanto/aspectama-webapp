@@ -71,7 +71,7 @@ export default {
     flex-direction: column;
     width: 87%;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
     margin: 0 auto;
 
     .header-container{

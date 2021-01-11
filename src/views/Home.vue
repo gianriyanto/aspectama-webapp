@@ -12,7 +12,7 @@
         <h2 class="subheader-text"> {{ subheader[0] }} </h2>
         <h2 class="subheader-text"> {{ subheader[1] }} </h2>
       </span>
-      <ContactBar id="ContactBar"/>
+      <CallToAction id="CallToAction"/>
       <MosaicTiles id="MosaicTiles"/>
       <BottomBar id="BottomBar"/>
     </div>
@@ -26,22 +26,22 @@
 
 import TopBar from "@/components/TopBar";
 import MosaicTiles from "@/components/MosaicTiles";
-import ContactBar from "@/components/ContactBar";
 import BottomBar from "@/components/BottomBar";
 import SideBar from "@/components/SideBar";
+import CallToAction from "@/components/CallToAction";
 
 export default {
   name: "Home",
   components: {
+    CallToAction,
     SideBar,
     BottomBar,
-    ContactBar,
     MosaicTiles,
     TopBar
   },
   data() {
     return {
-      header: ["Hello! I'm Ervina", "your education counselor."],
+      header: ["Hi! I'm Ervina.", "Your education counselor."],
       subheader: ["I help architect a personalised education blueprint for aspiring professionals like you.", "Find out how I can help, I’d love to hear from you."]
     }
   }
@@ -73,7 +73,7 @@ export default {
       height: fit-content;
       width: 600px;
       text-align: center;
-      margin-top: 10vh;
+      margin-top: 11vh;
 
       h1{
         margin: 0;
@@ -81,7 +81,7 @@ export default {
         font-size: 37px;
         color: #1f1f1f;
         letter-spacing: -0.5px;
-        line-height: 1.1;
+        line-height: 1.2;
       }
     }
     .subheader-container{
@@ -100,13 +100,14 @@ export default {
         line-height: 1.7;
       }
     }
-    #ContactBar{
+    #CallToAction{
       padding-top: 2vh;
-      width: 390px;
+      width: fit-content;
       height: fit-content;
+      border: thin solid white;
     }
     #MosaicTiles{
-      padding-top: 5vh;
+      padding-top: 4vh;
       width: 62%;
       min-width: 650px;
       max-width: 700px;

@@ -2,7 +2,6 @@
   <div id="MosaicTiles">
     <div class="left-section">
       <div class="left-side">
-
         <transition appear name="slide-fade-down">
           <span class="card-0">
             <span class="label">
@@ -11,7 +10,6 @@
             <img class="image drop-shadow" src="@/assets/images/timeline.svg" alt="">
           </span>
         </transition>
-
         <transition appear name="slide-fade-right">
           <span class="card-1">
           <span class="label">
@@ -20,10 +18,8 @@
           <img class="image drop-shadow" src="@/assets/images/artificial_intelligence.svg" alt="">
         </span>
         </transition>
-
       </div>
       <div class="right-side">
-
         <transition appear name="slide-fade-up">
           <span class="card-2">
           <span class="label">
@@ -32,12 +28,10 @@
           <img class="image drop-shadow" src="@/assets/images/report_analysis_-2.svg" alt="">
         </span>
         </transition>
-
       </div>
     </div>
     <div class="right-section">
       <div class="top-side">
-
         <transition appear name="slide-fade-down">
           <span class="card-3">
           <span class="label">
@@ -46,7 +40,6 @@
           <img class="image drop-shadow" src="@/assets/images/world_connection_.svg" alt="">
         </span>
         </transition>
-
         <transition appear name="slide-fade-right">
           <span class="card-4">
           <span class="label">
@@ -55,10 +48,8 @@
           <img class="image drop-shadow" src="@/assets/images/graduation.svg" alt="">
         </span>
         </transition>
-
       </div>
       <div class="bottom-side">
-
         <transition appear name="slide-fade-left">
           <span class="card-5">
           <span class="label">
@@ -67,7 +58,6 @@
           <img class="image drop-shadow" src="@/assets/images/profile_analysis_.svg" alt="">
         </span>
         </transition>
-
       </div>
     </div>
   </div>
