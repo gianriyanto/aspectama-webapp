@@ -29,13 +29,12 @@ export default {
   flex-direction: row;
 
   .contact-button{
-    height: 42px;
+    height: 41px;
     width: 150px;
-    background-image: linear-gradient(to right, #2b2b2b, #3b3b3b);
-    border: thin solid #2b2b2b;
+    background-image: linear-gradient(to right, #2d2d2d, #4a4a4a);
     border-radius: 30px;
     transition: all .3s ease-in-out;
-    filter: drop-shadow(1px 6px 10px rgba(96, 88, 88, 0.6));
+    filter: drop-shadow(1px 6px 10px rgba(96, 88, 88, 0.4));
 
     .button-label{
       font-family: "Bw Modelica Medium", serif;
@@ -51,19 +50,20 @@ export default {
   .testimony-button{
     align-self: center;
     margin-left: 20px;
-    height: 42px;
+    height: 41px;
     width: fit-content;
     background-color: transparent;
+    border: thin solid transparent;
     transition: all .3s ease-in-out;
 
     .button-label{
       font-family: "Bw Modelica Bold", serif;
-      font-size: 13px;
-      color: #2b2b2b;
+      font-size: 14px;
+      color: #5675e7;
     }
 
     &:hover{
-      opacity: 0.7;
+      opacity: 0.6;
     }
   }
 }

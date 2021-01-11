@@ -4,13 +4,13 @@
       <TopBar id="TopBar"/>
       <transition appear name="fade">
         <span class="header-container">
-          <h1 class="header-text"> {{ header[0] }} </h1>
-          <h1 class="header-text"> {{ header[1] }} </h1>
+          <h1 class="header-text"> Hi! I'm <span class="highlight-name"> Ervina. </span> </h1>
+          <h1 class="header-text"> Your education counselor. </h1>
         </span>
       </transition>
       <span class="subheader-container">
-        <h2 class="subheader-text"> {{ subheader[0] }} </h2>
-        <h2 class="subheader-text"> {{ subheader[1] }} </h2>
+        <h2 class="subheader-text"> I help architect a personalised education blueprint for aspiring professionals like you. </h2>
+        <h2 class="subheader-text"> Find out how I can help, I’d love to hear from you. </h2>
       </span>
       <CallToAction id="CallToAction"/>
       <MosaicTiles id="MosaicTiles"/>
@@ -38,12 +38,6 @@ export default {
     BottomBar,
     MosaicTiles,
     TopBar
-  },
-  data() {
-    return {
-      header: ["Hi! I'm Ervina.", "Your education counselor."],
-      subheader: ["I help architect a personalised education blueprint for aspiring professionals like you.", "Find out how I can help, I’d love to hear from you."]
-    }
   }
 }
 </script>
@@ -82,6 +76,10 @@ export default {
         color: #1f1f1f;
         letter-spacing: -0.5px;
         line-height: 1.2;
+
+        .highlight-name{
+          color: #5675e7;
+        }
       }
     }
     .subheader-container{

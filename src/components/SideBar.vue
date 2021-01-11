@@ -81,17 +81,17 @@ export default {
       height: fit-content;
 
       .header-text{
-        font-family: "Gilroy SemiBold", serif;
+        font-family: "Bw Modelica Bold", serif;
         font-size: 24px;
         color: #1f1f1f;
-        letter-spacing: -0.5px;
+        letter-spacing: -1px;
         line-height: 1.2;
       }
 
       .subheader-text{
         padding-top: 7px;
-        font-family: "Bw Modelica Light", serif;
-        font-size: 12px;
+        font-family: "GIlroy Light", serif;
+        font-size: 15px;
         color: #4a4a4a;
         letter-spacing: 0;
         line-height: 1.2;
