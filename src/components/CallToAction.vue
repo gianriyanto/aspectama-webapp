@@ -33,7 +33,7 @@ export default {
     width: 150px;
     background-image: linear-gradient(to right, #2d2d2d, #4a4a4a);
     border-radius: 30px;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
     filter: drop-shadow(1px 6px 10px rgba(96, 88, 88, 0.4));
 
     .button-label{
@@ -54,12 +54,12 @@ export default {
     width: fit-content;
     background-color: transparent;
     border: thin solid transparent;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
 
     .button-label{
       font-family: "Bw Modelica Bold", serif;
       font-size: 14px;
-      color: #5675e7;
+      color: #2d2d2d;
     }
 
     &:hover{

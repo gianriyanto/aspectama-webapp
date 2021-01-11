@@ -48,7 +48,7 @@ export default {
     height: 42px;
     width: 120px;
     background-color: transparent;
-    border: thin solid #454545;
+    border: thin solid #6e6e6e;
     border-radius: 9px;
     position: relative;
 
@@ -56,7 +56,7 @@ export default {
       position: relative;
       font-family: "Bw Modelica Bold", serif;
       font-size: 12px;
-      color: #1f1f1f;
+      color: #353535;
       z-index: 2;
     }
     &:after {
@@ -66,7 +66,7 @@ export default {
       left: 0;
       width: 0;
       height: 100%;
-      background: linear-gradient(to right, #bbf6f4, #9eacf5);
+      background: linear-gradient(to right, #c8dffd, #c7d1ff);
       border-radius: 9px;
       transition: all 0.35s;
     }
