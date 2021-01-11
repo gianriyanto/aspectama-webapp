@@ -15,13 +15,6 @@
         </span>
       </div>
       <Typeform id="Typeform"/>
-      <div class="button-container">
-        <button class="submit-button">
-        <span class="button-label">
-          Submit
-        </span>
-        </button>
-      </div>
     </div>
   </div>
 </template>
@@ -107,34 +100,9 @@ export default {
     #Typeform{
       padding-top: 25px;
       height: fit-content;
-    }
-
-    .button-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
       flex-grow: 1;
-
-      .submit-button{
-        margin-left: auto;
-        height: 40px;
-        width: 41%;
-        background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
-        border-radius: 8px;
-        transition: all .3s ease-in-out;
-        filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.4));
-
-        .button-label{
-          font-family: "Bw Modelica Medium", serif;
-          font-size: 11px;
-          color: white;
-        }
-
-        &:hover{
-          opacity: 0.9;
-        }
-      }
     }
+
   }
 }
 

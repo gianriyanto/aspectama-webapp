@@ -1,5 +1,5 @@
 <template>
-  <div id="Typeform">
+  <div id="Typeform" :key="componentKey">
     <ProgramSelection id="ProgramSelection" v-bind:selectionData="programs"/>
 
     <div class="input-card" v-bind:class="{'isvalid-border': name.isValid}">
@@ -63,12 +63,25 @@
     </div>
 
     <transition appear name="fade">
-      <div v-if="country.isValid && course.isValid && name.isValid && contact.isValid" class="footer-container">
-        <span class="footer-text">
-          Thanks {{ name.input.split(' ')[0] }}, chat soon!
+      <div class="footer-container">
+        <span v-if="country.isValid && course.isValid && name.isValid && contact.isValid" class="footer-text">
+          Thanks <span class="highlight-name"> {{ name.input.split(' ')[0] }}! </span> chat soon.
         </span>
       </div>
     </transition>
+
+    <div class="button-container">
+      <button class="clear-button"  @click="handleClear()">
+        <span class="button-label">
+          Start new
+        </span>
+      </button>
+      <button :class="buttonStyle" @click="handleSubmit()">
+        <span class="button-label">
+          {{ buttonLabel }}
+        </span>
+      </button>
+    </div>
 
   </div>
 </template>
@@ -85,12 +98,36 @@ export default {
   },
   data() {
     return {
+      componentKey: 0,
       programs: [{programName: 'Pre-uni Pathway', isSelected: false, imageURL:'team_work.svg'}, {programName: 'Under Graduate', isSelected: false, imageURL:'career_-2.svg'}, {programName: 'Post Graduate', isSelected: false, imageURL:'knowledge_.svg'} ],
       name: {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false},
       course: {prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false},
       country: {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false},
       contact: {prompt: 'Your mobile or email', input: 'Your mobile or email', edit: false, isValid: false},
+      buttonLabel: "Submit",
+      buttonStyle: "submit-button"
     }
+  },
+  methods: {
+    handleSubmit: function(){
+      if (this.buttonLabel === "Submit"){
+        this.buttonLabel = 'Submitted!';
+        this.buttonStyle = 'submitted-button';
+      }
+    },
+    handleClear: function(){
+      this.buttonLabel = 'Submit';
+      this.buttonStyle = 'submit-button';
+      this.clearForm();
+    },
+    clearForm: function(){
+      this.componentKey += 1;
+      this.programs = [{programName: 'Pre-uni Pathway', isSelected: false, imageURL:'team_work.svg'}, {programName: 'Under Graduate', isSelected: false, imageURL:'career_-2.svg'}, {programName: 'Post Graduate', isSelected: false, imageURL:'knowledge_.svg'} ];
+      this.name = {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false};
+      this.course ={prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false};
+      this.country = {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false};
+      this.contact = {prompt: 'Your mobile or email', input: 'Your mobile or email', edit: false, isValid: false};
+    },
   }
 }
 </script>
@@ -167,12 +204,82 @@ export default {
      padding-top: 5px;
      display: flex;
      flex-direction: column;
-     height: fit-content;
+     flex-grow: 1;
+     height: 40px;
 
      .footer-text{
        font-family: "Bw Modelica Light", serif;
        font-size: 14px;
        color: #1f1f1f;
+
+       .highlight-name{
+         font-family: "Bw Modelica Bold", serif;
+       }
+     }
+   }
+
+   .button-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+
+     .clear-button{
+       height: 40px;
+       width: fit-content;
+       border-radius: 8px;
+       transition: all .3s ease-in-out;
+       background-color: transparent;
+
+       .button-label{
+         font-family: "Bw Modelica Medium", serif;
+         font-size: 11px;
+         color: #727272;
+       }
+
+       &:hover{
+         opacity: 0.9;
+       }
+     }
+
+     .submit-button{
+       margin-left: 15px;
+       height: 40px;
+       width: 38%;
+       background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+       border-radius: 8px;
+       transition: all .3s ease-in-out;
+       filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.4));
+
+       .button-label{
+         font-family: "Bw Modelica Medium", serif;
+         font-size: 11px;
+         color: white;
+       }
+
+       &:hover{
+         opacity: 0.9;
+       }
+     }
+
+     .submitted-button{
+       margin-left: 15px;
+       height: 40px;
+       width: 38%;
+       background-color: #e2e2e2;
+       border: thin solid #d6d6d6;
+       border-radius: 8px;
+       transition: all .3s ease-in-out;
+       filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.1));
+
+       .button-label{
+         font-family: "Bw Modelica Medium", serif;
+         font-size: 11px;
+         color: #1ab081;
+       }
+
+       &:hover{
+         opacity: 0.9;
+       }
      }
    }
  }
