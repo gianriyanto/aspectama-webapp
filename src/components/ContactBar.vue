@@ -1,7 +1,8 @@
 <template>
   <div id="ContactBar">
     <div class="bar-container">
-      <contact-inline-input class="input-field" v-bind:inputData="contact"/>
+      <smartphone-icon size="1x" class="phone-icon"></smartphone-icon>
+      <contact-inline-input id="ContactInlineInput" v-bind:inputData="contact"/>
       <button class="send-button" @click="sendContact">
         <span class="button-label">
           Keep in touch
@@ -13,15 +14,17 @@
 
 <script>
 import ContactInlineInput from "@/components/ContactInlineInput";
+import { SmartphoneIcon } from 'vue-feather-icons'
 
 export default {
   name: "ContactBar",
   components: {
     ContactInlineInput,
+    SmartphoneIcon
   },
   data() {
     return {
-      contact: {prompt: 'your contact phone or email', input: 'your contact phone or email', edit: false, isValid: false},
+      contact: {prompt: 'Contact phone or email', input: 'Contact phone or email', edit: false, isValid: false},
     }
   },
   methods: {
@@ -45,13 +48,17 @@ export default {
     height: 31px;
     width: 100%;
     border-radius: 30px;
-    padding: 3px 3px 3px 25px;
+    padding: 3px 3px 3px 15px;
     align-items: center;
     background-color: white;
     filter: drop-shadow(3px 6px 10px rgba(96, 88, 88, 0.3));
 
-    .input-field{
+    .phone-icon{
+      color: #a0a0a0;
+    }
+    #ContactInlineInput{
       flex-grow: 1;
+      padding-left: 7px;
       padding-right: 13px;
     }
     .send-button{
