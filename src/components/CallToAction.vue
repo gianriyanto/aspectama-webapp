@@ -38,7 +38,7 @@ export default {
     justify-content: center;
     height: 41px;
     width: 150px;
-    background-image: linear-gradient(to right, #2d2d2d, #4a4a4a);
+    background-image: linear-gradient(to right, #128c7e, #128c7e);
     border-radius: 30px;
     transition: all .4s ease-in-out;
     filter: drop-shadow(1px 6px 10px rgba(96, 88, 88, 0.4));
@@ -46,7 +46,7 @@ export default {
     .whatsapp-icon{
       align-self: center;
       font-size: 20px;
-      color: #dcf8c6;
+      color: white;
       padding-left: 10px;
     }
 
@@ -70,16 +70,16 @@ export default {
     width: fit-content;
     background-color: transparent;
     border: thin solid transparent;
-    transition: all .4s ease-in-out;
 
     .button-label{
       font-family: "Bw Modelica Bold", serif;
       font-size: 14px;
-      color: #5675e7;
-    }
+      color: #1f1f1f;
+      transition: all .3s ease-in-out;
 
-    &:hover{
-      opacity: 0.6;
+      &:hover{
+        opacity: 0.7;
+      }
     }
   }
 }
