@@ -227,17 +227,18 @@ export default {
        height: 40px;
        width: fit-content;
        border-radius: 8px;
-       transition: all .3s ease-in-out;
        background-color: transparent;
 
        .button-label{
          font-family: "Bw Modelica Medium", serif;
-         font-size: 11px;
-         color: #727272;
-       }
+         font-size: 13px;
+         color: #5d5d5d;
+         transition: all .3s ease-in-out;
 
-       &:hover{
-         opacity: 0.9;
+         &:hover{
+           color: #5675e7;
+           opacity: 0.9;
+         }
        }
      }
 
@@ -245,10 +246,10 @@ export default {
        margin-left: 15px;
        height: 40px;
        width: 38%;
-       background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+       background-image: linear-gradient(to right top, #5675e7, #5c99e3);
        border-radius: 8px;
        transition: all .3s ease-in-out;
-       filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.4));
+       filter: drop-shadow(1px 3px 5px rgb(145, 172, 200));
 
        .button-label{
          font-family: "Bw Modelica Medium", serif;
