@@ -128,9 +128,9 @@ export default {
         .label{
           padding: 15px 20px 0 20px;
           height: fit-content;
-          width: 80%;
+          width: 70%;
           font-family: "Gilroy Bold", serif;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.3;
           color: white;
         }
@@ -156,12 +156,12 @@ export default {
         background-image: linear-gradient(to right top, #fadcb8, #fddda7);
 
         .label{
-          padding: 0 20px 20px 20px;
+          padding: 0 20px 12px 20px;
           height: fit-content;
           font-family: "Gilroy Bold", serif;
-          font-size: 20px;
+          font-size: 19px;
           letter-spacing: -1px;
-          line-height: 1.4;
+          line-height: 1.2;
           color: #1f1f1f;
         }
 
@@ -193,7 +193,7 @@ export default {
         background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
         .label{
-          padding: 20px 0 5px 0;
+          padding: 15px 0 5px 0;
           align-self: center;
           text-align: center;
           width: 80%;
@@ -201,18 +201,18 @@ export default {
           font-size: 13px;
           letter-spacing: -0px;
           line-height: 1.3;
-          color: black;
+          color: white;
         }
         .image{
           margin: 0 auto;
           width: 76%;
-          height: 90px;
+          height: 80px;
         }
       }
       .card-4{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 0 0 4px 4px;
         width: 45%;
         border-radius: 6px;
@@ -254,7 +254,7 @@ export default {
           width: 85%;
           text-align: left;
           font-family: "Gilroy Bold", serif;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.3;
           color: white;
         }
