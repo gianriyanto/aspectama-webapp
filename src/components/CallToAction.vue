@@ -41,7 +41,7 @@ export default {
     background-image: linear-gradient(to right, #128c7e, #128c7e);
     border-radius: 30px;
     transition: all .4s ease-in-out;
-    filter: drop-shadow(1px 6px 10px rgba(96, 88, 88, 0.4));
+    box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
 
     .whatsapp-icon{
       align-self: center;
@@ -60,7 +60,7 @@ export default {
     }
 
     &:hover{
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
   .testimony-button{
