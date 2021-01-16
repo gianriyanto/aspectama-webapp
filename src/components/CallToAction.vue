@@ -46,7 +46,7 @@ export default {
     .whatsapp-icon{
       align-self: center;
       font-size: 20px;
-      color: white;
+      color: #dcf8c6;
       padding-left: 10px;
     }
 
