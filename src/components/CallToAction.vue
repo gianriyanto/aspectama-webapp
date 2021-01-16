@@ -1,6 +1,7 @@
 <template>
   <div id="CallToAction">
-    <button class="contact-button">
+    <button class="contact-button" v-on:click="goToSite('https://wa.me/+6281232012145')">
+      <font-awesome-icon class="whatsapp-icon" :icon="['fab', 'whatsapp']" />
       <span class="button-label">
         Contact Me
       </span>
@@ -17,8 +18,11 @@
 
 export default {
   name: "CallToAction",
-  components: {
-  }
+  methods: {
+    goToSite(url) {
+      window.open(url, '_blank');
+    }
+  },
 }
 </script>
 
@@ -29,6 +33,9 @@ export default {
   flex-direction: row;
 
   .contact-button{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
     height: 41px;
     width: 150px;
     background-image: linear-gradient(to right, #2d2d2d, #4a4a4a);
@@ -36,8 +43,17 @@ export default {
     transition: all .4s ease-in-out;
     filter: drop-shadow(1px 6px 10px rgba(96, 88, 88, 0.4));
 
+    .whatsapp-icon{
+      align-self: center;
+      font-size: 20px;
+      color: white;
+      padding-left: 10px;
+    }
+
     .button-label{
-      font-family: "Bw Modelica Medium", serif;
+      align-self: center;
+      padding-top: 3px;
+      font-family: "Gilroy Regular", serif;
       font-size: 12px;
       letter-spacing: 0.3px;
       color: white;
@@ -59,7 +75,7 @@ export default {
     .button-label{
       font-family: "Bw Modelica Bold", serif;
       font-size: 14px;
-      color: #2d2d2d;
+      color: #5675e7;
     }
 
     &:hover{
