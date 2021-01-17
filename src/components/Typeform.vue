@@ -76,7 +76,7 @@
           Start new
         </span>
       </button>
-      <button :class="buttonStyle" @click="handleSubmit()">
+      <button :class="buttonStyle" @click="handleSubmit">
         <span class="button-label">
           {{ buttonLabel }}
         </span>
@@ -89,6 +89,7 @@
 <script>
 import ProgramSelection from "@/components/ProgramSelection";
 import InlineInput from "@/components/InlineInput";
+import emailjs from 'emailjs-com';
 
 export default {
   name: "Typeform",
@@ -100,6 +101,7 @@ export default {
     return {
       componentKey: 0,
       programs: [{programName: 'Pre-uni Pathway', isSelected: false, imageURL:'team_work.svg'}, {programName: 'Under Graduate', isSelected: false, imageURL:'career_-2.svg'}, {programName: 'Post Graduate', isSelected: false, imageURL:'knowledge_.svg'} ],
+      selectedProgram: '',
       name: {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false},
       course: {prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false},
       country: {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false},
@@ -109,8 +111,22 @@ export default {
     }
   },
   methods: {
-    handleSubmit: function(){
+    handleSubmit(){
       if (this.buttonLabel === "Submit"){
+
+        this.getSelectedProgram();
+        // TODO: Not working. Please check.
+        emailjs.send(
+            "service_g2d2x69",
+            "template_mzr78m7",
+            {
+              name: this.name.input,
+              program: this.selectedProgram,
+              course: this.course.input,
+              country: this.location.input,
+              contact: this.contact.input
+            }
+        );
         this.buttonLabel = 'Submitted!';
         this.buttonStyle = 'submitted-button';
       }
@@ -128,6 +144,16 @@ export default {
       this.country = {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false};
       this.contact = {prompt: 'Your mobile or email', input: 'Your mobile or email', edit: false, isValid: false};
     },
+    getSelectedProgram: function(){
+      for (let i = 0; i < this.programs.length; i++) {
+        if (this.programs[i].isSelected) {
+          this.selectedProgram = this.programs[i].programName;
+        }
+        else{
+          this.selectedProgram = 'no program selected';
+        }
+      }
+    }
   }
 }
 </script>
