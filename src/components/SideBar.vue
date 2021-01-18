@@ -10,9 +10,6 @@
         <span class="header-text">
           Let's get started.
         </span>
-        <span class="subheader-text">
-          Tell me a little bit about yourself.
-        </span>
       </div>
       <Typeform id="Typeform"/>
     </div>
@@ -71,7 +68,6 @@ export default {
     flex-direction: column;
     width: 87%;
     height: 100%;
-    padding-top: 5px;
     margin: 0 auto;
 
     .header-container{
@@ -87,18 +83,9 @@ export default {
         letter-spacing: -1px;
         line-height: 1.2;
       }
-
-      .subheader-text{
-        padding-top: 7px;
-        font-family: "GIlroy Light", serif;
-        font-size: 15px;
-        color: #4a4a4a;
-        letter-spacing: 0;
-        line-height: 1.2;
-      }
     }
     #Typeform{
-      padding-top: 25px;
+      padding-top: 10px;
       height: fit-content;
       flex-grow: 1;
     }

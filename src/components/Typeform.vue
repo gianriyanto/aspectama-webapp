@@ -115,7 +115,7 @@ export default {
       if (this.buttonLabel === "Submit"){
 
         this.getSelectedProgram();
-        // TODO: Not working. Please check.
+
         emailjs.send(
             "service_g2d2x69",
             "template_mzr78m7",
@@ -123,7 +123,7 @@ export default {
               name: this.name.input,
               program: this.selectedProgram,
               course: this.course.input,
-              country: this.location.input,
+              country: this.country.input,
               contact: this.contact.input
             }
         );
@@ -170,12 +170,12 @@ export default {
    #ProgramSelection{
      height: 160px;
      width: 100%;
-     margin-bottom: 1.7vh;
+     margin-bottom: 1.5vh;
    }
 
    .input-card{
      align-self: center;
-     margin-bottom: 1.7vh;
+     margin-bottom: 1.5vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
@@ -200,7 +200,7 @@ export default {
 
    .disabled-card{
      align-self: center;
-     margin-bottom: 1.7vh;
+     margin-bottom: 1.5vh;
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;
@@ -231,7 +231,7 @@ export default {
      display: flex;
      flex-direction: column;
      flex-grow: 1;
-     height: 40px;
+     min-height: fit-content;
 
      .footer-text{
        font-family: "Bw Modelica Light", serif;
@@ -248,9 +248,10 @@ export default {
      display: flex;
      flex-direction: row;
      justify-content: flex-end;
+     height: 37px;
 
      .clear-button{
-       height: 40px;
+       height: 100%;
        width: fit-content;
        border-radius: 8px;
        background-color: transparent;
@@ -270,7 +271,7 @@ export default {
 
      .submit-button{
        margin-left: 15px;
-       height: 40px;
+       height: 100%;
        width: 38%;
        background-image: linear-gradient(to right top, #5675e7, #5c99e3);
        border-radius: 8px;
