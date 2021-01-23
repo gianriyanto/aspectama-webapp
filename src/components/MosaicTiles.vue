@@ -314,7 +314,7 @@ export default {
           margin: 2vw 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
-          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
+          filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.4));
 
           .label{
             text-align: center;
@@ -341,7 +341,7 @@ export default {
           margin: 2vw 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #5da1f3, #708efa);
-          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
+          filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.6));
 
           .label{
             padding-left: 30px;
@@ -373,7 +373,7 @@ export default {
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fadcb8, #fddda7);
-          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
+          filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.4));
 
           .label{
             padding: 0 20px 20px 25px;
@@ -416,7 +416,7 @@ export default {
           height: 360px;
           border-radius: 12px;
           background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
-          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
+          filter: drop-shadow(1px 5px 10px rgba(96, 88, 88, 0.4));
 
           .label{
             padding: 10px 0 20px 0;
@@ -444,7 +444,7 @@ export default {
           height: 420px;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
-          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
+          filter: drop-shadow(1px 5px 10px rgba(141, 135, 135, 0.9));
 
           .label{
             padding: 5px 20px 15px 0;
@@ -478,7 +478,7 @@ export default {
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #969bfc, #788df6);
-          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
+          filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.6));
 
           .label{
             padding: 0 20px 20px 25px;

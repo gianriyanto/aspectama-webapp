@@ -102,15 +102,15 @@ export default {
   #SideBar {
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    background-color: #f8f8f8;
+    border-radius: 35px 35px 0 0;
+    background-image: linear-gradient(to bottom, #eaeaea, #ffffff);
 
     .my-image-container {
       display: none;
     }
 
     .content-wrapper {
-      padding-top: 20px;
+      padding-top: 30px;
       padding-bottom: 20px;
       display: flex;
       flex-direction: column;
@@ -134,7 +134,7 @@ export default {
       }
 
       #Typeform {
-        padding-top: 30px;
+        padding-top: 15px;
         height: fit-content;
         flex-grow: 1;
       }

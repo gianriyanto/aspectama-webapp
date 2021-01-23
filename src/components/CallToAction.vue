@@ -21,13 +21,21 @@
         Client Stories
       </span>
     </button>
+    <button class="scroll-button">
+      <chevrons-down-icon size="1.5x" class="scroll-icon"></chevrons-down-icon>
+    </button>
   </div>
 </template>
 
 <script>
 
+import { ChevronsDownIcon } from 'vue-feather-icons'
+
 export default {
   name: "CallToAction",
+  components: {
+    ChevronsDownIcon
+  },
   methods: {
     goToSite(url) {
       window.open(url, '_blank');
@@ -105,23 +113,23 @@ export default {
 
     .get-started-button{
       align-self: center;
-      height: 46px;
-      width: 220px;
-      background-image: linear-gradient(to right top, #6e89ec, #5c99e3);
+      height: 51px;
+      width: 210px;
+      background-image: linear-gradient(to right top, #758fec, #5294e3);
       border-radius: 8px;
       margin-bottom: 2vh;
       box-shadow: 0 8px 15px 0 rgba(93, 103, 239, 0.3);
 
       .button-label{
         font-family: "Gilroy Medium", serif;
-        font-size: 14px;
+        font-size: 16px;
         color: white;
       }
     }
     .my-card-button{
       align-self: center;
-      height: 46px;
-      width: 220px;
+      height: 50px;
+      width: 210px;
       background-color: transparent;
       border: thin solid #5c99e3;
       border-radius: 8px;
@@ -129,9 +137,20 @@ export default {
       box-shadow: 0 8px 15px 0 rgba(49, 50, 64, 0.1);
 
       .button-label{
-        font-family: "Gilroy Bold", serif;
-        font-size: 14px;
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 16px;
         color: #5c99e3;
+      }
+    }
+
+    .scroll-button{
+      align-self: center;
+      background-color: transparent;
+      margin-top: 20vh;
+
+      .scroll-icon{
+        font-size: 21px;
+        color: #a0a0a0;
       }
     }
 

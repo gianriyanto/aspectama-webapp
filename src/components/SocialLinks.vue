@@ -80,9 +80,9 @@ export default {
 
     .icon {
       color: #76a8dd;
-      font-size: 20px;
+      font-size: 17px;
     }
-lan
+
     .link {
       font-family: "Bw Modelica Bold", serif;
       font-size: 13px;

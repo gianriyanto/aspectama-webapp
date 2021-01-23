@@ -325,7 +325,7 @@ export default {
 
     #ProgramSelection {
       height: 160px;
-      width: 100%;
+      width: 99%;
       margin-bottom: 2vh;
     }
 
@@ -386,7 +386,7 @@ export default {
       padding-top: 5px;
       display: flex;
       flex-direction: column;
-      height: 70px;
+      height: 40px;
 
       .footer-text {
         font-family: "Bw Modelica Light", serif;

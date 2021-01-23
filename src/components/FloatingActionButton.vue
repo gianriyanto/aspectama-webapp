@@ -19,6 +19,7 @@ export default {
 
 #FloatingActionButton{
   position: fixed;
+  z-index: 3;
   display: flex;
   width: 57px;
   height: 57px;
