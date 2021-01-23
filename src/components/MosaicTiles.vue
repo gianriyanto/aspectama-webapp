@@ -290,7 +290,7 @@ export default {
   #MosaicTiles{
     display: flex;
     flex-direction: column;
-    width: 93%;
+    width: 91%;
     margin: 0 auto;
 
     .left-section{
@@ -311,9 +311,9 @@ export default {
           flex-direction: column-reverse;
           justify-content: space-evenly;
           height: 380px;
-          margin: 2vw 0;
+          margin: 3vw 0;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
+          background-image: linear-gradient(to right top, #ffdbaf, #f3a0b0);
           filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.4));
 
           .label{
@@ -338,9 +338,9 @@ export default {
           flex-direction: row;
           justify-content: center;
           height: 300px;
-          margin: 2vw 0;
+          margin: 3vw 0;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #5da1f3, #708efa);
+          background-image: linear-gradient(to right top, #8dc1ff, #9970fa);
           filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.6));
 
           .label{
@@ -369,10 +369,10 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 2vw 0;
+          margin: 3vw 0;
           width: 100%;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #fadcb8, #fddda7);
+          background-image: linear-gradient(to right top, #f1cbff, #ffd28b);
           filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.4));
 
           .label{
@@ -411,11 +411,11 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: center;
-          margin: 2vw 0;
+          margin: 3vw 0;
           width: 100%;
           height: 360px;
           border-radius: 12px;
-          background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
+          background-image: linear-gradient(to left bottom, #78c2f3, #71d7c8);
           filter: drop-shadow(1px 5px 10px rgba(96, 88, 88, 0.4));
 
           .label{
@@ -439,11 +439,11 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 2vw 0;
+          margin: 3vw 0;
           width: 100%;
           height: 420px;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+          background-image: linear-gradient(to right top, #212121, #2c2c2d);
           filter: drop-shadow(1px 5px 10px rgba(141, 135, 135, 0.9));
 
           .label{
@@ -455,7 +455,9 @@ export default {
             font-size: 53px;
             letter-spacing: 0;
             line-height: 1.2;
-            color: #fffae8;
+            background-image: linear-gradient(to right, #ddcb9e, #fff2d0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
           .image{
             padding: 20px 0 0 30px;
@@ -474,10 +476,10 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 2vw 0;
+          margin: 3vw 0;
           width: 100%;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #969bfc, #788df6);
+          background-image: linear-gradient(to right top, #969bfc, #78b5f6);
           filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.6));
 
           .label{
@@ -492,7 +494,7 @@ export default {
           .image{
             padding-top: 20px;
             margin: 0 auto;
-            height: 46%;
+            height: 40%;
             width: 100%;
           }
         }
