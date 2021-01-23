@@ -103,38 +103,14 @@ export default {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background-color: #f6f6f6;
-    height: fit-content;
+    background-color: #f8f8f8;
 
     .my-image-container {
-      display: flex;
-      align-items: center;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-self: center;
-      width: 91%;
-      height: 55px;
-
-      .image {
-        display: flex;
-        width: 55px;
-        height: 100%;
-        border-radius: 50%;
-        background-color: #ececec;
-
-        .label {
-          padding-top: 5px;
-          padding-left: 2px;
-          margin: auto;
-          font-family: "Gilroy Bold", serif;
-          font-size: 20px;
-          letter-spacing: 2px;
-          color: #d2d2d2;
-        }
-      }
+      display: none;
     }
 
     .content-wrapper {
+      padding-top: 15px;
       display: flex;
       flex-direction: column;
       width: 87%;
@@ -151,13 +127,13 @@ export default {
           font-family: "Bw Modelica Bold", serif;
           font-size: 24px;
           color: #1f1f1f;
-          letter-spacing: -1px;
+          letter-spacing: -0.5px;
           line-height: 1.2;
         }
       }
 
       #Typeform {
-        padding-top: 10px;
+        padding-top: 30px;
         height: fit-content;
         flex-grow: 1;
       }

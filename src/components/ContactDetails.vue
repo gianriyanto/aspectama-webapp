@@ -63,14 +63,14 @@ export default {
 
     .phone{
       font-family: "Gilroy Regular", serif;
-      font-size: 13px;
+      font-size: 14px;
       color: #1f1f1f;
       margin-bottom: 3px;
     }
 
     .email{
       font-family: "Gilroy Regular", serif;
-      font-size: 13px;
+      font-size: 14px;
       color: #1f1f1f;
       cursor: pointer;
     }
