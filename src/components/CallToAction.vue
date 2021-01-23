@@ -84,4 +84,65 @@ export default {
   }
 }
 
+@media only screen and (max-width: 768px) {
+
+  #CallToAction{
+    display: flex;
+    flex-direction: row;
+
+    .contact-button{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      height: 41px;
+      width: 150px;
+      background-image: linear-gradient(to right, #45bfa3, #33b5a6);
+      border-radius: 30px;
+      transition: all .4s ease-in-out;
+      box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
+
+      .whatsapp-icon{
+        align-self: center;
+        font-size: 20px;
+        color: white;
+        padding-left: 10px;
+      }
+
+      .button-label{
+        align-self: center;
+        padding-top: 3px;
+        font-family: "Gilroy Regular", serif;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: white;
+      }
+
+      &:hover{
+        opacity: 0.9;
+      }
+    }
+    .testimony-button{
+      display: none;
+      align-self: center;
+      margin-left: 20px;
+      height: 41px;
+      width: fit-content;
+      background-color: transparent;
+      border: thin solid transparent;
+
+      .button-label{
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: #1f1f1f;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+}
+
 </style>

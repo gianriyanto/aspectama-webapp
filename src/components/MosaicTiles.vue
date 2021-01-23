@@ -73,204 +73,427 @@ export default {
 
 @import "/src/styles/animations.scss";
 
-#MosaicTiles{
-  display: flex;
-  flex-direction: row;
-  border-radius: 12px;
-
-  .left-section{
+@media only screen and (min-width: 768px) {
+  #MosaicTiles {
     display: flex;
     flex-direction: row;
-    width: 55%;
-    height: 100%;
+    border-radius: 12px;
 
-    .left-side{
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 51%;
-
-      .card-0{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        height: 40%;
-        margin: 0 4px 4px 0;
-        border-radius: 6px;
-        background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
-
-        .label{
-          text-align: center;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          font-family: "Gilroy Bold", serif;
-          font-size: 14px;
-          line-height: 1.3;
-          color: #1f1f1f;
-          width: 75%;
-          align-self: center;
-        }
-        .image{
-          width: 40%;
-          align-self: center;
-          height: auto;
-        }
-      }
-      .card-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 57%;
-        margin: 4px 4px 0 0;
-        border-radius: 6px;
-        background-image: linear-gradient(to right top, #5da1f3, #708efa);
-
-        .label{
-          padding: 15px 20px 0 20px;
-          height: fit-content;
-          width: 70%;
-          font-family: "Gilroy Bold", serif;
-          font-size: 14px;
-          line-height: 1.3;
-          color: white;
-        }
-        .image{
-          margin-left: auto;
-          height: 80px;
-          width: 80%;
-        }
-      }
-    }
-    .right-side{
-      display: flex;
-      height: 100%;
-      width: 49%;
-
-      .card-2{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        margin: 0 4px 0 4px;
-        width: 100%;
-        border-radius: 6px;
-        background-image: linear-gradient(to right top, #fadcb8, #fddda7);
-
-        .label{
-          padding: 0 20px 12px 20px;
-          height: fit-content;
-          font-family: "Gilroy Bold", serif;
-          font-size: 19px;
-          letter-spacing: -1px;
-          line-height: 1.2;
-          color: #1f1f1f;
-        }
-
-        .image{
-          height: 170px;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .right-section{
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    height: 100%;
-
-    .top-side{
+    .left-section {
       display: flex;
       flex-direction: row;
-      height: 54%;
+      width: 55%;
+      height: 100%;
 
-      .card-3{
+      .left-side {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0 4px 4px 4px;
-        width: 55%;
-        border-radius: 6px;
-        background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
+        height: 100%;
+        width: 51%;
 
-        .label{
-          padding: 15px 0 5px 0;
-          align-self: center;
-          text-align: center;
-          width: 80%;
-          font-family: "Gilroy Bold", serif;
-          font-size: 13px;
-          letter-spacing: -0px;
-          line-height: 1.3;
-          color: white;
+        .card-0 {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          height: 40%;
+          margin: 0 4px 4px 0;
+          border-radius: 6px;
+          background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
+
+          .label {
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: "Gilroy Bold", serif;
+            font-size: 14px;
+            line-height: 1.3;
+            color: #1f1f1f;
+            width: 75%;
+            align-self: center;
+          }
+
+          .image {
+            width: 40%;
+            align-self: center;
+            height: auto;
+          }
         }
-        .image{
-          margin: 0 auto;
-          width: 76%;
-          height: 80px;
+
+        .card-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: 57%;
+          margin: 4px 4px 0 0;
+          border-radius: 6px;
+          background-image: linear-gradient(to right top, #5da1f3, #708efa);
+
+          .label {
+            padding: 15px 20px 0 20px;
+            height: fit-content;
+            width: 70%;
+            font-family: "Gilroy Bold", serif;
+            font-size: 14px;
+            line-height: 1.3;
+            color: white;
+          }
+
+          .image {
+            margin-left: auto;
+            height: 80px;
+            width: 80%;
+          }
         }
       }
-      .card-4{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        margin: 0 0 4px 4px;
-        width: 45%;
-        border-radius: 6px;
-        background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
 
-        .label{
-          padding: 5px 20px 10px 20px;
-          text-align: right;
-          font-family: "Gilroy Bold", serif;
-          font-size: 16px;
-          letter-spacing: 0;
-          line-height: 1.2;
-          color: #fffae8;
-        }
-        .image{
-          margin: 0 auto;
-          align-self: center;
-          width: 70%;
-          height: 70px;
+      .right-side {
+        display: flex;
+        height: 100%;
+        width: 49%;
+
+        .card-2 {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          margin: 0 4px 0 4px;
+          width: 100%;
+          border-radius: 6px;
+          background-image: linear-gradient(to right top, #fadcb8, #fddda7);
+
+          .label {
+            padding: 0 20px 12px 20px;
+            height: fit-content;
+            font-family: "Gilroy Bold", serif;
+            font-size: 19px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            color: #1f1f1f;
+          }
+
+          .image {
+            height: 170px;
+            width: 100%;
+          }
         }
       }
     }
-    .bottom-side{
-      display: flex;
-      height: 47%;
 
-      .card-5{
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      width: 45%;
+      height: 100%;
+
+      .top-side {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 4px 0 0 4px;
-        width: 100%;
-        border-radius: 6px;
-        background-image: linear-gradient(to right top, #969bfc, #788df6);
+        height: 54%;
 
-        .label{
-          padding: 15px 0 15px 20px;
-          margin: auto 0;
-          width: 85%;
-          text-align: left;
-          font-family: "Gilroy Bold", serif;
-          font-size: 14px;
-          line-height: 1.3;
-          color: white;
+        .card-3 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 4px 4px 4px;
+          width: 55%;
+          border-radius: 6px;
+          background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
+
+          .label {
+            padding: 15px 0 5px 0;
+            align-self: center;
+            text-align: center;
+            width: 80%;
+            font-family: "Gilroy Bold", serif;
+            font-size: 13px;
+            letter-spacing: -0px;
+            line-height: 1.3;
+            color: white;
+          }
+
+          .image {
+            margin: 0 auto;
+            width: 76%;
+            height: 80px;
+          }
         }
 
-        .image{
-          margin: auto 0;
-          height: 100px;
-          width: 130px;
+        .card-4 {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          margin: 0 0 4px 4px;
+          width: 45%;
+          border-radius: 6px;
+          background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+
+          .label {
+            padding: 5px 20px 10px 20px;
+            text-align: right;
+            font-family: "Gilroy Bold", serif;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 1.2;
+            color: #fffae8;
+          }
+
+          .image {
+            margin: 0 auto;
+            align-self: center;
+            width: 70%;
+            height: 70px;
+          }
+        }
+      }
+
+      .bottom-side {
+        display: flex;
+        height: 47%;
+
+        .card-5 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 4px 0 0 4px;
+          width: 100%;
+          border-radius: 6px;
+          background-image: linear-gradient(to right top, #969bfc, #788df6);
+
+          .label {
+            padding: 15px 0 15px 20px;
+            margin: auto 0;
+            width: 85%;
+            text-align: left;
+            font-family: "Gilroy Bold", serif;
+            font-size: 14px;
+            line-height: 1.3;
+            color: white;
+          }
+
+          .image {
+            margin: auto 0;
+            height: 100px;
+            width: 130px;
+          }
         }
       }
     }
+
+    .drop-shadow {
+      filter: drop-shadow(1px 10px 15px rgba(96, 88, 88, 0.3));
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #MosaicTiles{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    .left-section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      border: thin solid lightseagreen;
+
+      .left-side{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        height: fit-content;
+        width: 100%;
+
+        .card-0{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          height: 250px;
+          margin: 10px 0;
+          border-radius: 12px;
+          background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
+
+          .label{
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: "Gilroy Bold", serif;
+            font-size: 14px;
+            line-height: 1.3;
+            color: #1f1f1f;
+            width: 75%;
+            align-self: center;
+          }
+          .image{
+            width: 40%;
+            align-self: center;
+            height: auto;
+          }
+        }
+        .card-1{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          height: 220px;
+          margin: 10px 0;
+          border-radius: 12px;
+          background-image: linear-gradient(to right top, #5da1f3, #708efa);
+
+          .label{
+            padding: 15px 20px 0 20px;
+            height: fit-content;
+            width: 70%;
+            font-family: "Gilroy Bold", serif;
+            font-size: 14px;
+            line-height: 1.3;
+            color: white;
+          }
+          .image{
+            margin-left: auto;
+            height: 80px;
+            width: 80%;
+          }
+        }
+      }
+      .right-side{
+        display: flex;
+        height: 400px;
+        width: 100%;
+
+        .card-2{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          margin: 10px 0;
+          width: 100%;
+          border-radius: 12px;
+          background-image: linear-gradient(to right top, #fadcb8, #fddda7);
+
+          .label{
+            padding: 0 20px 12px 20px;
+            height: fit-content;
+            font-family: "Gilroy Bold", serif;
+            font-size: 19px;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            color: #1f1f1f;
+          }
+
+          .image{
+            height: 170px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .right-section{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      border: thin solid greenyellow;
+
+      .top-side{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+
+        .card-3{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 10px 0;
+          height: 280px;
+          border-radius: 12px;
+          background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
+
+          .label{
+            padding: 15px 0 5px 0;
+            align-self: center;
+            text-align: center;
+            width: 80%;
+            font-family: "Gilroy Bold", serif;
+            font-size: 13px;
+            letter-spacing: -0px;
+            line-height: 1.3;
+            color: white;
+          }
+          .image{
+            margin: 0 auto;
+            width: 76%;
+            height: 80px;
+          }
+        }
+        .card-4{
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-evenly;
+          margin: 10px 0;
+          width: 100%;
+          height: 310px;
+          border-radius: 12px;
+          background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+
+          .label{
+            padding: 5px 20px 10px 20px;
+            text-align: right;
+            font-family: "Gilroy Bold", serif;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 1.2;
+            color: #fffae8;
+          }
+          .image{
+            margin: 0 auto;
+            align-self: center;
+            width: 70%;
+            height: 70px;
+          }
+        }
+      }
+      .bottom-side{
+        display: flex;
+        height: 47%;
+
+        .card-5{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 4px 0 0 4px;
+          width: 100%;
+          border-radius: 6px;
+          background-image: linear-gradient(to right top, #969bfc, #788df6);
+
+          .label{
+            padding: 15px 0 15px 20px;
+            margin: 10px 0;
+            width: 85%;
+            height: 320px;
+            text-align: left;
+            font-family: "Gilroy Bold", serif;
+            font-size: 14px;
+            line-height: 1.3;
+            color: white;
+          }
+
+          .image{
+            margin: auto 0;
+            height: 100px;
+            width: 130px;
+          }
+        }
+      }
+    }
+
+    .drop-shadow{
+      filter: drop-shadow(1px 10px 15px rgba(96, 88, 88, 0.3));
+    }
   }
 
-  .drop-shadow{
-    filter: drop-shadow(1px 10px 15px rgba(96, 88, 88, 0.3));
-  }
 }
 
 
