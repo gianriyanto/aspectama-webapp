@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #BottomBar {
     width: 95%;
     height: 30px;
@@ -55,20 +55,20 @@ export default {
   }
 
   #BottomBarMobile {
-    width: 95%;
-    height: 30px;
+    width: 90%;
+    height: fit-content;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: thin solid hotpink;
 
     #SocialLinks {
-      width: 90px;
+      width: 30%;
+      margin-bottom: 2vh;
     }
 
     #ContactDetails {
-      width: 290px;
+      width: 100%;
     }
   }
 }

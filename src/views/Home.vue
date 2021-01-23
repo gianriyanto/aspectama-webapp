@@ -209,11 +209,11 @@ export default {
     width: 90%;
     border: thin solid blue;
     padding: 15px 0;
-    margin: 0 auto;
+    margin: 0 auto 5vh auto;
   }
 
   #BottomBarMobile{
-
+    margin: 0 auto 2vh auto;
   }
 }
 

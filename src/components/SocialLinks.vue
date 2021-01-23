@@ -37,27 +37,52 @@ export default {
 
 <style lang="scss" scoped>
 
-#SocialLinks{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (min-width: 769px) {
 
-  .icon{
-    color: #3c3c3c;
-    transition: all .35s ease-in-out;
+  #SocialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-    &:hover{
-      opacity: 0.8;
-      color: #3389f6;
+    .icon {
+      color: #3c3c3c;
+      transition: all .35s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+        color: #3389f6;
+      }
+    }
+
+    .link {
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 13px;
+      color: #292929;
+      cursor: pointer;
     }
   }
+}
 
-  .link{
-    font-family: "Bw Modelica Bold", serif;
-    font-size: 13px;
-    color: #292929;
-    cursor: pointer;
+@media only screen and (max-width: 768px) {
+
+  #SocialLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+      color: #3c3c3c;
+      font-size: 15px;
+    }
+
+    .link {
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 13px;
+      color: #292929;
+      cursor: pointer;
+    }
   }
 }
 

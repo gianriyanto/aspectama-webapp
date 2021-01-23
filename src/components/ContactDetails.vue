@@ -18,34 +18,66 @@ export default {
 
 <style lang="scss" scoped>
 
-#ContactDetails{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (min-width: 769px) {
 
-  .phone{
-    font-family: "Gilroy Regular", serif;
-    font-size: 13px;
-    color: black;
-  }
+  #ContactDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-  .email{
-    font-family: "Gilroy Regular", serif;
-    font-size: 13px;
-    color: black;
-    cursor: pointer;
-    transition: all .35s ease-in-out;
+    .phone {
+      font-family: "Gilroy Regular", serif;
+      font-size: 13px;
+      color: black;
+    }
 
-    &:hover{
-      opacity: 0.8;
-      color: #3389f6;
+    .email {
+      font-family: "Gilroy Regular", serif;
+      font-size: 13px;
+      color: black;
+      cursor: pointer;
+      transition: all .35s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+        color: #3389f6;
+      }
+    }
+
+    .slash {
+      font-family: "Gilroy Regular", serif;
+      font-size: 13px;
+      color: #292929;
     }
   }
-  .slash{
-    font-family: "Gilroy Regular", serif;
-    font-size: 13px;
-    color: #292929;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #ContactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .phone{
+      font-family: "Gilroy Regular", serif;
+      font-size: 13px;
+      color: #1f1f1f;
+      margin-bottom: 3px;
+    }
+
+    .email{
+      font-family: "Gilroy Regular", serif;
+      font-size: 13px;
+      color: #1f1f1f;
+      cursor: pointer;
+    }
+
+    .slash{
+      display: none;
+    }
   }
 }
 
