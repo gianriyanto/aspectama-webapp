@@ -21,9 +21,9 @@
         Client Stories
       </span>
     </button>
-    <button class="scroll-button">
+    <span class="scroll-container">
       <chevrons-down-icon size="1.5x" class="scroll-icon"></chevrons-down-icon>
-    </button>
+    </span>
   </div>
 </template>
 
@@ -103,7 +103,7 @@ export default {
       }
     }
   }
-  .get-started-button, .my-card-button, .scroll-button{
+  .get-started-button, .my-card-button, .scroll-container{
     display: none;
   }
 }
@@ -146,7 +146,7 @@ export default {
       }
     }
 
-    .scroll-button{
+    .scroll-container{
       align-self: center;
       background-color: transparent;
 
