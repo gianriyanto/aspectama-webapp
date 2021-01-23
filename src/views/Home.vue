@@ -20,6 +20,7 @@
       <SideBar id="SideBar"/>
     </transition>
     <BottomBar id="BottomBarMobile" />
+    <FloatingActionButton id="FloatingActionButton"/>
   </section>
 </template>
 
@@ -30,10 +31,12 @@ import MosaicTiles from "@/components/MosaicTiles";
 import BottomBar from "@/components/BottomBar";
 import SideBar from "@/components/SideBar";
 import CallToAction from "@/components/CallToAction";
+import FloatingActionButton from "@/components/FloatingActionButton";
 
 export default {
   name: "Home",
   components: {
+    FloatingActionButton,
     CallToAction,
     SideBar,
     BottomBar,
@@ -134,6 +137,9 @@ export default {
       margin: 0 15px;
     }
   }
+  #FloatingActionButton{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,17 +157,17 @@ export default {
       display: flex;
       flex-direction: column;
       height: fit-content;
-      width: fit-content;
+      width: 98%;
       text-align: center;
-      margin: 20vh auto 0;
+      margin: 7vh auto 0;
 
       .header-text{
         margin: 0;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 20px;
+        font-size: 24px;
         color: #1f1f1f;
         letter-spacing: -0.5px;
-        line-height: 1.2;
+        line-height: 1.3;
 
         .highlight-name{
           color: #5675e7;
@@ -173,25 +179,29 @@ export default {
       display: flex;
       flex-direction: column;
       height: fit-content;
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       text-align: center;
 
       .subheader-text-0{
         margin: 0;
         font-family: "Gilroy Light", serif;
-        font-size: 13px;
+        font-size: 15px;
         color: #1f1f1f;
         line-height: 1.7;
       }
       .subheader-text-1{
-        display: none;
+        margin: 0;
+        font-family: "Gilroy Light", serif;
+        font-size: 15px;
+        color: #1f1f1f;
+        line-height: 1.7;
       }
     }
 
     #CallToAction{
       padding-top: 4vh;
-      width: fit-content;
+      width: 90%;
       height: 40vh;
       margin: 0 auto;
     }
@@ -214,6 +224,9 @@ export default {
 
   #BottomBarMobile{
     margin: 0 auto 2vh auto;
+  }
+  #FloatingActionButton{
+
   }
 }
 
