@@ -6,6 +6,16 @@
         Contact Me
       </span>
     </button>
+    <button class="get-started-button">
+      <span class="button-label">
+        Get Started
+      </span>
+    </button>
+    <button class="my-card-button">
+      <span class="button-label">
+        Take my Card
+      </span>
+    </button>
     <button class="testimony-button">
       <span class="button-label">
         Client Stories
@@ -28,36 +38,38 @@ export default {
 
 <style lang="scss" scoped>
 
-#CallToAction{
-  display: flex;
-  flex-direction: row;
+@media only screen and (min-width: 769px) {
 
-  .contact-button{
+  #CallToAction {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    height: 41px;
-    width: 150px;
-    background-image: linear-gradient(to right, #45bfa3, #33b5a6);
-    border-radius: 30px;
-    transition: all .4s ease-in-out;
-    box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
+    flex-direction: row;
 
-    .whatsapp-icon{
-      align-self: center;
-      font-size: 20px;
-      color: white;
-      padding-left: 10px;
-    }
+    .contact-button {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      height: 41px;
+      width: 150px;
+      background-image: linear-gradient(to right, #45bfa3, #33b5a6);
+      border-radius: 30px;
+      transition: all .4s ease-in-out;
+      box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
 
-    .button-label{
-      align-self: center;
-      padding-top: 3px;
-      font-family: "Gilroy Regular", serif;
-      font-size: 12px;
-      letter-spacing: 0.3px;
-      color: white;
-    }
+      .whatsapp-icon {
+        align-self: center;
+        font-size: 20px;
+        color: white;
+        padding-left: 10px;
+      }
+
+      .button-label {
+        align-self: center;
+        padding-top: 3px;
+        font-family: "Gilroy Regular", serif;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: white;
+      }
 
     &:hover{
       opacity: 0.9;
@@ -71,14 +83,15 @@ export default {
     background-color: transparent;
     border: thin solid transparent;
 
-    .button-label{
-      font-family: "Bw Modelica Bold", serif;
-      font-size: 14px;
-      color: #1f1f1f;
-      transition: all .3s ease-in-out;
+      .button-label {
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: #1f1f1f;
+        transition: all .3s ease-in-out;
 
-      &:hover{
-        opacity: 0.7;
+        &:hover {
+          opacity: 0.7;
+        }
       }
     }
   }
@@ -88,58 +101,44 @@ export default {
 
   #CallToAction{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    .contact-button{
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      height: 41px;
-      width: 150px;
-      background-image: linear-gradient(to right, #45bfa3, #33b5a6);
-      border-radius: 30px;
-      transition: all .4s ease-in-out;
-      box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
-
-      .whatsapp-icon{
-        align-self: center;
-        font-size: 20px;
-        color: white;
-        padding-left: 10px;
-      }
+    .get-started-button{
+      align-self: center;
+      height: 45px;
+      width: 210px;
+      background-image: linear-gradient(to right top, #6e89ec, #5c99e3);
+      border-radius: 8px;
+      margin-bottom: 2vh;
 
       .button-label{
-        align-self: center;
-        padding-top: 3px;
-        font-family: "Gilroy Regular", serif;
-        font-size: 12px;
-        letter-spacing: 0.3px;
+        font-family: "Gilroy Medium", serif;
+        font-size: 14px;
         color: white;
-      }
-
-      &:hover{
-        opacity: 0.9;
       }
     }
-    .testimony-button{
-      display: none;
+    .my-card-button{
       align-self: center;
-      margin-left: 20px;
-      height: 41px;
-      width: fit-content;
+      height: 43px;
+      width: 210px;
       background-color: transparent;
-      border: thin solid transparent;
+      border: thin solid #5c99e3;
+      border-radius: 8px;
+      margin-bottom: 2vh;
 
       .button-label{
-        font-family: "Bw Modelica Bold", serif;
+        font-family: "Gilroy Bold", serif;
         font-size: 14px;
-        color: #1f1f1f;
-        transition: all .3s ease-in-out;
-
-        &:hover{
-          opacity: 0.7;
-        }
+        color: #5c99e3;
       }
+    }
+
+    .contact-button{
+      display: none;
+    }
+
+    .testimony-button{
+      display: none;
     }
   }
 
