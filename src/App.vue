@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Home id="Home"/>
+    <div id="wrapper">
+      <Home id="Home"/>
+    </div>
   </div>
 </template>
 
@@ -20,6 +22,10 @@ export default {
 #app {
   background-image: linear-gradient(to right top, white, white);
   min-height: 740px;
+
+  #wrapper{
+    width: 100%;
+  }
 
   button{
     cursor: pointer;
@@ -43,7 +49,14 @@ html, body {
   padding: 0 !important;
 }
 
-@media only screen and (max-width: 769px) { }
+@media only screen and (max-width: 768px) {
+
+  #wrapper{
+    width: 100%;
+    border: thin solid indianred;
+  }
+
+}
 
 @font-face {
   font-family: "Gilroy Bold";
