@@ -123,7 +123,9 @@ export default {
         width: 60%;
         min-width: 640px;
         max-width: 700px;
-        height: 260px;
+        height: 40%;
+        min-height: 260px;
+        max-height: 300px
       }
 
       #BottomBar {

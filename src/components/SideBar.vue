@@ -135,6 +135,7 @@ export default {
 
       #Typeform {
         padding-top: 15px;
+        width: 100%;
         height: fit-content;
         flex-grow: 1;
       }
