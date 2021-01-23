@@ -415,12 +415,6 @@ export default {
           font-family: "Bw Modelica Medium", serif;
           font-size: 13px;
           color: #5d5d5d;
-          transition: all .3s ease-in-out;
-
-          &:hover {
-            color: #5675e7;
-            opacity: 0.9;
-          }
         }
       }
 
@@ -428,16 +422,11 @@ export default {
         width: 48%;
         background-image: linear-gradient(to right top, #5675e7, #5c99e3);
         border-radius: 8px;
-        transition: all .3s ease-in-out;
 
         .button-label {
           font-family: "Bw Modelica Medium", serif;
           font-size: 13px;
           color: white;
-        }
-
-        &:hover {
-          opacity: 0.9;
         }
       }
 
@@ -448,16 +437,11 @@ export default {
         background-color: #e2e2e2;
         border: thin solid #d6d6d6;
         border-radius: 8px;
-        transition: all .3s ease-in-out;
 
         .button-label {
           font-family: "Bw Modelica Medium", serif;
           font-size: 11px;
           color: #1ab081;
-        }
-
-        &:hover {
-          opacity: 0.9;
         }
       }
     }
