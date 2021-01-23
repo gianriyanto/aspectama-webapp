@@ -94,7 +94,7 @@ export default {
       cursor: pointer;
 
       .logo-image{
-        height: 55px;
+        height: 65px;
         width: auto;
       }
     }

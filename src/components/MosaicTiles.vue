@@ -415,7 +415,7 @@ export default {
           background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
           .label{
-            padding: 10px 0 15px 0;
+            padding: 10px 0 20px 0;
             align-self: center;
             text-align: center;
             width: 85%;

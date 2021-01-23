@@ -13,7 +13,7 @@
     </button>
     <button class="my-card-button">
       <span class="button-label">
-        Take my Card
+        Take my card
       </span>
     </button>
     <button class="testimony-button">
@@ -105,8 +105,8 @@ export default {
 
     .get-started-button{
       align-self: center;
-      height: 45px;
-      width: 210px;
+      height: 46px;
+      width: 220px;
       background-image: linear-gradient(to right top, #6e89ec, #5c99e3);
       border-radius: 8px;
       margin-bottom: 2vh;
@@ -119,8 +119,8 @@ export default {
     }
     .my-card-button{
       align-self: center;
-      height: 43px;
-      width: 210px;
+      height: 46px;
+      width: 220px;
       background-color: transparent;
       border: thin solid #5c99e3;
       border-radius: 8px;

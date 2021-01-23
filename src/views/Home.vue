@@ -154,12 +154,12 @@ export default {
     }
 
     .header-container{
+      margin: 5vh auto 0;
       display: flex;
       flex-direction: column;
       height: fit-content;
       width: 98%;
       text-align: center;
-      margin: 7vh auto 0;
 
       .header-text{
         margin: 0;
@@ -207,7 +207,7 @@ export default {
     }
 
     #MosaicTiles{
-      padding-top: 5vh;
+      padding-top: 3vh;
       padding-bottom: 2vh;
     }
 
