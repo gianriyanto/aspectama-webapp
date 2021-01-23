@@ -110,7 +110,8 @@ export default {
     }
 
     .content-wrapper {
-      padding-top: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       display: flex;
       flex-direction: column;
       width: 87%;

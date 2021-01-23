@@ -71,9 +71,10 @@ export default {
 
 <style lang="scss" scoped>
 
-@import "/src/styles/animations.scss";
-
 @media only screen and (min-width: 768px) {
+
+  @import "/src/styles/animations.scss";
+
   #MosaicTiles {
     display: flex;
     flex-direction: row;
