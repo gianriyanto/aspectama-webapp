@@ -6,7 +6,7 @@
         Contact Me
       </span>
     </button>
-    <button class="get-started-button">
+    <button class="get-started-button" v-scroll-to="{ el: '#SideBar', easing: [.2, .80, .30, 1],duration: 1500}">
       <span class="button-label">
         Get Started
       </span>
