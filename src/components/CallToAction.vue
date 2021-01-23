@@ -61,7 +61,7 @@ export default {
       background-image: linear-gradient(to right, #45bfa3, #33b5a6);
       border-radius: 30px;
       transition: all .4s ease-in-out;
-      box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
+      box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.5);
 
       .whatsapp-icon {
         align-self: center;
@@ -74,7 +74,7 @@ export default {
         align-self: center;
         padding-top: 3px;
         font-family: "Gilroy Regular", serif;
-        font-size: 12px;
+        font-size: 13px;
         letter-spacing: 0.3px;
         color: white;
       }
@@ -92,8 +92,8 @@ export default {
     border: thin solid transparent;
 
       .button-label {
-        font-family: "Bw Modelica Bold", serif;
-        font-size: 14px;
+        font-family: "Gilroy SemiBold", serif;
+        font-size: 15px;
         color: #1f1f1f;
         transition: all .3s ease-in-out;
 
@@ -102,6 +102,9 @@ export default {
         }
       }
     }
+  }
+  .get-started-button, .my-card-button, .scroll-button{
+    display: none;
   }
 }
 

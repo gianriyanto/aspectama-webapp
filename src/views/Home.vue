@@ -15,7 +15,7 @@
       <CallToAction id="CallToAction"/>
       <MosaicTiles id="MosaicTiles"/>
       <BottomBar id="BottomBar"/>
-      <BottomBar id="BottomBarMobile" />
+      <BottomBar id="BottomBarMobile"/>
     </div>
     <transition appear name="fade">
       <SideBar id="SideBar"/>
@@ -51,6 +51,7 @@ export default {
 @import "/src/styles/animations.scss";
 
 @media only screen and (min-width: 769px) {
+
   #Home {
     display: flex;
     flex-direction: row;
@@ -67,7 +68,8 @@ export default {
       align-items: center;
 
       #TopBar {
-
+        width: 95%;
+        height: 75px;
       }
 
       .header-container {
@@ -83,7 +85,7 @@ export default {
           font-family: "Bw Modelica Bold", serif;
           font-size: 37px;
           color: #1f1f1f;
-          letter-spacing: -0.5px;
+          letter-spacing: -1px;
           line-height: 1.2;
 
           .highlight-name {
@@ -118,14 +120,16 @@ export default {
 
       #MosaicTiles {
         padding-top: 4vh;
-        width: 62%;
-        min-width: 650px;
+        width: 60%;
+        min-width: 640px;
         max-width: 700px;
         height: 260px;
       }
 
       #BottomBar {
         margin-top: auto;
+        width: 95%;
+        height: 30px;
       }
     }
 

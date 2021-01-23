@@ -26,16 +26,16 @@ export default {
 <style lang="scss" scoped>
 
 @media only screen and (min-width: 769px) {
+
   #BottomBar {
-    width: 95%;
-    height: 30px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     #SocialLinks {
-      width: 90px;
+      width: 110px;
     }
 
     #ContactDetails {
@@ -55,7 +55,7 @@ export default {
   }
 
   #BottomBarMobile {
-    width: 90%;
+    width: 95%;
     height: fit-content;
     display: flex;
     flex-direction: column;

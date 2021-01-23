@@ -27,8 +27,6 @@ export default {
 <style lang="scss" scoped>
 @media only screen and (min-width: 769px) {
   #TopBar {
-    width: 95%;
-    height: 75px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
