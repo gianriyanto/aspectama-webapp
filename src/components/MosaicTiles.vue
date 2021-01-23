@@ -313,7 +313,7 @@ export default {
           height: 380px;
           margin: 3vw 0;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #ffdbaf, #f3a0b0);
+          background-image: linear-gradient(to right top, #ffdfba, #ef728c);
           filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.4));
 
           .label{
@@ -372,7 +372,7 @@ export default {
           margin: 3vw 0;
           width: 100%;
           border-radius: 12px;
-          background-image: linear-gradient(to right top, #f1cbff, #ffd28b);
+          background-image: linear-gradient(to right top, #e6c4ff, #ffcc7c);
           filter: drop-shadow(1px 5px 8px rgba(96, 88, 88, 0.4));
 
           .label{
