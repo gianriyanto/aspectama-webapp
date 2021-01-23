@@ -309,8 +309,8 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-evenly;
-          height: 250px;
-          margin: 5px 0;
+          height: 320px;
+          margin: 2vw 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
 
@@ -335,8 +335,8 @@ export default {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          height: 220px;
-          margin: 5px 0;
+          height: 250px;
+          margin: 2vw 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #5da1f3, #708efa);
 
@@ -359,14 +359,14 @@ export default {
       }
       .right-side{
         display: flex;
-        height: 400px;
+        height: 450px;
         width: 100%;
 
         .card-2{
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 5px 0;
+          margin: 2vw 0;
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fadcb8, #fddda7);
@@ -376,14 +376,14 @@ export default {
             height: fit-content;
             font-family: "Gilroy Bold", serif;
             font-size: 47px;
-            letter-spacing: -1.7px;
-            line-height: 1.1;
+            letter-spacing: -1.9px;
+            line-height: 1.2;
             color: #1f1f1f;
           }
 
           .image{
             padding-top: 12px;
-            margin-left: auto;
+            margin: 0 auto;
             height: 170px;
             width: 70%;
           }
@@ -407,7 +407,8 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: center;
-          margin: 5px 0;
+          margin: 2vw 0;
+          width: 100%;
           height: 280px;
           border-radius: 12px;
           background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
@@ -433,7 +434,7 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 5px 0;
+          margin: 2vw 0;
           width: 100%;
           height: 380px;
           border-radius: 12px;
@@ -467,7 +468,7 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 5px 0;
+          margin: 2vw 0;
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #969bfc, #788df6);

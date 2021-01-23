@@ -144,7 +144,7 @@ export default {
     height: fit-content;
 
     #TopBar{
-      margin-top: 30px;
+      margin-top: 10vh;
     }
 
     .header-container{
@@ -153,7 +153,7 @@ export default {
       height: fit-content;
       width: fit-content;
       text-align: center;
-      margin: 5vh auto 0;
+      margin: 20vh auto 0;
 
       .header-text{
         margin: 0;
@@ -190,15 +190,15 @@ export default {
     }
 
     #CallToAction{
-      padding-top: 2vh;
+      padding-top: 4vh;
       width: fit-content;
-      height: fit-content;
+      height: 40vh;
       margin: 0 auto;
     }
 
     #MosaicTiles{
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
     }
 
     #BottomBar{
