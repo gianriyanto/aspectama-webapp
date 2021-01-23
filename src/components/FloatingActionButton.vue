@@ -26,11 +26,11 @@ export default {
   bottom: 15px;
   right: 15px;
   background-image: linear-gradient(to right, #45bfa3, #33b5a6);
-  box-shadow: 1px 3px 20px rgba(125, 128, 126, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(49, 50, 64, 0.6);
 
   .whatsapp-icon{
       margin: auto;
-      font-size: 30px;
+      font-size: 33px;
       color: white;
   }
 }

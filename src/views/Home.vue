@@ -207,7 +207,7 @@ export default {
     }
 
     #MosaicTiles{
-      padding-top: 2vh;
+      padding-top: 5vh;
       padding-bottom: 2vh;
     }
 
