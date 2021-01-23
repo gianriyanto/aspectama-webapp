@@ -110,6 +110,7 @@ export default {
       background-image: linear-gradient(to right top, #6e89ec, #5c99e3);
       border-radius: 8px;
       margin-bottom: 2vh;
+      box-shadow: 0 8px 15px 0 rgba(93, 103, 239, 0.3);
 
       .button-label{
         font-family: "Gilroy Medium", serif;
@@ -125,6 +126,7 @@ export default {
       border: thin solid #5c99e3;
       border-radius: 8px;
       margin-bottom: 2vh;
+      box-shadow: 0 8px 15px 0 rgba(49, 50, 64, 0.1);
 
       .button-label{
         font-family: "Gilroy Bold", serif;

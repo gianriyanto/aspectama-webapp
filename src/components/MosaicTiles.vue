@@ -310,36 +310,38 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-evenly;
-          height: 320px;
+          height: 380px;
           margin: 2vw 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
+          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
 
           .label{
             text-align: center;
             padding-top: 5px;
             padding-bottom: 5px;
             font-family: "Gilroy Bold", serif;
-            font-size: 30px;
+            font-size: 39px;
             line-height: 1.2;
             color: #1f1f1f;
-            width: 75%;
+            width: 80%;
             align-self: center;
           }
           .image{
             width: 50%;
             align-self: center;
-            height: auto;
+            height: 40%;
           }
         }
         .card-1{
           display: flex;
           flex-direction: row;
           justify-content: center;
-          height: 250px;
+          height: 300px;
           margin: 2vw 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #5da1f3, #708efa);
+          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
 
           .label{
             padding-left: 30px;
@@ -360,7 +362,7 @@ export default {
       }
       .right-side{
         display: flex;
-        height: 450px;
+        height: 500px;
         width: 100%;
 
         .card-2{
@@ -371,9 +373,10 @@ export default {
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fadcb8, #fddda7);
+          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
 
           .label{
-            padding: 0 20px 12px 20px;
+            padding: 0 20px 20px 25px;
             height: fit-content;
             font-family: "Gilroy Bold", serif;
             font-size: 47px;
@@ -385,7 +388,7 @@ export default {
           .image{
             padding-top: 12px;
             margin: 0 auto;
-            height: 170px;
+            height: 200px;
             width: 70%;
           }
         }
@@ -410,9 +413,10 @@ export default {
           justify-content: center;
           margin: 2vw 0;
           width: 100%;
-          height: 280px;
+          height: 360px;
           border-radius: 12px;
           background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
+          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
 
           .label{
             padding: 10px 0 20px 0;
@@ -437,9 +441,10 @@ export default {
           justify-content: space-between;
           margin: 2vw 0;
           width: 100%;
-          height: 380px;
+          height: 420px;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
+          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
 
           .label{
             padding: 5px 20px 15px 0;
@@ -447,7 +452,7 @@ export default {
             text-align: right;
             font-family: "Gilroy Bold", serif;
             width: 70%;
-            font-size: 49px;
+            font-size: 53px;
             letter-spacing: 0;
             line-height: 1.2;
             color: #fffae8;
@@ -463,7 +468,7 @@ export default {
       }
       .bottom-side{
         display: flex;
-        height: 450px;
+        height: 540px;
 
         .card-5{
           display: flex;
@@ -473,12 +478,13 @@ export default {
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #969bfc, #788df6);
+          box-shadow: 0 8px 20px 0 rgba(49, 50, 64, 0.3);
 
           .label{
-            padding: 0 20px 20px 20px;
+            padding: 0 20px 20px 25px;
             text-align: left;
             font-family: "Gilroy Bold", serif;
-            font-size: 35px;
+            font-size: 38px;
             line-height: 1.3;
             color: white;
           }

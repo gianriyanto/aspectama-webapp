@@ -326,12 +326,12 @@ export default {
     #ProgramSelection {
       height: 160px;
       width: 100%;
-      margin-bottom: 1.5vh;
+      margin-bottom: 2vh;
     }
 
     .input-card {
       align-self: center;
-      margin-bottom: 1.5vh;
+      margin-bottom: 2vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -356,7 +356,7 @@ export default {
 
     .disabled-card {
       align-self: center;
-      margin-bottom: 1.5vh;
+      margin-bottom: 2vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
