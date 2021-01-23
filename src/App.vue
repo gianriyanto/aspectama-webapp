@@ -53,6 +53,7 @@ html, body {
 
   #wrapper{
     width: 100%;
+    height: fit-content;
   }
 
 }

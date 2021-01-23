@@ -15,11 +15,11 @@
       <CallToAction id="CallToAction"/>
       <MosaicTiles id="MosaicTiles"/>
       <BottomBar id="BottomBar"/>
+      <BottomBar id="BottomBarMobile" />
     </div>
     <transition appear name="fade">
       <SideBar id="SideBar"/>
     </transition>
-    <BottomBar id="BottomBarMobile" />
     <FloatingActionButton id="FloatingActionButton"/>
   </section>
 </template>
@@ -78,7 +78,7 @@ export default {
         text-align: center;
         margin-top: 11vh;
 
-        .header-text {
+        .header-text{
           margin: 0;
           font-family: "Bw Modelica Bold", serif;
           font-size: 37px;
@@ -144,87 +144,99 @@ export default {
 
 @media only screen and (max-width: 768px) {
 
-  #Home{
+  #Home {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     height: fit-content;
 
-    #TopBar{
-      margin-top: 10vh;
-    }
+    .main-wrapper {
+      position: fixed;
+      z-index: 1;
+      height: 100vh;
+      overflow-y: scroll;
 
-    .header-container{
-      margin: 5vh auto 0;
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      width: 98%;
-      text-align: center;
+      #TopBar {
+        margin-top: 7vh;
+      }
 
-      .header-text{
-        margin: 0;
-        font-family: "Bw Modelica Bold", serif;
-        font-size: 24px;
-        color: #1f1f1f;
-        letter-spacing: -0.5px;
-        line-height: 1.3;
+      .header-container {
+        margin: 11vh auto 0;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 95%;
+        text-align: center;
 
-        .highlight-name{
-          color: #5675e7;
+        .header-text {
+          margin: 0;
+          font-family: "Gilroy SemiBold", serif;
+          font-size: 31px;
+          color: #1f1f1f;
+          letter-spacing: 0;
+          line-height: 1.15;
+
+          .highlight-name {
+            color: #5675e7;
+          }
         }
       }
-    }
-    .subheader-container{
-      padding-top: 12px;
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      width: 80%;
-      margin: 0 auto;
-      text-align: center;
 
-      .subheader-text-0{
-        margin: 0;
-        font-family: "Gilroy Light", serif;
-        font-size: 15px;
-        color: #1f1f1f;
-        line-height: 1.7;
+      .subheader-container {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        .subheader-text-0 {
+          margin: 0;
+          font-family: "Gilroy Regular", serif;
+          font-size: 17px;
+          color: #393939;
+          line-height: 1.5;
+        }
+
+        .subheader-text-1 {
+          display: none;
+          margin: 0;
+          font-family: "Gilroy Regular", serif;
+          font-size: 17px;
+          color: #393939;
+          line-height: 1.5;
+        }
       }
-      .subheader-text-1{
-        margin: 0;
-        font-family: "Gilroy Light", serif;
-        font-size: 15px;
-        color: #1f1f1f;
-        line-height: 1.7;
+
+      #CallToAction {
+        padding-top: 4vh;
+        width: 90%;
+        height: 40vh;
+        margin: 0 auto;
       }
-    }
 
-    #CallToAction{
-      padding-top: 4vh;
-      width: 90%;
-      height: 40vh;
-      margin: 0 auto;
-    }
+      #MosaicTiles {
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+      }
 
-    #MosaicTiles{
-      padding-top: 3vh;
-      padding-bottom: 2vh;
-    }
-
-    #BottomBar{
-      display: none;
+      #BottomBarMobile{
+        margin: 5vh auto 0 auto;
+      }
     }
   }
+
   #SideBar{
-    width: 93%;
-    height: fit-content;
+    position: sticky;
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
     padding: 15px 0;
-    margin: 0 auto 9vh auto;
+    margin: 100vh auto 0 auto;
   }
 
-  #BottomBarMobile{
-    margin: 0 auto;
-  }
   #FloatingActionButton{
 
   }
