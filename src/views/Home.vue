@@ -161,7 +161,7 @@ export default {
       }
 
       .header-container {
-        margin: 11vh auto 0;
+        margin: 5vh auto 0;
         display: flex;
         flex-direction: column;
         height: fit-content;

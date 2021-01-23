@@ -133,7 +133,7 @@ export default {
       background-color: transparent;
       border: thin solid #5c99e3;
       border-radius: 8px;
-      margin-bottom: 2vh;
+      margin-bottom: 15vh;
       box-shadow: 0 8px 15px 0 rgba(49, 50, 64, 0.1);
 
       .button-label{
@@ -146,11 +146,10 @@ export default {
     .scroll-button{
       align-self: center;
       background-color: transparent;
-      margin-top: 20vh;
 
       .scroll-icon{
-        font-size: 21px;
-        color: #a0a0a0;
+        font-size: 25px;
+        color: #868686;
       }
     }
 
