@@ -19,6 +19,7 @@
     <transition appear name="fade">
       <SideBar id="SideBar"/>
     </transition>
+    <BottomBar id="BottomBarMobile" />
   </section>
 </template>
 
@@ -197,6 +198,7 @@ export default {
 
     #MosaicTiles{
       padding-top: 5vh;
+      padding-bottom: 5vh;
     }
 
     #BottomBar{
@@ -204,8 +206,14 @@ export default {
     }
   }
   #SideBar{
-    display: none;
-    margin-top: 5vh;
+    width: 90%;
+    border: thin solid blue;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+
+  #BottomBarMobile{
+
   }
 }
 

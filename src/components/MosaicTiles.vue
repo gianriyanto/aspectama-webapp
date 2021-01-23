@@ -297,7 +297,6 @@ export default {
       flex-direction: column;
       width: 100%;
       height: 100%;
-      border: thin solid lightseagreen;
 
       .left-side{
         display: flex;
@@ -394,7 +393,6 @@ export default {
       flex-direction: column;
       width: 100%;
       height: 100%;
-      border: thin solid greenyellow;
 
       .top-side{
         display: flex;
@@ -463,7 +461,7 @@ export default {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          margin: 4px 0 0 4px;
+          margin: 10px 0;
           width: 100%;
           border-radius: 6px;
           background-image: linear-gradient(to right top, #969bfc, #788df6);
@@ -472,7 +470,7 @@ export default {
             padding: 15px 0 15px 20px;
             margin: 10px 0;
             width: 85%;
-            height: 320px;
+            height: 300px;
             text-align: left;
             font-family: "Gilroy Bold", serif;
             font-size: 14px;
