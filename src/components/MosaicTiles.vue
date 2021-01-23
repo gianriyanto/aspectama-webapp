@@ -463,7 +463,7 @@ export default {
           justify-content: space-between;
           margin: 10px 0;
           width: 100%;
-          border-radius: 6px;
+          border-radius: 12px;
           background-image: linear-gradient(to right top, #969bfc, #788df6);
 
           .label{

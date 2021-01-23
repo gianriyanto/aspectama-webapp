@@ -162,154 +162,307 @@ export default {
 
 @import "/src/styles/animations.scss";
 
- #Typeform{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+@media only screen and (min-width: 769px) {
 
-   #ProgramSelection{
-     height: 160px;
-     width: 100%;
-     margin-bottom: 1.5vh;
-   }
+  #Typeform {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-   .input-card{
-     align-self: center;
-     margin-bottom: 1.5vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     padding: 7px 20px;
-     width: 86%;
-     height: 62px;
-     border-radius: 7px;
-     border: 1px solid #dddddd;
-     background-color: white;
-     transition: all .4s ease-in-out;
+    #ProgramSelection {
+      height: 160px;
+      width: 100%;
+      margin-bottom: 1.5vh;
+    }
 
-     .prompt {
-       font-family: "Bw Modelica Bold", serif;
-       font-size: 14px;
-       color: #434343;
-     }
-   }
+    .input-card {
+      align-self: center;
+      margin-bottom: 1.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 7px 20px;
+      width: 86%;
+      height: 62px;
+      border-radius: 7px;
+      border: 1px solid #dddddd;
+      background-color: white;
+      transition: all .4s ease-in-out;
 
-   .isvalid-border{
-     border: 1px solid #85cdbc;
-   }
+      .prompt {
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: #434343;
+      }
+    }
 
-   .disabled-card{
-     align-self: center;
-     margin-bottom: 1.5vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-     padding: 7px 20px;
-     width: 86%;
-     height: 62px;
-     border-radius: 7px;
-     border: 1px solid rgba(112, 91, 91, 0.1);
-     background-color: white;
-     opacity: 0.7;
+    .isvalid-border {
+      border: 1px solid #85cdbc;
+    }
 
-     .prompt {
-       font-family: "Bw Modelica Bold", serif;
-       font-size: 14px;
-       color: #d7d7d7;
-     }
+    .disabled-card {
+      align-self: center;
+      margin-bottom: 1.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 7px 20px;
+      width: 86%;
+      height: 62px;
+      border-radius: 7px;
+      border: 1px solid rgba(112, 91, 91, 0.1);
+      background-color: white;
+      opacity: 0.7;
 
-     .input{
-       font-family: "Bw Modelica Regular", serif;
-       font-size: 14px;
-       color: #d7d7d7;
-     }
-   }
+      .prompt {
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: #d7d7d7;
+      }
 
-   .footer-container{
-     padding-left: 5px;
-     padding-top: 5px;
-     display: flex;
-     flex-direction: column;
-     flex-grow: 1;
-     min-height: fit-content;
+      .input {
+        font-family: "Bw Modelica Regular", serif;
+        font-size: 14px;
+        color: #d7d7d7;
+      }
+    }
 
-     .footer-text{
-       font-family: "Bw Modelica Light", serif;
-       font-size: 14px;
-       color: #1f1f1f;
+    .footer-container {
+      padding-left: 5px;
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      min-height: fit-content;
 
-       .highlight-name{
-         font-family: "Bw Modelica Bold", serif;
-       }
-     }
-   }
+      .footer-text {
+        font-family: "Bw Modelica Light", serif;
+        font-size: 14px;
+        color: #1f1f1f;
 
-   .button-container{
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-end;
-     height: 37px;
+        .highlight-name {
+          font-family: "Bw Modelica Bold", serif;
+        }
+      }
+    }
 
-     .clear-button{
-       height: 100%;
-       width: fit-content;
-       border-radius: 8px;
-       background-color: transparent;
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: 37px;
 
-       .button-label{
-         font-family: "Bw Modelica Medium", serif;
-         font-size: 13px;
-         color: #5d5d5d;
-         transition: all .3s ease-in-out;
+      .clear-button {
+        height: 100%;
+        width: fit-content;
+        border-radius: 8px;
+        background-color: transparent;
 
-         &:hover{
-           color: #5675e7;
-           opacity: 0.9;
-         }
-       }
-     }
+        .button-label {
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 13px;
+          color: #5d5d5d;
+          transition: all .3s ease-in-out;
 
-     .submit-button{
-       margin-left: 15px;
-       height: 100%;
-       width: 38%;
-       background-image: linear-gradient(to right top, #5675e7, #5c99e3);
-       border-radius: 8px;
-       transition: all .3s ease-in-out;
-       filter: drop-shadow(1px 3px 5px rgb(145, 172, 200));
+          &:hover {
+            color: #5675e7;
+            opacity: 0.9;
+          }
+        }
+      }
 
-       .button-label{
-         font-family: "Bw Modelica Medium", serif;
-         font-size: 11px;
-         color: white;
-       }
+      .submit-button {
+        margin-left: 15px;
+        height: 100%;
+        width: 38%;
+        background-image: linear-gradient(to right top, #5675e7, #5c99e3);
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+        filter: drop-shadow(1px 3px 5px rgb(145, 172, 200));
 
-       &:hover{
-         opacity: 0.9;
-       }
-     }
+        .button-label {
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 11px;
+          color: white;
+        }
 
-     .submitted-button{
-       margin-left: 15px;
-       height: 40px;
-       width: 38%;
-       background-color: #e2e2e2;
-       border: thin solid #d6d6d6;
-       border-radius: 8px;
-       transition: all .3s ease-in-out;
-       filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.1));
+        &:hover {
+          opacity: 0.9;
+        }
+      }
 
-       .button-label{
-         font-family: "Bw Modelica Medium", serif;
-         font-size: 11px;
-         color: #1ab081;
-       }
+      .submitted-button {
+        margin-left: 15px;
+        height: 40px;
+        width: 38%;
+        background-color: #e2e2e2;
+        border: thin solid #d6d6d6;
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+        filter: drop-shadow(1px 3px 10px rgba(96, 88, 88, 0.1));
 
-       &:hover{
-         opacity: 0.9;
-       }
-     }
-   }
- }
+        .button-label {
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 11px;
+          color: #1ab081;
+        }
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  #Typeform {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    #ProgramSelection {
+      height: 160px;
+      width: 100%;
+      margin-bottom: 1.5vh;
+    }
+
+    .input-card {
+      align-self: center;
+      margin-bottom: 1.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 7px 20px;
+      width: 86%;
+      height: 62px;
+      border-radius: 7px;
+      border: 1px solid #dddddd;
+      background-color: white;
+      transition: all .4s ease-in-out;
+
+      .prompt {
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: #434343;
+      }
+    }
+
+    .isvalid-border {
+      border: 1px solid #85cdbc;
+    }
+
+    .disabled-card {
+      align-self: center;
+      margin-bottom: 1.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 7px 20px;
+      width: 86%;
+      height: 62px;
+      border-radius: 7px;
+      border: 1px solid rgba(112, 91, 91, 0.1);
+      background-color: white;
+      opacity: 0.7;
+
+      .prompt {
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: #d7d7d7;
+      }
+
+      .input {
+        font-family: "Bw Modelica Regular", serif;
+        font-size: 14px;
+        color: #d7d7d7;
+      }
+    }
+
+    .footer-container {
+      padding-left: 5px;
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+
+      .footer-text {
+        font-family: "Bw Modelica Light", serif;
+        font-size: 14px;
+        color: #1f1f1f;
+
+        .highlight-name {
+          font-family: "Bw Modelica Bold", serif;
+        }
+      }
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 45px;
+
+      .clear-button {
+        width: 48%;
+        border-radius: 8px;
+        border: thin solid lightgrey;
+        background-color: transparent;
+
+        .button-label {
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 13px;
+          color: #5d5d5d;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            color: #5675e7;
+            opacity: 0.9;
+          }
+        }
+      }
+
+      .submit-button {
+        width: 48%;
+        background-image: linear-gradient(to right top, #5675e7, #5c99e3);
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+
+        .button-label {
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 13px;
+          color: white;
+        }
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      .submitted-button {
+        margin-left: 15px;
+        height: 40px;
+        width: 38%;
+        background-color: #e2e2e2;
+        border: thin solid #d6d6d6;
+        border-radius: 8px;
+        transition: all .3s ease-in-out;
+
+        .button-label {
+          font-family: "Bw Modelica Medium", serif;
+          font-size: 11px;
+          color: #1ab081;
+        }
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+}
 
 </style>

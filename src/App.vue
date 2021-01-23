@@ -53,7 +53,6 @@ html, body {
 
   #wrapper{
     width: 100%;
-    border: thin solid indianred;
   }
 
 }
