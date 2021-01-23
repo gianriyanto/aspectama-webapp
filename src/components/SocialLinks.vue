@@ -5,6 +5,10 @@
       <globe-icon size="1.5x" class="icon"></globe-icon>
     </a>
     <a class="link"
+       v-on:click="goToSite('https://goo.gl/maps/Kiy9Y93i1RmriBij7')">
+      <MapIcon size="1.5x" class="icon"></MapIcon>
+    </a>
+    <a class="link"
        v-on:click="goToSite('https://www.facebook.com/Aspectama-AlamSutera-288109908569927/')">
       <facebook-icon size="1.5x" class="icon"></facebook-icon>
     </a>
@@ -19,13 +23,15 @@
 import { InstagramIcon } from 'vue-feather-icons'
 import { FacebookIcon } from 'vue-feather-icons'
 import { GlobeIcon } from 'vue-feather-icons'
+import { MapIcon } from 'vue-feather-icons'
 
 export default {
   name: "SocialLinks",
   components: {
     FacebookIcon,
     InstagramIcon,
-    GlobeIcon
+    GlobeIcon,
+    MapIcon
   },
   methods: {
     goToSite(url) {
@@ -73,10 +79,10 @@ export default {
     align-items: center;
 
     .icon {
-      color: #3c3c3c;
-      font-size: 15px;
+      color: #76a8dd;
+      font-size: 20px;
     }
-
+lan
     .link {
       font-family: "Bw Modelica Bold", serif;
       font-size: 13px;

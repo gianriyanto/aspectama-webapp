@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "ContactDetails"
+  name: "ContactDetails",
 }
 </script>
 
@@ -65,14 +65,14 @@ export default {
       font-family: "Gilroy Regular", serif;
       font-size: 14px;
       color: #1f1f1f;
-      margin-bottom: 3px;
+      margin-bottom: 5px;
     }
 
     .email{
       font-family: "Gilroy Regular", serif;
       font-size: 14px;
       color: #1f1f1f;
-      cursor: pointer;
+      margin-bottom: 5px;
     }
 
     .slash{

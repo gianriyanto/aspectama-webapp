@@ -19,7 +19,7 @@ export default {
   components: {
     ContactDetails,
     SocialLinks
-  }
+  },
 }
 </script>
 
@@ -63,12 +63,13 @@ export default {
     align-items: center;
 
     #SocialLinks {
-      width: 30%;
-      margin-bottom: 2vh;
+      width: 60%;
+      margin-bottom: 4vh;
     }
 
     #ContactDetails {
       width: 100%;
+      margin-bottom: 8vh;
     }
   }
 }

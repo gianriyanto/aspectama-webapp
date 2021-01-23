@@ -219,11 +219,11 @@ export default {
     width: 93%;
     height: fit-content;
     padding: 15px 0;
-    margin: 0 auto 5vh auto;
+    margin: 0 auto 9vh auto;
   }
 
   #BottomBarMobile{
-    margin: 0 auto 2vh auto;
+    margin: 0 auto;
   }
   #FloatingActionButton{
 
