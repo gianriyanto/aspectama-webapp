@@ -206,7 +206,7 @@ export default {
     }
   }
   #SideBar{
-    width: 90%;
+    width: 93%;
     height: fit-content;
     padding: 15px 0;
     margin: 0 auto 5vh auto;

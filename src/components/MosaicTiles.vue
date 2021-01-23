@@ -289,7 +289,7 @@ export default {
   #MosaicTiles{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
 
     .left-section{
@@ -308,9 +308,9 @@ export default {
         .card-0{
           display: flex;
           flex-direction: column-reverse;
-          justify-content: center;
+          justify-content: space-evenly;
           height: 250px;
-          margin: 10px 0;
+          margin: 5px 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fdc0c0, #ffb3c1);
 
@@ -319,40 +319,41 @@ export default {
             padding-top: 5px;
             padding-bottom: 5px;
             font-family: "Gilroy Bold", serif;
-            font-size: 14px;
-            line-height: 1.3;
+            font-size: 30px;
+            line-height: 1.2;
             color: #1f1f1f;
             width: 75%;
             align-self: center;
           }
           .image{
-            width: 40%;
+            width: 50%;
             align-self: center;
             height: auto;
           }
         }
         .card-1{
           display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
+          flex-direction: row;
+          justify-content: center;
           height: 220px;
-          margin: 10px 0;
+          margin: 5px 0;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #5da1f3, #708efa);
 
           .label{
-            padding: 15px 20px 0 20px;
+            padding-left: 30px;
+            margin: auto 0;
             height: fit-content;
             width: 70%;
             font-family: "Gilroy Bold", serif;
-            font-size: 14px;
+            font-size: 28px;
             line-height: 1.3;
             color: white;
           }
           .image{
-            margin-left: auto;
-            height: 80px;
-            width: 80%;
+            margin: auto 0;
+            height: 110px;
+            flex-grow: 1;
           }
         }
       }
@@ -365,7 +366,7 @@ export default {
           display: flex;
           flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 10px 0;
+          margin: 5px 0;
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #fadcb8, #fddda7);
@@ -374,15 +375,17 @@ export default {
             padding: 0 20px 12px 20px;
             height: fit-content;
             font-family: "Gilroy Bold", serif;
-            font-size: 19px;
-            letter-spacing: -1px;
-            line-height: 1.2;
+            font-size: 47px;
+            letter-spacing: -1.7px;
+            line-height: 1.1;
             color: #1f1f1f;
           }
 
           .image{
+            padding-top: 12px;
+            margin-left: auto;
             height: 170px;
-            width: 100%;
+            width: 70%;
           }
         }
       }
@@ -402,86 +405,87 @@ export default {
 
         .card-3{
           display: flex;
-          flex-direction: column;
+          flex-direction: column-reverse;
           justify-content: center;
-          margin: 10px 0;
+          margin: 5px 0;
           height: 280px;
           border-radius: 12px;
           background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
           .label{
-            padding: 15px 0 5px 0;
+            padding: 10px 0 15px 0;
             align-self: center;
             text-align: center;
-            width: 80%;
+            width: 85%;
             font-family: "Gilroy Bold", serif;
-            font-size: 13px;
+            font-size: 30px;
             letter-spacing: -0px;
-            line-height: 1.3;
+            line-height: 1.1;
             color: white;
           }
           .image{
-            margin: 0 auto;
+            margin: 15px auto 0 auto;
             width: 76%;
-            height: 80px;
+            flex-grow: 1;
           }
         }
         .card-4{
           display: flex;
           flex-direction: column-reverse;
-          justify-content: space-evenly;
-          margin: 10px 0;
+          justify-content: space-between;
+          margin: 5px 0;
           width: 100%;
-          height: 310px;
+          height: 380px;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #2b2b2b, #2d2d2d);
 
           .label{
-            padding: 5px 20px 10px 20px;
+            padding: 5px 20px 15px 0;
+            margin-left: auto;
             text-align: right;
             font-family: "Gilroy Bold", serif;
-            font-size: 16px;
+            width: 70%;
+            font-size: 49px;
             letter-spacing: 0;
             line-height: 1.2;
             color: #fffae8;
           }
           .image{
-            margin: 0 auto;
+            padding: 20px 0 0 30px;
+            margin-right: auto;
             align-self: center;
-            width: 70%;
-            height: 70px;
+            width: 60%;
+            flex-grow: 1;
           }
         }
       }
       .bottom-side{
         display: flex;
-        height: 47%;
+        height: 450px;
 
         .card-5{
           display: flex;
-          flex-direction: row;
+          flex-direction: column-reverse;
           justify-content: space-between;
-          margin: 10px 0;
+          margin: 5px 0;
           width: 100%;
           border-radius: 12px;
           background-image: linear-gradient(to right top, #969bfc, #788df6);
 
           .label{
-            padding: 15px 0 15px 20px;
-            margin: 10px 0;
-            width: 85%;
-            height: 300px;
+            padding: 0 20px 20px 20px;
             text-align: left;
             font-family: "Gilroy Bold", serif;
-            font-size: 14px;
+            font-size: 35px;
             line-height: 1.3;
             color: white;
           }
 
           .image{
-            margin: auto 0;
-            height: 100px;
-            width: 130px;
+            padding-top: 20px;
+            margin: 0 auto;
+            height: 46%;
+            width: 100%;
           }
         }
       }
