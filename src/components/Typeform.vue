@@ -325,7 +325,7 @@ export default {
 
     #ProgramSelection {
       height: 160px;
-      width: 86%;
+      width: 99%;
       margin-bottom: 2vh;
     }
 
