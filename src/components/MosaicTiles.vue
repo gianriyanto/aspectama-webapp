@@ -123,7 +123,7 @@ export default {
         .card-1 {
           display: flex;
           flex-direction: column;
-          justify-content: flex-start;
+          justify-content: center;
           height: 57%;
           margin: 4px 4px 0 0;
           border-radius: 6px;
@@ -133,15 +133,15 @@ export default {
             padding: 15px 20px 0 20px;
             height: fit-content;
             width: 70%;
-            font-family: "Gilroy Bold", serif;
-            font-size: 14px;
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 15px;
             line-height: 1.3;
             color: white;
           }
 
           .image {
             margin-left: auto;
-            height: 80px;
+            height: 90px;
             width: 80%;
           }
         }
@@ -162,13 +162,13 @@ export default {
           background-image: linear-gradient(to right top, #fadcb8, #fddda7);
 
           .label {
-            padding: 0 20px 12px 20px;
+            padding: 0 20px 20px 20px;
             height: fit-content;
             font-family: "Gilroy Bold", serif;
             font-size: 19px;
-            letter-spacing: -1px;
-            line-height: 1.2;
-            color: #1f1f1f;
+            letter-spacing: -0.5px;
+            line-height: 1.4;
+            color: #343434;
           }
 
           .image {
@@ -200,11 +200,11 @@ export default {
           background-image: linear-gradient(to left bottom, #78c2f3, #69a6f1);
 
           .label {
-            padding: 15px 0 5px 0;
+            padding: 10px 0 5px 0;
             align-self: center;
             text-align: center;
-            width: 80%;
-            font-family: "Gilroy Bold", serif;
+            width: 75%;
+            font-family: "Gilroy SemiBold", serif;
             font-size: 13px;
             letter-spacing: -0px;
             line-height: 1.3;
@@ -257,16 +257,16 @@ export default {
           margin: 4px 0 0 4px;
           width: 100%;
           border-radius: 6px;
-          background-image: linear-gradient(to right top, #969bfc, #788df6);
+          background-image: linear-gradient(to right top, #9ea3fa, #788df6);
 
           .label {
             padding: 15px 0 15px 20px;
             margin: auto 0;
             width: 85%;
             text-align: left;
-            font-family: "Gilroy Bold", serif;
-            font-size: 14px;
-            line-height: 1.3;
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 15px;
+            line-height: 1.4;
             color: white;
           }
 
