@@ -78,7 +78,7 @@ export default {
         height: fit-content;
         width: 600px;
         text-align: center;
-        margin-top: 11vh;
+        margin-top: 8vh;
 
         .header-text{
           margin: 0;
