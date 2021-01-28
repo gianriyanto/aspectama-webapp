@@ -60,7 +60,6 @@ html, body {
     width: 100%;
     height: fit-content;
   }
-
 }
 
 @font-face {
