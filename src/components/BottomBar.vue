@@ -71,7 +71,7 @@ export default {
       align-self: center;
       height: 51px;
       width: 100%;
-      background-image: linear-gradient(to right top, #222222, #323232);
+      background-image: linear-gradient(to right, #262626, #5a5a5a);
       border-radius: 8px;
       margin-bottom: 6vh;
       box-shadow: 0 8px 15px 0 rgba(191, 193, 212, 0.3);

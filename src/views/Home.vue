@@ -2,18 +2,20 @@
   <section id="Home">
     <div class="main-wrapper">
       <TopBar id="TopBar"/>
-      <transition appear name="fade">
-        <span class="header-container">
-          <span class="header-text"> Hi! I'm <span class="highlight-name"> Ervina. </span> </span>
-          <span class="header-text"> Your education counselor. </span>
+      <div class="body-wrapper">
+        <transition appear name="fade">
+          <span class="header-container">
+            <span class="header-text"> Hi! I'm <span class="highlight-name"> Ervina. </span> </span>
+            <span class="header-text"> Your education counselor. </span>
+          </span>
+        </transition>
+        <span class="subheader-container">
+          <h2 class="subheader-text-0"> I help architect a personalised education blueprint for aspiring professionals like you. </h2>
+          <h2 class="subheader-text-1"> Find out how I can help, I’d love to hear from you. </h2>
         </span>
-      </transition>
-      <span class="subheader-container">
-        <h2 class="subheader-text-0"> I help architect a personalised education blueprint for aspiring professionals like you. </h2>
-        <h2 class="subheader-text-1"> Find out how I can help, I’d love to hear from you. </h2>
-      </span>
-      <CallToAction id="CallToAction"/>
-      <MosaicTiles id="MosaicTiles"/>
+        <CallToAction id="CallToAction"/>
+        <MosaicTiles id="MosaicTiles"/>
+      </div>
       <BottomBar id="BottomBar"/>
       <BottomBar id="BottomBarMobile"/>
     </div>
@@ -66,66 +68,77 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: auto 0;
 
       #TopBar {
         width: 95%;
         height: 75px;
       }
 
-      .header-container {
+      .body-wrapper {
         display: flex;
         flex-direction: column;
-        height: fit-content;
-        width: 600px;
-        text-align: center;
-        margin-top: 8vh;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        height: 90%;
+        padding-bottom: 50px;
 
-        .header-text{
-          margin: 0;
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 37px;
-          color: #1f1f1f;
-          letter-spacing: -1px;
-          line-height: 1.2;
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          width: 600px;
+          text-align: center;
 
-          .highlight-name {
-            color: #5675e7;
+
+          .header-text {
+            margin: 0;
+            font-family: "Bw Modelica Bold", serif;
+            font-size: 37px;
+            color: #1f1f1f;
+            letter-spacing: -1px;
+            line-height: 1.2;
+
+            .highlight-name {
+              color: #5675e7;
+            }
           }
         }
-      }
 
-      .subheader-container {
-        padding-top: 12px;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-        text-align: center;
+        .subheader-container {
+          padding-top: 12px;
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          width: fit-content;
+          text-align: center;
 
-        .subheader-text-0, .subheader-text-1 {
-          margin: 0;
-          font-family: "Gilroy Light", serif;
-          font-size: 14px;
-          color: #1f1f1f;
-          line-height: 1.7;
+          .subheader-text-0, .subheader-text-1 {
+            margin: 0;
+            font-family: "Gilroy Light", serif;
+            font-size: 14px;
+            color: #1f1f1f;
+            line-height: 1.7;
+          }
         }
-      }
 
-      #CallToAction {
-        padding-top: 2vh;
-        width: fit-content;
-        height: fit-content;
-        border: thin solid white;
-      }
+        #CallToAction {
+          padding-top: 2vh;
+          width: fit-content;
+          height: fit-content;
+          border: thin solid white;
+        }
 
-      #MosaicTiles {
-        padding-top: 4vh;
-        width: 60%;
-        min-width: 640px;
-        max-width: 700px;
-        height: 40%;
-        min-height: 260px;
-        max-height: 300px
+        #MosaicTiles {
+          padding-top: 4vh;
+          width: 60%;
+          min-width: 640px;
+          max-width: 700px;
+          height: 40%;
+          min-height: 280px;
+          max-height: 300px
+        }
       }
 
       #BottomBar {
@@ -166,65 +179,68 @@ export default {
         margin-top: 7vh;
       }
 
-      .header-container {
-        margin: 5vh auto 0;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: 95%;
-        text-align: center;
+      .body-wrapper {
 
-        .header-text {
-          margin: 0;
-          font-family: "Gilroy SemiBold", serif;
-          font-size: 31px;
-          color: #1f1f1f;
-          letter-spacing: 0;
-          line-height: 1.15;
+        .header-container {
+          margin: 5vh auto 0;
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          width: 95%;
+          text-align: center;
 
-          .highlight-name {
-            color: #5675e7;
+          .header-text {
+            margin: 0;
+            font-family: "Gilroy SemiBold", serif;
+            font-size: 31px;
+            color: #1f1f1f;
+            letter-spacing: 0;
+            line-height: 1.15;
+
+            .highlight-name {
+              color: #5675e7;
+            }
           }
         }
-      }
 
-      .subheader-container {
-        padding-top: 12px;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
+        .subheader-container {
+          padding-top: 12px;
+          display: flex;
+          flex-direction: column;
+          height: fit-content;
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
 
-        .subheader-text-0 {
-          margin: 0;
-          font-family: "Gilroy Regular", serif;
-          font-size: 17px;
-          color: #393939;
-          line-height: 1.5;
+          .subheader-text-0 {
+            margin: 0;
+            font-family: "Gilroy Regular", serif;
+            font-size: 17px;
+            color: #393939;
+            line-height: 1.5;
+          }
+
+          .subheader-text-1 {
+            display: none;
+            margin: 0;
+            font-family: "Gilroy Regular", serif;
+            font-size: 17px;
+            color: #393939;
+            line-height: 1.5;
+          }
         }
 
-        .subheader-text-1 {
-          display: none;
-          margin: 0;
-          font-family: "Gilroy Regular", serif;
-          font-size: 17px;
-          color: #393939;
-          line-height: 1.5;
+        #CallToAction {
+          padding-top: 4vh;
+          width: 90%;
+          height: 40vh;
+          margin: 0 auto;
         }
-      }
 
-      #CallToAction {
-        padding-top: 4vh;
-        width: 90%;
-        height: 40vh;
-        margin: 0 auto;
-      }
-
-      #MosaicTiles {
-        padding-top: 3vh;
-        padding-bottom: 2vh;
+        #MosaicTiles {
+          padding-top: 3vh;
+          padding-bottom: 2vh;
+        }
       }
 
       #BottomBarMobile{
