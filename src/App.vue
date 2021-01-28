@@ -22,9 +22,14 @@ export default {
 #app {
   background-image: linear-gradient(to right top, white, white);
   min-height: 740px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   #wrapper{
     width: 100%;
+    min-width: 100vw;
+    height: 100%;
+    min-height: 100vh;
   }
 
   button{

@@ -5,6 +5,11 @@
       <ContactDetails/>
     </div>
     <div id="BottomBarMobile">
+      <button class="get-started-button" v-scroll-to="{ el: '#SideBar', easing: [.2, .80, .30, 1],duration: 1500}">
+        <span class="button-label">
+          Get Started
+        </span>
+      </button>
       <SocialLinks/>
       <ContactDetails/>
     </div>
@@ -62,6 +67,23 @@ export default {
     justify-content: space-between;
     align-items: center;
 
+    .get-started-button{
+      align-self: center;
+      height: 51px;
+      width: 100%;
+      background-image: linear-gradient(to right top, #222222, #323232);
+      border-radius: 8px;
+      margin-bottom: 6vh;
+      box-shadow: 0 8px 15px 0 rgba(191, 193, 212, 0.3);
+      padding-top: 4px;
+
+      .button-label{
+        font-family: "Gilroy Medium", serif;
+        font-size: 16px;
+        color: white;
+      }
+    }
+
     #SocialLinks {
       width: 60%;
       margin-bottom: 4vh;
@@ -69,7 +91,7 @@ export default {
 
     #ContactDetails {
       width: 100%;
-      margin-bottom: 8vh;
+      margin-bottom: 20vh;
     }
   }
 }
