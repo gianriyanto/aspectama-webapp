@@ -117,8 +117,8 @@ export default {
         this.getSelectedProgram();
 
         emailjs.send(
-            "service_g2d2x69",
-            "template_mzr78m7",
+            "service_v11ojoh",
+            "template_8vlrtx9",
             {
               name: this.name.input,
               program: this.selectedProgram,
