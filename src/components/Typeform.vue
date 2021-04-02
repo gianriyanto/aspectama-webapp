@@ -1,7 +1,6 @@
 <template>
   <div id="Typeform" :key="componentKey">
     <ProgramSelection id="ProgramSelection" v-bind:selectionData="programs"/>
-
     <div class="input-card" v-bind:class="{'isvalid-border': name.isValid}">
       <span class="prompt">
         Let's start with your name
@@ -10,7 +9,6 @@
         <inline-input v-bind:inputData="name"/>
       </span>
     </div>
-
     <div class="disabled-card" v-if="!name.isValid">
       <span class="prompt">
         You're most interested to study
@@ -27,7 +25,6 @@
         <inline-input v-bind:inputData="course"/>
       </span>
     </div>
-
     <div class="disabled-card" v-if="!course.isValid || !name.isValid">
       <span class="prompt">
         And travel abroad to
@@ -44,13 +41,12 @@
         <inline-input v-bind:inputData="country"/>
       </span>
     </div>
-
     <div class="disabled-card" v-if="!country.isValid || !course.isValid || !name.isValid">
       <span class="prompt">
         Cool! It's best to reach you at
       </span>
       <span class="input">
-        What's your mobile number or email
+        Type your phone number
       </span>
     </div>
     <div class="input-card" v-bind:class="{'isvalid-border': contact.isValid}" v-else>
@@ -61,19 +57,20 @@
         <inline-input v-bind:inputData="contact"/>
       </span>
     </div>
-
     <transition appear name="fade">
       <div class="footer-container">
         <span v-if="country.isValid && course.isValid && name.isValid && contact.isValid" class="footer-text">
           Thanks <span class="highlight-name"> {{ name.input.split(' ')[0] }}! </span> chat soon.
         </span>
+        <span v-else-if="showValidateError && !isFormValid" class="error-text">
+          Please make sure you've filled out everything.
+        </span>
       </div>
     </transition>
-
     <div class="button-container">
       <button class="clear-button"  @click="handleClear()">
         <span class="button-label">
-          Start new
+          Clear
         </span>
       </button>
       <button :class="buttonStyle" @click="handleSubmit">
@@ -82,7 +79,6 @@
         </span>
       </button>
     </div>
-
   </div>
 </template>
 
@@ -105,17 +101,18 @@ export default {
       name: {prompt: 'Your full name', input: 'Your full name', edit: false, isValid: false},
       course: {prompt: 'Interested major or course', input: 'Interested major or course', edit: false, isValid: false},
       country: {prompt: 'Preferred city or country?', input: 'Preferred city or country?', edit: false, isValid: false},
-      contact: {prompt: "What's your mobile number or email", input: "What's your mobile number or email", edit: false, isValid: false},
+      contact: {prompt: "Type your phone number", input: "Type your phone number", edit: false, isValid: false},
       buttonLabel: "Submit",
-      buttonStyle: "submit-button"
+      buttonStyle: "submit-button",
+      showValidateError: false,
+      isFormValid: true,
     }
   },
   methods: {
     handleSubmit(){
-      if (this.buttonLabel === "Submit"){
-
-        this.getSelectedProgram();
-
+      this.validateForm()
+      this.getSelectedProgram();
+      if (this.isFormValid && this.buttonLabel === "Submit"){
         emailjs.send(
             "service_v11ojoh",
             "template_8vlrtx9",
@@ -127,6 +124,7 @@ export default {
               contact: this.contact.input
             }
         );
+        this.showValidateError = false;
         this.buttonLabel = 'Submitted!';
         this.buttonStyle = 'submitted-button';
       }
@@ -134,6 +132,7 @@ export default {
     handleClear: function(){
       this.buttonLabel = 'Submit';
       this.buttonStyle = 'submit-button';
+      this.showValidateError = false;
       this.clearForm();
     },
     clearForm: function(){
@@ -146,12 +145,19 @@ export default {
     },
     getSelectedProgram: function(){
       for (let i = 0; i < this.programs.length; i++) {
-        if (this.programs[i].isSelected) {
+        if (this.programs[i].isSelected === true) {
           this.selectedProgram = this.programs[i].programName;
+          break
         }
-        else{
-          this.selectedProgram = 'no program selected';
-        }
+      }
+    },
+    validateForm: function() {
+      if (this.selectedProgram && this.name.isValid && this.course.isValid && this.country.isValid && this.contact.isValid) {
+        this.isFormValid = true
+        this.showValidateError = false
+      } else {
+        this.isFormValid = false
+        this.showValidateError = true
       }
     }
   }

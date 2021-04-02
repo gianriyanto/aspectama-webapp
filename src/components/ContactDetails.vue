@@ -4,8 +4,8 @@
       62 812 3201 2145
     </span>
     <span class="slash"> / </span>
-    <a class="email" href="mailto:consult@aspectamalsut.co.id">
-      consult@aspectamalsut.co.id
+    <a class="email" href="mailto:consult@aspectamaalsut.co.id">
+      consult@aspectamaalsut.co.id
     </a>
   </div>
 </template>
